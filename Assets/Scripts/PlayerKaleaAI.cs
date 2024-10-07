@@ -4,10 +4,14 @@ using UnityEngine;
 
 public class PlayerKaleaAI : MonoBehaviour
 {
-    public float distanciaRaycast = 10f;
+    public float distanciaRaycast = 100f;
+    public LayerMask kaleaAI;
+    private kaleaAI iaUltimaGolpeada;
 
+    public Renderer kaleaAIrenderer;
     void Update()
     {
+        Debug.Log("Visible " + kaleaAIrenderer.isVisible);
         LanzarRaycast();
     }
 
@@ -16,24 +20,34 @@ public class PlayerKaleaAI : MonoBehaviour
         Ray ray = new Ray(transform.position, transform.forward);
         RaycastHit hit;
 
-        if (Physics.Raycast(ray, out hit, distanciaRaycast))
+        if (Physics.Raycast(ray, out hit, distanciaRaycast, kaleaAI))
         {
+            Debug.Log("GGGGGGG");
             kaleaAI ia = hit.collider.GetComponent<kaleaAI>();
 
             if (ia != null)
             {
                 ia.DetenerIA(true);
+                iaUltimaGolpeada = ia;
                 Debug.Log("Raycast impactó a la IA: " + hit.collider.name);
             }
         }
-        else
+
+        /*else if (iaUltimaGolpeada != null)
+        {
+            iaUltimaGolpeada.DetenerIA(false);
+            iaUltimaGolpeada = null;
+        }*/
+
+        if( !kaleaAIrenderer.isVisible)
         {
             kaleaAI[] ias = FindObjectsOfType<kaleaAI>();
             foreach (kaleaAI ia in ias)
             {
                 ia.DetenerIA(false);
             }
-        }        
+        }
+
         Debug.DrawRay(transform.position, transform.forward * distanciaRaycast, Color.red);
     }
 }
