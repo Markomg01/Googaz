@@ -9,6 +9,7 @@ public class kaleaAI : MonoBehaviour
     public Vector3 direccion = Vector3.forward;
 
     private bool raycastGolpeo = false;
+    private bool estabaDetenida = false;
 
     void Update()
     {
@@ -25,15 +26,20 @@ public class kaleaAI : MonoBehaviour
 
     public void DetenerIA(bool detener)
     {
-        raycastGolpeo = detener;
+        if (detener != raycastGolpeo)
+        {
+            raycastGolpeo = detener;
 
-        if (detener)
-        {
-            Debug.Log("Detenido señoria");
-        }
-        else
-        {
-            //Debug.Log("Reanudando movimiento");
+            if (detener)
+            {
+                Debug.Log("IA Detenida");
+                estabaDetenida = true;
+            }
+            else if (estabaDetenida)
+            {
+                Debug.Log("IA Reanudando movimiento");
+                estabaDetenida = false;
+            }
         }
     }
 
