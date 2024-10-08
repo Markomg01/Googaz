@@ -540,6 +540,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distanciaRaycast: 500
+  kaleaAI:
+    serializedVersion: 2
+    m_Bits: 0
+  kaleaAIrenderer: {fileID: 0}
 --- !u!1 &239097131
 GameObject:
   m_ObjectHideFlags: 0
@@ -1121,6 +1125,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distanciaRaycast: 500
+  kaleaAI:
+    serializedVersion: 2
+    m_Bits: 0
+  kaleaAIrenderer: {fileID: 0}
 --- !u!1 &542611688
 GameObject:
   m_ObjectHideFlags: 0
@@ -1882,12 +1890,12 @@ PrefabInstance:
     - target: {fileID: 4134505312059479865, guid: 895f6f3c2d334633b5800312285058d2,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.048
       objectReference: {fileID: 0}
     - target: {fileID: 4134505312059479865, guid: 895f6f3c2d334633b5800312285058d2,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.08
+      value: 1.721
       objectReference: {fileID: 0}
     - target: {fileID: 4134505312059479865, guid: 895f6f3c2d334633b5800312285058d2,
         type: 3}
@@ -4186,6 +4194,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distanciaRaycast: 500
+  kaleaAI:
+    serializedVersion: 2
+    m_Bits: 256
+  kaleaAIrenderer: {fileID: 1968635539}
 --- !u!1 &1737549027
 GameObject:
   m_ObjectHideFlags: 0
@@ -4767,7 +4779,7 @@ GameObject:
   - component: {fileID: 1968635549}
   - component: {fileID: 1968635548}
   - component: {fileID: 1968635547}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: El malo de atras
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4794,9 +4806,9 @@ CapsuleCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 1.0624762
-  m_Height: 2.8131752
+  m_Height: 9.334552
   m_Direction: 1
-  m_Center: {x: -0.012746096, y: 0.4065876, z: -5.513002e-16}
+  m_Center: {x: -0.012746064, y: 3.6672773, z: -5.5130346e-16}
 --- !u!23 &1968635539
 MeshRenderer:
   m_ObjectHideFlags: 0
