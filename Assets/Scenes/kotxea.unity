@@ -10249,6 +10249,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: XR Interaction Setup
       objectReference: {fileID: 0}
+    - target: {fileID: 7690080512698956844, guid: 895f6f3c2d334633b5800312285058d2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7696548424635294051, guid: 895f6f3c2d334633b5800312285058d2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14814,7 +14819,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -15788,6 +15793,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puertaKotxea: {fileID: 0}
+  escena: Kalea
 --- !u!65 &1824398134
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16414,6 +16420,9 @@ MonoBehaviour:
     tangent: {x: -0.008847572, y: 0, z: 0.8998947}
     roll: 0
   - position: {x: 2.8610315, y: 0, z: 232.14433}
+    tangent: {x: 0.16724682, y: 0, z: 0.8998871}
+    roll: 0
+  - position: {x: 3.028278, y: 0, z: 280.9392}
     tangent: {x: 0.16724682, y: 0, z: 0.8998871}
     roll: 0
 --- !u!4 &1877475362
@@ -17838,7 +17847,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}

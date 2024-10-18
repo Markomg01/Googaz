@@ -8,17 +8,27 @@ public class ChangeScene : MonoBehaviour
 {
     public Animator puertaKotxea;
 
+    public string escena;
+
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log(other.gameObject.name);
         if (other.transform.name == "Poke Point")
         {
             puertaKotxea.SetTrigger("puertaKotxea");
+            Debug.Log("MANILLARRARARA");
         }
-    } 
-    
-    public void cambiarEscena()
+    }
+
+    private void OnCollisionEnter(Collision collision)
     {
-        SceneManager.LoadScene("Etxea(Egunez)");
+        Debug.Log(collision.gameObject.name);
+
+    }
+
+    public void CambiarEscena()
+    {
+        SceneManager.LoadScene(escena);
     }
     
 }
