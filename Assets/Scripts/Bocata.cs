@@ -44,7 +44,7 @@ public class Bocata : MonoBehaviour
     public void BreadTop()
     {
         breadtop.GetComponent<MeshRenderer>().enabled = false;
-        breadtop.GetComponent<XRSocketInteractor>().GetOldestInteractableSelected().transform.gameObject.GetComponent<Collider>().enabled = false; po.Play();
+        breadtop.GetComponent<XRSocketInteractor>().GetOldestInteractableSelected().transform.gameObject.GetComponent<Collider>().enabled = true; po.Play();
         Instantiate(bocatafinal, gameObject.transform.position, bocatafinal.transform.rotation);
         GameObject g = GameObject.Instantiate(end);
         Destroy(gameObject, 0.08f);

@@ -12,4 +12,11 @@ public class PaperActivator : MonoBehaviour
         GetComponent<XRGrabInteractable>().enabled = true;
         GetComponent<Collider>().enabled = true;
     }
+
+    private void DeactivatePaper()
+    {
+        GetComponent<Rigidbody>().isKinematic = true;
+        GetComponent<XRGrabInteractable>().enabled = false;
+        GetComponent<Collider>().enabled = false;
+    }
 }
