@@ -8219,29 +8219,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 536771569}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &538386905 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7696548424635294048, guid: 895f6f3c2d334633b5800312285058d2,
-    type: 3}
-  m_PrefabInstance: {fileID: 912955678}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &538386912
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 538386905}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ab037760d995684ea0ba1b17065599c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  distanciaRaycast: 500
-  kaleaAI:
-    serializedVersion: 2
-    m_Bits: 0
-  kaleaAIrenderer: {fileID: 0}
 --- !u!1001 &551043698
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12041,13 +12018,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 7690080512698956844, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7696548424635294048, guid: 895f6f3c2d334633b5800312285058d2,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 538386912}
     - targetCorrespondingSourceObject: {fileID: 9014170783728641055, guid: 895f6f3c2d334633b5800312285058d2,
         type: 3}
       insertIndex: -1
