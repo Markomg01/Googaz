@@ -5,8 +5,9 @@ using UnityEngine;
 
 public class DecalProjector : MonoBehaviour
 {
+    public GameObject paperPile;
+
     [SerializeField] GameObject bulletHolePrefab;
-    [SerializeField] GameObject bulletHoleContainer;
     [SerializeField] float destroyDelay;
 
     public float rayDistance;
@@ -17,15 +18,14 @@ public class DecalProjector : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.transform.name);
         if (other.CompareTag("Paper"))
         {
+            paperPile.GetComponent<Outline>().OutlineWidth = 3;
             Ray ray = new Ray(origin.transform.position, origin.transform.forward);
 
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit, rayDistance))
             {
-                Debug.Log(hit.transform.name);
                 SpawnBulletHole(hit, ray);
                 hit.transform.tag = "Signed";
             }

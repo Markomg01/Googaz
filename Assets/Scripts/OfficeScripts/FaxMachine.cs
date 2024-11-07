@@ -14,12 +14,9 @@ public class FaxMachine : MonoBehaviour
     public bool canSpawn;
     public Material faxLight;
 
-    private void Update()
+    private void Start()
     {
-        if(Input.GetKeyDown(KeyCode.Q))
-        {
-            SpawnPaper();
-        }
+        CanSpawn();
     }
 
     public void SpawnPaper()
