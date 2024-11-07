@@ -7,26 +7,31 @@ public class PaperCollector : MonoBehaviour
     public int paperSigned;
     public int paperToSign;
     public ParticleSystem particles;
+    public ParticleSystem spark;
     bool a = false;
     public FaxMachine faxMachine;
+    public Task taskScript;
 
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision collision)
     {
-        if (other.CompareTag("Signed"))
+        if (collision.gameObject.CompareTag("Signed"))
         {
+            GetComponent<Outline>().OutlineWidth = 0;
             faxMachine.CanSpawn();
             paperSigned++;
-            Destroy(other.gameObject);
+            spark.Play();
+            Destroy(collision.gameObject);
         }
     }
 
     private void Update()
     {
-        if(paperSigned >= paperToSign && !a)
+        if (paperSigned >= paperToSign && !a)
         {
             faxMachine.CantSpawn();
             a = true;
             particles.Play();
+            taskScript.TaskComplete(true);
         }
     }
 }
