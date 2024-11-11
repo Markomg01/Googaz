@@ -2,10 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class TaskManager : MonoBehaviour
 {
     public List<Task> tasksInScene = new List<Task>();
+
+    public FadeInOut fade;
 
     [SerializeField]
     UnityEvent tasksCompleted;
@@ -23,7 +26,17 @@ public class TaskManager : MonoBehaviour
 
         if (howManyFinished == tasksInScene.Count)
         {
+            Debug.Log("All Tasks Completed");
             tasksCompleted.Invoke();
         }
+    }
+
+    public string nextSceneName;
+
+    public void ChangeScene()
+    {
+        fade.FadeOut();
+        Debug.Log(nextSceneName + " sceneLoaded");
+    SceneManager.LoadScene(nextSceneName);
     }
 }
