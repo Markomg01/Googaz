@@ -8,6 +8,8 @@ public class TaskManager : MonoBehaviour
 {
     public List<Task> tasksInScene = new List<Task>();
 
+    public FadeInOut fade;
+
     [SerializeField]
     UnityEvent tasksCompleted;
 
@@ -33,7 +35,8 @@ public class TaskManager : MonoBehaviour
 
     public void ChangeScene()
     {
+        fade.FadeOut();
         Debug.Log(nextSceneName + " sceneLoaded");
-        SceneManager.LoadScene(nextSceneName);
+    SceneManager.LoadScene(nextSceneName);
     }
 }
