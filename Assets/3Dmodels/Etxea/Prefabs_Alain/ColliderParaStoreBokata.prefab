@@ -85,7 +85,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.0049353, y: 0.042897284, z: 4.551}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.6276, y: 1.6276, z: 1.6276}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8318826085915769201}
@@ -93,6 +93,7 @@ Transform:
   - {fileID: 642296203058649164}
   - {fileID: 7930384870431661713}
   - {fileID: 5889673589100959568}
+  - {fileID: 1367143058946436286}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &8939176746805932824
@@ -164,8 +165,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.20295358, y: 0.20189074, z: 0.17425394}
-  m_Center: {x: 0.08611119, y: -0.096587405, z: -0.03724599}
+  m_Size: {x: 0.20295358, y: 0.2630691, z: 0.17425394}
+  m_Center: {x: 0.08611119, y: -0.065998234, z: -0.03724599}
 --- !u!114 &1205006756529560446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -198,6 +199,7 @@ MonoBehaviour:
   duracionMensaje: 2
   tiempoDesaparecer: 1
   outline: {fileID: 522529424897131389}
+  task: {fileID: 0}
 --- !u!114 &522529424897131389
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -375,6 +377,37 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.047096014, y: 0.39740938, z: 0.17567539}
   m_Center: {x: 0.20968592, y: -0.0019438043, z: -0.038297653}
+--- !u!1 &9134624253895133632
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1367143058946436286}
+  m_Layer: 0
+  m_Name: BokataAttach
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1367143058946436286
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9134624253895133632}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.086, y: -0.087, z: -0.044}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7508007685683105893}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &8314424029300668157
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -401,7 +434,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4693653493845900, guid: 379785de5e39005469c875710d3cc5a7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.021312237
+      value: 0.079
       objectReference: {fileID: 0}
     - target: {fileID: 4693653493845900, guid: 379785de5e39005469c875710d3cc5a7, type: 3}
       propertyPath: m_LocalPosition.y
