@@ -1,10 +1,14 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Task : MonoBehaviour
 {
     public string taskName;
     [SerializeField]
     bool finished;
+
+    public Toggle toggle;
+
     TaskManager manager;
 
     private void Start()
@@ -24,6 +28,7 @@ public class Task : MonoBehaviour
     {
         Debug.Log("finished "+ taskName);
         finished = completed;
+        toggle.isOn = completed;
         manager.CheckTasksCompleted();
     }
 
