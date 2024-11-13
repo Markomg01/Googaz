@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 using TMPro;
+using Unity.VisualScripting;
 
 public class StoreBokata : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class StoreBokata : MonoBehaviour
     public float duracionMensaje = 2f;  // Duración del mensaje
     public float tiempoDesaparecer = 0.5f;  // Tiempo antes de eliminar el objeto correcto
     public Outline outline;  // Componente Outline
+    public Task task;
 
     private void Start()
     {
@@ -37,6 +39,7 @@ public class StoreBokata : MonoBehaviour
                 if (particulas != null)
                 {
                     particulas.Play();  // Activar partículas
+                    task.TaskComplete(task);
                 }
 
                 if (sonidoDeposito != null)
