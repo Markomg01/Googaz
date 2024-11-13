@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: f0b5c62ba79af724fa6a9064399d2eff, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -7284,7 +7284,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  nextSceneName: kotxea
+  nextSceneName: kotxea Dia1
 --- !u!4 &1042733766
 Transform:
   m_ObjectHideFlags: 0
@@ -18781,7 +18781,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puertaKotxea: {fileID: 6981024157794970336}
-  escena: kotxea
+  escena: kotxea Dia1
   SonidoCambioescena: {fileID: 0}
   FadeOut: {fileID: 1926641198}
 --- !u!1 &7086206277453891323
@@ -18810,10 +18810,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2595507838377116261, guid: 128b638b3f48a6449b329132e39f5cb7,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2595507839607747640, guid: 128b638b3f48a6449b329132e39f5cb7,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2827143683447847320, guid: 128b638b3f48a6449b329132e39f5cb7,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2952673603952252428, guid: 128b638b3f48a6449b329132e39f5cb7,
         type: 3}
       propertyPath: m_Name
       value: ColliderParaStoreBokata
+      objectReference: {fileID: 0}
+    - target: {fileID: 4866726519502140821, guid: 128b638b3f48a6449b329132e39f5cb7,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6992806740912380798, guid: 128b638b3f48a6449b329132e39f5cb7,
         type: 3}
@@ -19629,9 +19649,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puertaKotxea: {fileID: 8478499973287897677}
-  escena: kotxea
+  escena: kotxea Dia1
   SonidoCambioescena: {fileID: 0}
-  FadeOut: {fileID: 0}
+  FadeOut: {fileID: 1926641198}
 --- !u!95 &8478499973287897677
 Animator:
   serializedVersion: 5

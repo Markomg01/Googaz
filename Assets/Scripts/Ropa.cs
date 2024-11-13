@@ -15,6 +15,9 @@ public class Ropa : MonoBehaviour
     public float tiempoDesaparecer = 0.5f;  // Tiempo antes de eliminar el objeto correcto
     public Outline outline;  // Componente Outline
     public Toggle UIToggle ;  // Referencia al Canvas que quieres desactivar
+    public Task task;
+    int zenbatArropaJasota = 0;
+    public int MAXarropa = 3;
 
     private void Start()
     {
@@ -35,29 +38,56 @@ public class Ropa : MonoBehaviour
         {
             if (other.CompareTag(ropaTag))
             {
-                // Si es un objeto correcto
-                if (particulas2 != null)
+                zenbatArropaJasota++;
+
+                if (zenbatArropaJasota == MAXarropa)
                 {
-                    particulas2.Play();  // Activar partículas
+                    // Si es un objeto correcto
+                    if (particulas2 != null)
+                    {
+                        particulas2.Play();  // Activar partículas
+                    }
+
+                    if (sonidoDeposito != null)
+                    {
+                        audioSource.PlayOneShot(sonidoDeposito);  // Reproducir sonido
+                    }
+
+                    // Desactivar la interacción para que no pueda volver a agarrarse
+                    interactable.enabled = false;
+
+                    // Hacer que el objeto sea hijo del contenedor
+                    other.transform.SetParent(this.transform);
+
+                    // Desactivar las partículas y eliminar el objeto más rápido
+                    Invoke("DetenerParticulas", tiempoDesaparecer);
+                    Invoke("EliminarObjetoCorrecto", tiempoDesaparecer);
+
+
+
+                    //UIToggle.isOn = true;
+
+                    task.TaskComplete(outline);
+                }
+                else
+                {
+                    if (sonidoDeposito != null)
+                    {
+                        audioSource.PlayOneShot(sonidoDeposito);  // Reproducir sonido
+                    }
+
+                    // Desactivar la interacción para que no pueda volver a agarrarse
+                    interactable.enabled = false;
+
+                    // Hacer que el objeto sea hijo del contenedor
+                    other.transform.SetParent(this.transform);
+
+                    // Desactivar las partículas y eliminar el objeto más rápido
+                    Invoke("DetenerParticulas", tiempoDesaparecer);
+                    Invoke("EliminarObjetoCorrecto", tiempoDesaparecer);
                 }
 
-                if (sonidoDeposito != null)
-                {
-                    audioSource.PlayOneShot(sonidoDeposito);  // Reproducir sonido
-                }
 
-                // Desactivar la interacción para que no pueda volver a agarrarse
-                interactable.enabled = false;
-
-                // Hacer que el objeto sea hijo del contenedor
-                other.transform.SetParent(this.transform);
-
-                // Desactivar las partículas y eliminar el objeto más rápido
-                Invoke("DetenerParticulas", tiempoDesaparecer);
-                Invoke("EliminarObjetoCorrecto", tiempoDesaparecer);
-
-                UIToggle.isOn = true;
-                
             }
             else
             {
@@ -121,6 +151,7 @@ public class Ropa : MonoBehaviour
             Transform objetoDepositado = transform.GetChild(transform.childCount - 1);
             if (objetoDepositado != null)
             {
+                Debug.Log(objetoDepositado.gameObject.name);
                 Destroy(objetoDepositado.gameObject);  // Eliminar el objeto de la escena
             }
         }
