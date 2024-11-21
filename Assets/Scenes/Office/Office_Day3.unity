@@ -8059,6 +8059,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 877795273}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &883033599 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5765406507392859654, guid: 6bee6e2abe7305b4fbc074d45ede9a6c,
+    type: 3}
+  m_PrefabInstance: {fileID: 3737570860868622218}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &886023350
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18201,6 +18207,52 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1719368660}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1726005843
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1726005844}
+  - component: {fileID: 1726005845}
+  m_Layer: 0
+  m_Name: CoffeeArrow
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1726005844
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1726005843}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.529, y: 0.022, z: -0.224}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6096162928629393177}
+  m_Father: {fileID: 2003319507}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1726005845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1726005843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df56f486d0a3e1449af0a49b8cee9caf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToFollow: {fileID: 883033599}
 --- !u!1001 &1762383074
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22080,8 +22132,8 @@ PrefabInstance:
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 7064277950732140562, guid: 6bee6e2abe7305b4fbc074d45ede9a6c,
         type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 6096162928629393177}
+      insertIndex: 3
+      addedObject: {fileID: 1726005844}
     - targetCorrespondingSourceObject: {fileID: 1333557961872273257, guid: 6bee6e2abe7305b4fbc074d45ede9a6c,
         type: 3}
       insertIndex: -1
@@ -22303,12 +22355,12 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 2003319507}
+    m_TransformParent: {fileID: 1726005844}
     m_Modifications:
     - target: {fileID: 1534023406229861425, guid: f10d8c572075ed3459d97a51a84753ab,
         type: 3}
       propertyPath: m_Name
-      value: Arrow
+      value: CoffeeArrowModel
       objectReference: {fileID: 0}
     - target: {fileID: 4660160340481328902, guid: f10d8c572075ed3459d97a51a84753ab,
         type: 3}
@@ -22318,12 +22370,12 @@ PrefabInstance:
     - target: {fileID: 4660160340481328902, guid: f10d8c572075ed3459d97a51a84753ab,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.226
+      value: 0.22599995
       objectReference: {fileID: 0}
     - target: {fileID: 4660160340481328902, guid: f10d8c572075ed3459d97a51a84753ab,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.219
+      value: -0.21899961
       objectReference: {fileID: 0}
     - target: {fileID: 4660160340481328902, guid: f10d8c572075ed3459d97a51a84753ab,
         type: 3}
@@ -22333,7 +22385,7 @@ PrefabInstance:
     - target: {fileID: 4660160340481328902, guid: f10d8c572075ed3459d97a51a84753ab,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4660160340481328902, guid: f10d8c572075ed3459d97a51a84753ab,
         type: 3}
@@ -22343,7 +22395,7 @@ PrefabInstance:
     - target: {fileID: 4660160340481328902, guid: f10d8c572075ed3459d97a51a84753ab,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4660160340481328902, guid: f10d8c572075ed3459d97a51a84753ab,
         type: 3}
