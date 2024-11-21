@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 666108380070755655}
-  - component: {fileID: 5086562298677546956}
   - component: {fileID: 478842239679846636}
   - component: {fileID: 2392307342305553055}
+  - component: {fileID: 7206961023456116999}
   m_Layer: 0
   m_Name: CoffeeFinalSocket
   m_TagString: Untagged
@@ -34,7 +34,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 7064277950732140562}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5086562298677546956
+--- !u!65 &478842239679846636
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1821686519449790985}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.16, y: 0.17527777, z: 0.22}
+  m_Center: {x: 0, y: 0.06000635, z: -0}
+--- !u!114 &2392307342305553055
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -43,7 +64,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 1821686519449790985}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6695a7517c64a124b9a149f1e2f8d7df, type: 3}
+  m_Script: {fileID: 11500000, guid: 11ce59e9979204f4a8d1ae4619a223d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7206961023456116999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1821686519449790985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60523e0647cc6ab43acc73cb266a32a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 0}
@@ -130,40 +163,6 @@ MonoBehaviour:
   m_SocketScaleMode: 0
   m_FixedScale: {x: 1, y: 1, z: 1}
   m_TargetBoundsSize: {x: 1, y: 1, z: 1}
-  targetTag: Coffee
---- !u!65 &478842239679846636
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1821686519449790985}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.16, y: 0.17527777, z: 0.22}
-  m_Center: {x: 0, y: 0.06000635, z: -0}
---- !u!114 &2392307342305553055
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1821686519449790985}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 11ce59e9979204f4a8d1ae4619a223d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2768719100918047587
 GameObject:
   m_ObjectHideFlags: 0
@@ -295,7 +294,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3958236489761364657}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0.0000011473893}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
   m_LocalPosition: {x: -1.58, y: 0.854, z: -11.688}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -377,7 +376,7 @@ ParticleSystem:
   emitterVelocityMode: 0
   looping: 1
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -5280,7 +5279,7 @@ ParticleSystem:
   emitterVelocityMode: 0
   looping: 0
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -10221,7 +10220,7 @@ ParticleSystem:
   emitterVelocityMode: 0
   looping: 1
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -15105,7 +15104,7 @@ ParticleSystem:
   emitterVelocityMode: 0
   looping: 1
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -20052,10 +20051,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: CoffeeTable
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2699092741681021261, guid: 553bffe2605d3e7438cfe0d3cdd14a52, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8164078558771037576, guid: 553bffe2605d3e7438cfe0d3cdd14a52,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 825645199174861204}
   m_SourcePrefab: {fileID: 100100000, guid: 553bffe2605d3e7438cfe0d3cdd14a52, type: 3}
 --- !u!4 &505627896300561042 stripped
 Transform:
@@ -20063,6 +20067,33 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 40216398541653369}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &8197187562580132081 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8164078558771037576, guid: 553bffe2605d3e7438cfe0d3cdd14a52,
+    type: 3}
+  m_PrefabInstance: {fileID: 40216398541653369}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &825645199174861204
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8197187562580132081}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.599346, y: 0.86736685, z: 0.97703505}
+  m_Center: {x: 0, y: 0.43341044, z: 0.046548486}
 --- !u!1001 &2303827668841410220
 PrefabInstance:
   m_ObjectHideFlags: 0

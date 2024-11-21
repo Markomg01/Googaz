@@ -8,7 +8,10 @@ public class SocketDeactivator : MonoBehaviour
     public void DeactivateObject()
     {
         GetComponent<XRSocketInteractor>().GetOldestInteractableSelected().transform.gameObject.GetComponent<Collider>().enabled = false;
-        GetComponent<MeshRenderer>().enabled = false;
+        if (GetComponent<MeshRenderer>() != null )
+        {
+            GetComponent<MeshRenderer>().enabled = false;
+        }
     }
 
     public void DeactivateSocket()
