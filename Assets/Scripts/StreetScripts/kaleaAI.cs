@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class kaleaAI : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class kaleaAI : MonoBehaviour
     public Vector3 direccion = Vector3.forward;
 
     private bool raycastGolpeo = false;
+    public string escena;
 
     void Update()
     {
@@ -37,5 +39,22 @@ public class kaleaAI : MonoBehaviour
             Debug.Log("IA Reanudando movimiento");
         }
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            SceneManager.LoadScene(escena);
+        }
+    }
+
+    /*private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            Debug.Log("Trigger activado por el jugador. Reiniciando escena...");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+    }*/
 
 }

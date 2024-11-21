@@ -959,36 +959,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 469987360}
-  - {fileID: 59738384}
-  - {fileID: 2098870393}
-  - {fileID: 2059718100}
-  - {fileID: 1048357743}
-  - {fileID: 1806527701}
-  - {fileID: 64496823}
-  - {fileID: 256585396}
-  - {fileID: 1595281422}
-  - {fileID: 861840140}
-  - {fileID: 81880851}
-  - {fileID: 396600675}
-  - {fileID: 1215409693}
-  - {fileID: 1043342995}
-  - {fileID: 1625716631}
-  - {fileID: 2008958471}
   - {fileID: 1106714058}
-  - {fileID: 1217170634}
-  - {fileID: 1964054563}
-  - {fileID: 181549267}
-  - {fileID: 1773663517}
   - {fileID: 1672538219}
   - {fileID: 1440583622}
-  - {fileID: 418952252}
-  - {fileID: 928417985}
-  - {fileID: 545315114}
   - {fileID: 2018031806}
-  - {fileID: 1020732518}
-  - {fileID: 518997361}
-  - {fileID: 1247126668}
   - {fileID: 1877475362}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3024,63 +2998,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 58344651}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &59738382
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 59738384}
-  - component: {fileID: 59738383}
-  m_Layer: 0
-  m_Name: NPCKotxeaPath (23)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &59738383
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 59738382}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d37e5385efd7064cb1d54c94960acae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Resolution: 20
-  m_Appearance:
-    pathColor: {r: 0, g: 1, b: 0, a: 1}
-    inactivePathColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-    width: 0.2
-  m_Looped: 0
-  m_Waypoints:
-  - position: {x: 0.09931027, y: 0, z: -7.9982314}
-    tangent: {x: 0.014506571, y: 0, z: 1.4933853}
-    roll: 0
-  - position: {x: 0.12583655, y: 0, z: 474.6504}
-    tangent: {x: -0.008847572, y: 0, z: 0.8998947}
-    roll: 0
---- !u!4 &59738384
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 59738382}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.70710677}
-  m_LocalPosition: {x: -696.19, y: -0.08139014, z: -13.82}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 12719114}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1001 &61695228
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3254,63 +3171,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 61975638}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &64496821
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 64496823}
-  - component: {fileID: 64496822}
-  m_Layer: 0
-  m_Name: NPCKotxeaPath (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &64496822
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 64496821}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d37e5385efd7064cb1d54c94960acae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Resolution: 20
-  m_Appearance:
-    pathColor: {r: 0, g: 1, b: 0, a: 1}
-    inactivePathColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-    width: 0.2
-  m_Looped: 0
-  m_Waypoints:
-  - position: {x: 0.09931027, y: 0, z: -7.9982314}
-    tangent: {x: 0.014506571, y: 0, z: 1.4933853}
-    roll: 0
-  - position: {x: 0.12586871, y: 0, z: 234.16055}
-    tangent: {x: -0.008847572, y: 0, z: 0.8998947}
-    roll: 0
---- !u!4 &64496823
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 64496821}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.70710677}
-  m_LocalPosition: {x: -192.81305, y: -0.08139014, z: -19.4}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 12719114}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1001 &71599439
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3751,63 +3611,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2139280684}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &81880849
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 81880851}
-  - component: {fileID: 81880850}
-  m_Layer: 0
-  m_Name: NPCKotxeaPath (17)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &81880850
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 81880849}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d37e5385efd7064cb1d54c94960acae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Resolution: 20
-  m_Appearance:
-    pathColor: {r: 0, g: 1, b: 0, a: 1}
-    inactivePathColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-    width: 0.2
-  m_Looped: 0
-  m_Waypoints:
-  - position: {x: 0.09931027, y: 0, z: -7.9982314}
-    tangent: {x: 0.014506571, y: 0, z: 1.4933853}
-    roll: 0
-  - position: {x: 0.12586722, y: 0, z: 222.09875}
-    tangent: {x: -0.008847572, y: 0, z: 0.8998947}
-    roll: 0
---- !u!4 &81880851
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 81880849}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.70710677}
-  m_LocalPosition: {x: -248.2, y: -0.08139014, z: -13.83069}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 12719114}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1001 &84487252
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4809,7 +4612,7 @@ Transform:
   m_GameObject: {fileID: 106985742}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7105327, z: -0, w: 0.7036642}
-  m_LocalPosition: {x: -250.84619, y: -2.3922524, z: -10.630814}
+  m_LocalPosition: {x: -250.84619, y: -2.392252, z: -10.630814}
   m_LocalScale: {x: 1.6276, y: 1.6276, z: 1.5700502}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4828,7 +4631,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99a9c787e5d1bbf48a389834c4a9641c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Path: {fileID: 396600674}
+  m_Path: {fileID: 0}
   m_UpdateMethod: 0
   m_PositionUnits: 1
   m_Speed: 17
@@ -7447,7 +7250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99a9c787e5d1bbf48a389834c4a9641c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Path: {fileID: 64496822}
+  m_Path: {fileID: 0}
   m_UpdateMethod: 0
   m_PositionUnits: 1
   m_Speed: 17
@@ -7461,7 +7264,7 @@ Transform:
   m_GameObject: {fileID: 173257909}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7105327, z: -0, w: 0.7036642}
-  m_LocalPosition: {x: -166.15924, y: -2.3922524, z: -10.630814}
+  m_LocalPosition: {x: -166.15924, y: -2.392252, z: -10.630814}
   m_LocalScale: {x: 1.6276, y: 1.6276, z: 1.5700482}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7732,63 +7535,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 180729497}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &181549266
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 181549267}
-  - component: {fileID: 181549268}
-  m_Layer: 0
-  m_Name: NPCKotxeaPath (15)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &181549267
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 181549266}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.70710677}
-  m_LocalPosition: {x: -628.1, y: -0.08139014, z: -19.50069}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 12719114}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &181549268
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 181549266}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d37e5385efd7064cb1d54c94960acae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Resolution: 20
-  m_Appearance:
-    pathColor: {r: 0, g: 1, b: 0, a: 1}
-    inactivePathColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-    width: 0.2
-  m_Looped: 0
-  m_Waypoints:
-  - position: {x: 0.09931027, y: 0, z: -7.9982314}
-    tangent: {x: 0.014506571, y: 0, z: 1.4933853}
-    roll: 0
-  - position: {x: 0.12583831, y: 0, z: 466.19403}
-    tangent: {x: -0.008847572, y: 0, z: 0.8998947}
-    roll: 0
 --- !u!1001 &184448737
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11688,63 +11434,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7848dbbe0729c154fa350715bafd925d, type: 3}
---- !u!1 &256585395
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 256585396}
-  - component: {fileID: 256585397}
-  m_Layer: 0
-  m_Name: NPCKotxeaPath (20)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &256585396
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 256585395}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.70710677}
-  m_LocalPosition: {x: -321.4, y: -0.08139014, z: -19.4}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 12719114}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &256585397
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 256585395}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d37e5385efd7064cb1d54c94960acae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Resolution: 20
-  m_Appearance:
-    pathColor: {r: 0, g: 1, b: 0, a: 1}
-    inactivePathColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-    width: 0.2
-  m_Looped: 0
-  m_Waypoints:
-  - position: {x: 0.09931027, y: 0, z: -7.9982314}
-    tangent: {x: 0.014506571, y: 0, z: 1.4933853}
-    roll: 0
-  - position: {x: 0.125869, y: 0, z: 248.23228}
-    tangent: {x: -0.008847572, y: 0, z: 0.8998947}
-    roll: 0
 --- !u!1 &257398521
 GameObject:
   m_ObjectHideFlags: 0
@@ -11771,7 +11460,7 @@ Transform:
   m_GameObject: {fileID: 257398521}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7105327, z: -0, w: 0.7036642}
-  m_LocalPosition: {x: -329.94797, y: -2.3922524, z: -5.1515045}
+  m_LocalPosition: {x: -329.94797, y: -2.392252, z: -5.1515045}
   m_LocalScale: {x: 1.6276, y: 1.6276, z: 1.5700502}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11790,7 +11479,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99a9c787e5d1bbf48a389834c4a9641c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Path: {fileID: 1625716632}
+  m_Path: {fileID: 0}
   m_UpdateMethod: 0
   m_PositionUnits: 1
   m_Speed: 22
@@ -11821,7 +11510,7 @@ Transform:
   m_GameObject: {fileID: 259116361}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7105327, z: -0, w: 0.7036642}
-  m_LocalPosition: {x: -275.0162, y: -2.3922524, z: -10.730814}
+  m_LocalPosition: {x: -275.0162, y: -2.392252, z: -10.730814}
   m_LocalScale: {x: 1.6276, y: 1.6276, z: 1.5700502}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11840,7 +11529,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99a9c787e5d1bbf48a389834c4a9641c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Path: {fileID: 2059718101}
+  m_Path: {fileID: 0}
   m_UpdateMethod: 0
   m_PositionUnits: 1
   m_Speed: 17
@@ -12888,7 +12577,7 @@ Transform:
   m_GameObject: {fileID: 280166750}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7105327, z: -0, w: 0.7036642}
-  m_LocalPosition: {x: -20.447954, y: -2.3922524, z: -10.630814}
+  m_LocalPosition: {x: -20.447954, y: -2.392252, z: -10.630814}
   m_LocalScale: {x: 1.6276, y: 1.6276, z: 1.5700502}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -12907,7 +12596,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99a9c787e5d1bbf48a389834c4a9641c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Path: {fileID: 2008958472}
+  m_Path: {fileID: 0}
   m_UpdateMethod: 0
   m_PositionUnits: 1
   m_Speed: 17
@@ -14237,7 +13926,7 @@ Transform:
   m_GameObject: {fileID: 307767831}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7105327, z: -0, w: 0.7036642}
-  m_LocalPosition: {x: -221.5462, y: -2.3922524, z: -5.0615044}
+  m_LocalPosition: {x: -221.5462, y: -2.392252, z: -5.0615044}
   m_LocalScale: {x: 1.6276, y: 1.6276, z: 1.5700502}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -14256,7 +13945,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99a9c787e5d1bbf48a389834c4a9641c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Path: {fileID: 81880850}
+  m_Path: {fileID: 0}
   m_UpdateMethod: 0
   m_PositionUnits: 1
   m_Speed: 22
@@ -16380,7 +16069,7 @@ Transform:
   m_GameObject: {fileID: 342198646}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7105327, z: -0, w: 0.7036642}
-  m_LocalPosition: {x: -519.5462, y: -2.3922524, z: -10.630814}
+  m_LocalPosition: {x: -519.5462, y: -2.392252, z: -10.630814}
   m_LocalScale: {x: 1.6276, y: 1.6276, z: 1.5700502}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -16399,7 +16088,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99a9c787e5d1bbf48a389834c4a9641c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Path: {fileID: 1043342996}
+  m_Path: {fileID: 0}
   m_UpdateMethod: 0
   m_PositionUnits: 1
   m_Speed: 17
@@ -16433,7 +16122,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99a9c787e5d1bbf48a389834c4a9641c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Path: {fileID: 2098870392}
+  m_Path: {fileID: 0}
   m_UpdateMethod: 0
   m_PositionUnits: 1
   m_Speed: 17
@@ -16447,7 +16136,7 @@ Transform:
   m_GameObject: {fileID: 343499667}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7105327, z: -0, w: 0.7036642}
-  m_LocalPosition: {x: -194.79102, y: -2.3922524, z: -10.730814}
+  m_LocalPosition: {x: -194.79102, y: -2.392252, z: -10.730814}
   m_LocalScale: {x: 1.6276, y: 1.6276, z: 1.5700482}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -16920,7 +16609,7 @@ Transform:
   m_GameObject: {fileID: 348632086}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7105327, z: -0, w: 0.7036642}
-  m_LocalPosition: {x: -670.7661, y: -2.3922524, z: -10.830814}
+  m_LocalPosition: {x: -670.7661, y: -2.392252, z: -10.830814}
   m_LocalScale: {x: 1.6276, y: 1.6276, z: 1.5700502}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -16939,7 +16628,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99a9c787e5d1bbf48a389834c4a9641c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Path: {fileID: 1247126667}
+  m_Path: {fileID: 0}
   m_UpdateMethod: 0
   m_PositionUnits: 1
   m_Speed: 17
@@ -18359,7 +18048,7 @@ Transform:
   m_GameObject: {fileID: 380096524}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7105327, z: -0, w: 0.7036642}
-  m_LocalPosition: {x: -294.7462, y: -2.3922524, z: -10.630814}
+  m_LocalPosition: {x: -294.7462, y: -2.392252, z: -10.630814}
   m_LocalScale: {x: 1.6276, y: 1.6276, z: 1.5700502}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -18378,7 +18067,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99a9c787e5d1bbf48a389834c4a9641c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Path: {fileID: 256585397}
+  m_Path: {fileID: 0}
   m_UpdateMethod: 0
   m_PositionUnits: 1
   m_Speed: 17
@@ -18966,63 +18655,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 394676875}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &396600673
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 396600675}
-  - component: {fileID: 396600674}
-  m_Layer: 0
-  m_Name: NPCKotxeaPath (13)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &396600674
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 396600673}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d37e5385efd7064cb1d54c94960acae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Resolution: 20
-  m_Appearance:
-    pathColor: {r: 0, g: 1, b: 0, a: 1}
-    inactivePathColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-    width: 0.2
-  m_Looped: 0
-  m_Waypoints:
-  - position: {x: 0.09931027, y: 0, z: -7.9982314}
-    tangent: {x: 0.014506571, y: 0, z: 1.4933853}
-    roll: 0
-  - position: {x: 0.12586924, y: 0, z: 250.3681}
-    tangent: {x: -0.008847572, y: 0, z: 0.8998947}
-    roll: 0
---- !u!4 &396600675
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 396600673}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.70710677}
-  m_LocalPosition: {x: -277.5, y: -0.08139014, z: -19.4}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 12719114}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &398288416
 GameObject:
   m_ObjectHideFlags: 0
@@ -19049,7 +18681,7 @@ Transform:
   m_GameObject: {fileID: 398288416}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7105327, z: -0, w: 0.7036642}
-  m_LocalPosition: {x: -612.4479, y: -2.3922524, z: -10.730814}
+  m_LocalPosition: {x: -612.4479, y: -2.392252, z: -10.730814}
   m_LocalScale: {x: 1.6276, y: 1.6276, z: 1.5700502}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -19068,7 +18700,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99a9c787e5d1bbf48a389834c4a9641c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Path: {fileID: 1048357744}
+  m_Path: {fileID: 0}
   m_UpdateMethod: 0
   m_PositionUnits: 1
   m_Speed: 17
@@ -21012,63 +20644,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7848dbbe0729c154fa350715bafd925d, type: 3}
---- !u!1 &418952250
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 418952252}
-  - component: {fileID: 418952251}
-  m_Layer: 0
-  m_Name: NPCKotxeaPath (4)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &418952251
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 418952250}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d37e5385efd7064cb1d54c94960acae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Resolution: 20
-  m_Appearance:
-    pathColor: {r: 0, g: 1, b: 0, a: 1}
-    inactivePathColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-    width: 0.2
-  m_Looped: 0
-  m_Waypoints:
-  - position: {x: 0.09931027, y: 0, z: -7.9982314}
-    tangent: {x: 0.014506571, y: 0, z: 1.4933853}
-    roll: 0
-  - position: {x: 0.12586722, y: 0, z: 222.09875}
-    tangent: {x: -0.008847572, y: 0, z: 0.8998947}
-    roll: 0
---- !u!4 &418952252
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 418952250}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.70710677}
-  m_LocalPosition: {x: -158.51306, y: -0.08139014, z: -13.919998}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 12719114}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1001 &419755354
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23252,63 +22827,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 469332020}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &469987358
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 469987360}
-  - component: {fileID: 469987359}
-  m_Layer: 0
-  m_Name: NPCKotxeaPath
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &469987359
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 469987358}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d37e5385efd7064cb1d54c94960acae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Resolution: 20
-  m_Appearance:
-    pathColor: {r: 0, g: 1, b: 0, a: 1}
-    inactivePathColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-    width: 0.2
-  m_Looped: 0
-  m_Waypoints:
-  - position: {x: 0.09931027, y: 0, z: -7.9982314}
-    tangent: {x: 0.014506571, y: 0, z: 1.4933853}
-    roll: 0
-  - position: {x: 0.12586722, y: 0, z: 222.09875}
-    tangent: {x: -0.008847572, y: 0, z: 0.8998947}
-    roll: 0
---- !u!4 &469987360
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 469987358}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.70710677}
-  m_LocalPosition: {x: -221.41306, y: -0.08139014, z: -13.82}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 12719114}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1001 &470302790
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25036,63 +24554,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 517664423}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &518997360
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 518997361}
-  - component: {fileID: 518997362}
-  m_Layer: 0
-  m_Name: NPCKotxeaPath (14)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &518997361
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 518997360}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.70710677}
-  m_LocalPosition: {x: -394.8, y: -0.08139014, z: -19.6}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 12719114}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &518997362
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 518997360}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d37e5385efd7064cb1d54c94960acae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Resolution: 20
-  m_Appearance:
-    pathColor: {r: 0, g: 1, b: 0, a: 1}
-    inactivePathColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-    width: 0.2
-  m_Looped: 0
-  m_Waypoints:
-  - position: {x: 0.09931027, y: 0, z: -7.9982314}
-    tangent: {x: 0.014506571, y: 0, z: 1.4933853}
-    roll: 0
-  - position: {x: 0.12586722, y: 0, z: 222.09875}
-    tangent: {x: -0.008847572, y: 0, z: 0.8998947}
-    roll: 0
 --- !u!1001 &519843921
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26422,63 +25883,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 542894314}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &545315112
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 545315114}
-  - component: {fileID: 545315113}
-  m_Layer: 0
-  m_Name: NPCKotxeaPath (22)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &545315113
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 545315112}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d37e5385efd7064cb1d54c94960acae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Resolution: 20
-  m_Appearance:
-    pathColor: {r: 0, g: 1, b: 0, a: 1}
-    inactivePathColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-    width: 0.2
-  m_Looped: 0
-  m_Waypoints:
-  - position: {x: 0.09931027, y: 0, z: -7.9982314}
-    tangent: {x: 0.014506571, y: 0, z: 1.4933853}
-    roll: 0
-  - position: {x: 0.12583469, y: 0, z: 490.25964}
-    tangent: {x: -0.008847572, y: 0, z: 0.8998947}
-    roll: 0
---- !u!4 &545315114
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 545315112}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.70710677}
-  m_LocalPosition: {x: -403.5018, y: -0.08139014, z: -13.919998}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 12719114}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1001 &545575738
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28899,7 +28303,7 @@ Transform:
   m_GameObject: {fileID: 589859457}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7105327, z: -0, w: 0.7036642}
-  m_LocalPosition: {x: -669.53613, y: -2.3922524, z: -5.0508137}
+  m_LocalPosition: {x: -669.53613, y: -2.392252, z: -5.0508137}
   m_LocalScale: {x: 1.6276, y: 1.6276, z: 1.5700502}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -28918,7 +28322,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99a9c787e5d1bbf48a389834c4a9641c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Path: {fileID: 59738383}
+  m_Path: {fileID: 0}
   m_UpdateMethod: 0
   m_PositionUnits: 1
   m_Speed: 22
@@ -38857,7 +38261,7 @@ Transform:
   m_GameObject: {fileID: 826147396}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7105327, z: -0, w: 0.7036642}
-  m_LocalPosition: {x: -647.41614, y: -2.3922524, z: -10.630814}
+  m_LocalPosition: {x: -647.41614, y: -2.392252, z: -10.630814}
   m_LocalScale: {x: 1.6276, y: 1.6276, z: 1.5700502}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -38876,7 +38280,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99a9c787e5d1bbf48a389834c4a9641c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Path: {fileID: 861840141}
+  m_Path: {fileID: 0}
   m_UpdateMethod: 0
   m_PositionUnits: 1
   m_Speed: 17
@@ -40772,63 +40176,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 859783466}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &861840139
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 861840140}
-  - component: {fileID: 861840141}
-  m_Layer: 0
-  m_Name: NPCKotxeaPath (27)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &861840140
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 861840139}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.70710677}
-  m_LocalPosition: {x: -674.07, y: -0.08139014, z: -19.4}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 12719114}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &861840141
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 861840139}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d37e5385efd7064cb1d54c94960acae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Resolution: 20
-  m_Appearance:
-    pathColor: {r: 0, g: 1, b: 0, a: 1}
-    inactivePathColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-    width: 0.2
-  m_Looped: 0
-  m_Waypoints:
-  - position: {x: 0.09931027, y: 0, z: -7.9982314}
-    tangent: {x: 0.014506571, y: 0, z: 1.4933853}
-    roll: 0
-  - position: {x: 0.12584406, y: 0, z: 425.67252}
-    tangent: {x: -0.008847572, y: 0, z: 0.8998947}
-    roll: 0
 --- !u!1001 &863908169
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44376,63 +43723,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7848dbbe0729c154fa350715bafd925d, type: 3}
---- !u!1 &928417983
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 928417985}
-  - component: {fileID: 928417984}
-  m_Layer: 0
-  m_Name: NPCKotxeaPath (21)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &928417984
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 928417983}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d37e5385efd7064cb1d54c94960acae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Resolution: 20
-  m_Appearance:
-    pathColor: {r: 0, g: 1, b: 0, a: 1}
-    inactivePathColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-    width: 0.2
-  m_Looped: 0
-  m_Waypoints:
-  - position: {x: 0.09931027, y: 0, z: -7.9982314}
-    tangent: {x: 0.014506571, y: 0, z: 1.4933853}
-    roll: 0
-  - position: {x: 0.1258427, y: 0, z: 426.77838}
-    tangent: {x: -0.008847572, y: 0, z: 0.8998947}
-    roll: 0
---- !u!4 &928417985
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 928417983}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.70710677}
-  m_LocalPosition: {x: -591.3, y: -0.08139014, z: -13.919998}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 12719114}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1001 &928731866
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -48428,63 +47718,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1020011341}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1020732516
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1020732518}
-  - component: {fileID: 1020732517}
-  m_Layer: 0
-  m_Name: NPCKotxeaPath (5)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1020732517
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1020732516}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d37e5385efd7064cb1d54c94960acae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Resolution: 20
-  m_Appearance:
-    pathColor: {r: 0, g: 1, b: 0, a: 1}
-    inactivePathColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-    width: 0.2
-  m_Looped: 0
-  m_Waypoints:
-  - position: {x: 0.09931027, y: 0, z: -7.9982314}
-    tangent: {x: 0.014506571, y: 0, z: 1.4933853}
-    roll: 0
-  - position: {x: 0.12586722, y: 0, z: 222.09875}
-    tangent: {x: -0.008847572, y: 0, z: 0.8998947}
-    roll: 0
---- !u!4 &1020732518
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1020732516}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.70710677}
-  m_LocalPosition: {x: -93.914825, y: -0.08139014, z: -19.6}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 12719114}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1001 &1022491999
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -49392,63 +48625,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1043326285}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1043342994
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1043342995}
-  - component: {fileID: 1043342996}
-  m_Layer: 0
-  m_Name: NPCKotxeaPath (26)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1043342995
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1043342994}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.70710677}
-  m_LocalPosition: {x: -546.2, y: -0.08139014, z: -19.4}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 12719114}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &1043342996
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1043342994}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d37e5385efd7064cb1d54c94960acae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Resolution: 20
-  m_Appearance:
-    pathColor: {r: 0, g: 1, b: 0, a: 1}
-    inactivePathColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-    width: 0.2
-  m_Looped: 0
-  m_Waypoints:
-  - position: {x: 0.09931027, y: 0, z: -7.9982314}
-    tangent: {x: 0.014506571, y: 0, z: 1.4933853}
-    roll: 0
-  - position: {x: 0.12585588, y: 0, z: 327.22375}
-    tangent: {x: -0.008847572, y: 0, z: 0.8998947}
-    roll: 0
 --- !u!1001 &1043878387
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -49783,63 +48959,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1046846928}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1048357742
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1048357743}
-  - component: {fileID: 1048357744}
-  m_Layer: 0
-  m_Name: NPCKotxeaPath (28)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1048357743
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1048357742}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.70710677}
-  m_LocalPosition: {x: -639.1017, y: -0.08139014, z: -19.5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 12719114}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &1048357744
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1048357742}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d37e5385efd7064cb1d54c94960acae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Resolution: 20
-  m_Appearance:
-    pathColor: {r: 0, g: 1, b: 0, a: 1}
-    inactivePathColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-    width: 0.2
-  m_Looped: 0
-  m_Waypoints:
-  - position: {x: 0.09931027, y: 0, z: -7.9982314}
-    tangent: {x: 0.014506571, y: 0, z: 1.4933853}
-    roll: 0
-  - position: {x: 0.12584989, y: 0, z: 390.3653}
-    tangent: {x: -0.008847572, y: 0, z: 0.8998947}
-    roll: 0
 --- !u!1001 &1049446003
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50118,7 +49237,7 @@ Transform:
   m_GameObject: {fileID: 1051492912}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7105327, z: -0, w: 0.7036642}
-  m_LocalPosition: {x: -601.44617, y: -2.3922524, z: -10.731504}
+  m_LocalPosition: {x: -601.44617, y: -2.392252, z: -10.731504}
   m_LocalScale: {x: 1.6276, y: 1.6276, z: 1.5700502}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -50137,7 +49256,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99a9c787e5d1bbf48a389834c4a9641c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Path: {fileID: 181549268}
+  m_Path: {fileID: 0}
   m_UpdateMethod: 0
   m_PositionUnits: 1
   m_Speed: 17
@@ -51532,7 +50651,7 @@ Transform:
   m_GameObject: {fileID: 1066646121}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7105327, z: -0, w: 0.7036642}
-  m_LocalPosition: {x: -225.64795, y: -2.3922524, z: -10.731504}
+  m_LocalPosition: {x: -225.64795, y: -2.392252, z: -10.731504}
   m_LocalScale: {x: 1.6276, y: 1.6276, z: 1.5700502}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -51551,7 +50670,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99a9c787e5d1bbf48a389834c4a9641c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Path: {fileID: 1773663518}
+  m_Path: {fileID: 0}
   m_UpdateMethod: 0
   m_PositionUnits: 1
   m_Speed: 17
@@ -56256,7 +55375,7 @@ Transform:
   m_GameObject: {fileID: 1157619453}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7105327, z: -0, w: 0.7036642}
-  m_LocalPosition: {x: -438.9462, y: -2.3922524, z: -10.630814}
+  m_LocalPosition: {x: -438.9462, y: -2.392252, z: -10.630814}
   m_LocalScale: {x: 1.6276, y: 1.6276, z: 1.5700502}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -56275,7 +55394,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99a9c787e5d1bbf48a389834c4a9641c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Path: {fileID: 1595281421}
+  m_Path: {fileID: 0}
   m_UpdateMethod: 0
   m_PositionUnits: 1
   m_Speed: 17
@@ -57442,10 +56561,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4224636915255053766, guid: 895f6f3c2d334633b5800312285058d2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6443765611106601763, guid: 895f6f3c2d334633b5800312285058d2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7169631891049266947, guid: 895f6f3c2d334633b5800312285058d2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7313654230448209575, guid: 895f6f3c2d334633b5800312285058d2,
         type: 3}
       propertyPath: m_Name
       value: XR Interaction Setup
+      objectReference: {fileID: 0}
+    - target: {fileID: 7602005377494257453, guid: 895f6f3c2d334633b5800312285058d2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7690080512698956844, guid: 895f6f3c2d334633b5800312285058d2,
         type: 3}
@@ -57505,6 +56644,11 @@ PrefabInstance:
     - target: {fileID: 9014170783809206330, guid: 895f6f3c2d334633b5800312285058d2,
         type: 3}
       propertyPath: m_BackGroundColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9067829889149138881, guid: 895f6f3c2d334633b5800312285058d2,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -59601,63 +58745,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1215227852}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1215409692
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1215409693}
-  - component: {fileID: 1215409694}
-  m_Layer: 0
-  m_Name: NPCKotxeaPath (30)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1215409693
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1215409692}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.70710677}
-  m_LocalPosition: {x: 0.6, y: -0.08139014, z: -19.4}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 12719114}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &1215409694
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1215409692}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d37e5385efd7064cb1d54c94960acae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Resolution: 20
-  m_Appearance:
-    pathColor: {r: 0, g: 1, b: 0, a: 1}
-    inactivePathColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-    width: 0.2
-  m_Looped: 0
-  m_Waypoints:
-  - position: {x: 0.09931027, y: 0, z: -7.9982314}
-    tangent: {x: 0.014506571, y: 0, z: 1.4933853}
-    roll: 0
-  - position: {x: 0.12586722, y: 0, z: 222.09875}
-    tangent: {x: -0.008847572, y: 0, z: 0.8998947}
-    roll: 0
 --- !u!1001 &1215738849
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -59737,63 +58824,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1215738849}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1217170632
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1217170634}
-  - component: {fileID: 1217170633}
-  m_Layer: 0
-  m_Name: NPCKotxeaPath (3)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1217170633
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1217170632}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d37e5385efd7064cb1d54c94960acae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Resolution: 20
-  m_Appearance:
-    pathColor: {r: 0, g: 1, b: 0, a: 1}
-    inactivePathColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-    width: 0.2
-  m_Looped: 0
-  m_Waypoints:
-  - position: {x: 0.09931027, y: 0, z: -7.9982314}
-    tangent: {x: 0.014506571, y: 0, z: 1.4933853}
-    roll: 0
-  - position: {x: 0.12586628, y: 0, z: 227.96555}
-    tangent: {x: -0.008847572, y: 0, z: 0.8998947}
-    roll: 0
---- !u!4 &1217170634
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1217170632}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.70710677}
-  m_LocalPosition: {x: -206.20482, y: -0.08139014, z: -14.019999}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 12719114}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1001 &1217525305
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -61041,63 +60071,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1244692520}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1247126666
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1247126668}
-  - component: {fileID: 1247126667}
-  m_Layer: 0
-  m_Name: NPCKotxeaPath (29)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1247126667
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1247126666}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d37e5385efd7064cb1d54c94960acae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Resolution: 20
-  m_Appearance:
-    pathColor: {r: 0, g: 1, b: 0, a: 1}
-    inactivePathColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-    width: 0.2
-  m_Looped: 0
-  m_Waypoints:
-  - position: {x: 0.09931027, y: 0, z: -7.9982314}
-    tangent: {x: 0.014506571, y: 0, z: 1.4933853}
-    roll: 0
-  - position: {x: 0.12582864, y: 0, z: 553.0594}
-    tangent: {x: -0.008847572, y: 0, z: 0.8998947}
-    roll: 0
---- !u!4 &1247126668
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1247126666}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.70710677}
-  m_LocalPosition: {x: -697.42, y: -0.08139014, z: -19.6}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 12719114}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!4 &1248318301 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2394aa273e323214f8153c165ec1aeed,
@@ -62249,7 +61222,7 @@ Transform:
   m_GameObject: {fileID: 1274992832}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7105327, z: -0, w: 0.7036642}
-  m_LocalPosition: {x: -368.14618, y: -2.3922524, z: -10.830814}
+  m_LocalPosition: {x: -368.14618, y: -2.392252, z: -10.830814}
   m_LocalScale: {x: 1.6276, y: 1.6276, z: 1.5700502}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -62268,7 +61241,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99a9c787e5d1bbf48a389834c4a9641c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Path: {fileID: 518997362}
+  m_Path: {fileID: 0}
   m_UpdateMethod: 0
   m_PositionUnits: 1
   m_Speed: 17
@@ -67206,7 +66179,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99a9c787e5d1bbf48a389834c4a9641c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Path: {fileID: 1217170633}
+  m_Path: {fileID: 0}
   m_UpdateMethod: 0
   m_PositionUnits: 1
   m_Speed: 22
@@ -67220,7 +66193,7 @@ Transform:
   m_GameObject: {fileID: 1373534412}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7105327, z: -0, w: 0.7036642}
-  m_LocalPosition: {x: -179.55101, y: -2.3922524, z: -5.2508125}
+  m_LocalPosition: {x: -179.55101, y: -2.392252, z: -5.2508125}
   m_LocalScale: {x: 1.6276, y: 1.6276, z: 1.5700482}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -78902,63 +77875,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1592281026}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1595281420
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1595281422}
-  - component: {fileID: 1595281421}
-  m_Layer: 0
-  m_Name: NPCKotxeaPath (24)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1595281421
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1595281420}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d37e5385efd7064cb1d54c94960acae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Resolution: 20
-  m_Appearance:
-    pathColor: {r: 0, g: 1, b: 0, a: 1}
-    inactivePathColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-    width: 0.2
-  m_Looped: 0
-  m_Waypoints:
-  - position: {x: 0.09931027, y: 0, z: -7.9982314}
-    tangent: {x: 0.014506571, y: 0, z: 1.4933853}
-    roll: 0
-  - position: {x: 0.12584406, y: 0, z: 425.67252}
-    tangent: {x: -0.008847572, y: 0, z: 0.8998947}
-    roll: 0
---- !u!4 &1595281422
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1595281420}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.70710677}
-  m_LocalPosition: {x: -465.6, y: -0.08139014, z: -19.4}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 12719114}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1001 &1595305272
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -79698,7 +78614,7 @@ Transform:
   m_GameObject: {fileID: 1605429805}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7105327, z: -0, w: 0.7036642}
-  m_LocalPosition: {x: -564.6461, y: -2.3922524, z: -5.150812}
+  m_LocalPosition: {x: -564.6461, y: -2.392252, z: -5.150812}
   m_LocalScale: {x: 1.6276, y: 1.6276, z: 1.5700502}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -79717,7 +78633,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99a9c787e5d1bbf48a389834c4a9641c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Path: {fileID: 928417984}
+  m_Path: {fileID: 0}
   m_UpdateMethod: 0
   m_PositionUnits: 1
   m_Speed: 22
@@ -80012,7 +78928,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99a9c787e5d1bbf48a389834c4a9641c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Path: {fileID: 418952251}
+  m_Path: {fileID: 0}
   m_UpdateMethod: 0
   m_PositionUnits: 1
   m_Speed: 22
@@ -80026,7 +78942,7 @@ Transform:
   m_GameObject: {fileID: 1608693896}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7105327, z: -0, w: 0.7036642}
-  m_LocalPosition: {x: -131.85925, y: -2.3922524, z: -5.150812}
+  m_LocalPosition: {x: -131.85925, y: -2.392252, z: -5.150812}
   m_LocalScale: {x: 1.6276, y: 1.6276, z: 1.5700482}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -80774,63 +79690,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1624872496}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1625716630
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1625716631}
-  - component: {fileID: 1625716632}
-  m_Layer: 0
-  m_Name: NPCKotxeaPath (18)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1625716631
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1625716630}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.70710677}
-  m_LocalPosition: {x: -356.60178, y: -0.08139014, z: -13.920691}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 12719114}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &1625716632
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1625716630}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d37e5385efd7064cb1d54c94960acae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Resolution: 20
-  m_Appearance:
-    pathColor: {r: 0, g: 1, b: 0, a: 1}
-    inactivePathColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-    width: 0.2
-  m_Looped: 0
-  m_Waypoints:
-  - position: {x: 0.09931027, y: 0, z: -7.9982314}
-    tangent: {x: 0.014506571, y: 0, z: 1.4933853}
-    roll: 0
-  - position: {x: 0.12586607, y: 0, z: 236.09923}
-    tangent: {x: -0.008848406, y: 0, z: 6.150055}
-    roll: 0
 --- !u!1001 &1627672684
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -83057,7 +81916,7 @@ Transform:
   m_GameObject: {fileID: 1668692985}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7105327, z: -0, w: 0.7036642}
-  m_LocalPosition: {x: -35.346184, y: -2.3922524, z: -10.730814}
+  m_LocalPosition: {x: -35.346184, y: -2.392252, z: -10.730814}
   m_LocalScale: {x: 1.6276, y: 1.6276, z: 1.5700482}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -83076,7 +81935,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99a9c787e5d1bbf48a389834c4a9641c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Path: {fileID: 1806527702}
+  m_Path: {fileID: 0}
   m_UpdateMethod: 0
   m_PositionUnits: 1
   m_Speed: 17
@@ -83701,7 +82560,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99a9c787e5d1bbf48a389834c4a9641c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Path: {fileID: 469987359}
+  m_Path: {fileID: 0}
   m_UpdateMethod: 0
   m_PositionUnits: 1
   m_Speed: 22
@@ -83715,7 +82574,7 @@ Transform:
   m_GameObject: {fileID: 1684882913}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7105327, z: -0, w: 0.7036642}
-  m_LocalPosition: {x: -194.75925, y: -2.3922524, z: -5.0508137}
+  m_LocalPosition: {x: -194.75925, y: -2.392252, z: -5.0508137}
   m_LocalScale: {x: 1.6276, y: 1.6276, z: 1.5700482}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -88570,63 +87429,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1772710964}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1773663516
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1773663517}
-  - component: {fileID: 1773663518}
-  m_Layer: 0
-  m_Name: NPCKotxeaPath (16)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1773663517
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1773663516}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.70710677}
-  m_LocalPosition: {x: -252.30173, y: -0.08139014, z: -19.50069}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 12719114}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &1773663518
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1773663516}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d37e5385efd7064cb1d54c94960acae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Resolution: 20
-  m_Appearance:
-    pathColor: {r: 0, g: 1, b: 0, a: 1}
-    inactivePathColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-    width: 0.2
-  m_Looped: 0
-  m_Waypoints:
-  - position: {x: 0.09931027, y: 0, z: -7.9982314}
-    tangent: {x: 0.014506571, y: 0, z: 1.4933853}
-    roll: 0
-  - position: {x: 0.12583831, y: 0, z: 466.19403}
-    tangent: {x: -0.008847572, y: 0, z: 0.8998947}
-    roll: 0
 --- !u!1001 &1775154406
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -90609,63 +89411,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1804259514}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1806527700
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1806527701}
-  - component: {fileID: 1806527702}
-  m_Layer: 0
-  m_Name: NPCKotxeaPath (7)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1806527701
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1806527700}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.70710677}
-  m_LocalPosition: {x: -62, y: -0.08139014, z: -19.5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 12719114}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &1806527702
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1806527700}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d37e5385efd7064cb1d54c94960acae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Resolution: 20
-  m_Appearance:
-    pathColor: {r: 0, g: 1, b: 0, a: 1}
-    inactivePathColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-    width: 0.2
-  m_Looped: 0
-  m_Waypoints:
-  - position: {x: 0.09931027, y: 0, z: -7.9982314}
-    tangent: {x: 0.014506571, y: 0, z: 1.4933853}
-    roll: 0
-  - position: {x: 0.12586722, y: 0, z: 222.09875}
-    tangent: {x: -0.008847572, y: 0, z: 0.8998947}
-    roll: 0
 --- !u!1 &1807342251
 GameObject:
   m_ObjectHideFlags: 0
@@ -91397,7 +90142,7 @@ Transform:
   m_GameObject: {fileID: 1818139135}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7105327, z: 0, w: 0.7036642}
-  m_LocalPosition: {x: -376.848, y: -2.3922524, z: -5.150812}
+  m_LocalPosition: {x: -376.848, y: -2.392252, z: -5.150812}
   m_LocalScale: {x: 1.6276, y: 1.6276, z: 1.5700502}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -91416,7 +90161,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99a9c787e5d1bbf48a389834c4a9641c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Path: {fileID: 545315113}
+  m_Path: {fileID: 0}
   m_UpdateMethod: 0
   m_PositionUnits: 1
   m_Speed: 22
@@ -91447,7 +90192,7 @@ Transform:
   m_GameObject: {fileID: 1820732933}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7105327, z: -0, w: 0.7036642}
-  m_LocalPosition: {x: -513.0462, y: -2.3922524, z: -5.2508125}
+  m_LocalPosition: {x: -513.0462, y: -2.392252, z: -5.2508125}
   m_LocalScale: {x: 1.6276, y: 1.6276, z: 1.5700502}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -91466,7 +90211,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99a9c787e5d1bbf48a389834c4a9641c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Path: {fileID: 1964054562}
+  m_Path: {fileID: 0}
   m_UpdateMethod: 0
   m_PositionUnits: 1
   m_Speed: 22
@@ -98113,7 +96858,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99a9c787e5d1bbf48a389834c4a9641c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Path: {fileID: 1020732517}
+  m_Path: {fileID: 0}
   m_UpdateMethod: 0
   m_PositionUnits: 1
   m_Speed: 16
@@ -98127,7 +96872,7 @@ Transform:
   m_GameObject: {fileID: 1930245237}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7105327, z: -0, w: 0.7036642}
-  m_LocalPosition: {x: -67.26101, y: -2.3922524, z: -10.830814}
+  m_LocalPosition: {x: -67.26101, y: -2.392252, z: -10.830814}
   m_LocalScale: {x: 1.6276, y: 1.6276, z: 1.5700482}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -100564,63 +99309,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21f9b3a9feb85154a94acbd6df9eede3, type: 3}
---- !u!1 &1964054561
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1964054563}
-  - component: {fileID: 1964054562}
-  m_Layer: 0
-  m_Name: NPCKotxeaPath (25)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1964054562
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1964054561}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d37e5385efd7064cb1d54c94960acae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Resolution: 20
-  m_Appearance:
-    pathColor: {r: 0, g: 1, b: 0, a: 1}
-    inactivePathColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-    width: 0.2
-  m_Looped: 0
-  m_Waypoints:
-  - position: {x: 0.09931027, y: 0, z: -7.9982314}
-    tangent: {x: 0.014506571, y: 0, z: 1.4933853}
-    roll: 0
-  - position: {x: 0.12583877, y: 0, z: 456.12817}
-    tangent: {x: -0.008847572, y: 0, z: 0.8998947}
-    roll: 0
---- !u!4 &1964054563
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1964054561}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.70710677}
-  m_LocalPosition: {x: -539.7, y: -0.08139014, z: -14.019999}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 12719114}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1001 &1966446946
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -102912,63 +101600,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2008902145}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2008958470
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2008958471}
-  - component: {fileID: 2008958472}
-  m_Layer: 0
-  m_Name: NPCKotxeaPath (8)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2008958471
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2008958470}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.70710677}
-  m_LocalPosition: {x: -47.101776, y: -0.08139014, z: -19.4}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 12719114}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &2008958472
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2008958470}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d37e5385efd7064cb1d54c94960acae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Resolution: 20
-  m_Appearance:
-    pathColor: {r: 0, g: 1, b: 0, a: 1}
-    inactivePathColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-    width: 0.2
-  m_Looped: 0
-  m_Waypoints:
-  - position: {x: 0.09931027, y: 0, z: -7.9982314}
-    tangent: {x: 0.014506571, y: 0, z: 1.4933853}
-    roll: 0
-  - position: {x: 0.12586722, y: 0, z: 222.09875}
-    tangent: {x: -0.008847572, y: 0, z: 0.8998947}
-    roll: 0
 --- !u!1001 &2011458568
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -103396,6 +102027,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2020580714}
+  - component: {fileID: 2020580715}
   m_Layer: 0
   m_Name: NPCKotxeak
   m_TagString: Untagged
@@ -103449,6 +102081,27 @@ Transform:
   - {fileID: 972960411}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &2020580715
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2020580713}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: df3f964b59e780a41806d46d47f673eb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &2020588738
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -105866,63 +104519,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2059241295}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2059718099
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2059718100}
-  - component: {fileID: 2059718101}
-  m_Layer: 0
-  m_Name: NPCKotxeaPath (19)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2059718100
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2059718099}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.70710677}
-  m_LocalPosition: {x: -301.67, y: -0.08139014, z: -19.5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 12719114}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &2059718101
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2059718099}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d37e5385efd7064cb1d54c94960acae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Resolution: 20
-  m_Appearance:
-    pathColor: {r: 0, g: 1, b: 0, a: 1}
-    inactivePathColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-    width: 0.2
-  m_Looped: 0
-  m_Waypoints:
-  - position: {x: 0.09931027, y: 0, z: -7.9982314}
-    tangent: {x: 0.014506571, y: 0, z: 1.4933853}
-    roll: 0
-  - position: {x: 0.12586686, y: 0, z: 230.44508}
-    tangent: {x: -0.008847572, y: 0, z: 0.8998947}
-    roll: 0
 --- !u!1001 &2060326336
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -106122,7 +104718,7 @@ Transform:
   m_GameObject: {fileID: 2068699065}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7105327, z: -0, w: 0.7036642}
-  m_LocalPosition: {x: 27.25382, y: -2.3922524, z: -10.630814}
+  m_LocalPosition: {x: 27.25382, y: -2.392252, z: -10.630814}
   m_LocalScale: {x: 1.6276, y: 1.6276, z: 1.5700502}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -106141,7 +104737,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99a9c787e5d1bbf48a389834c4a9641c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Path: {fileID: 1215409694}
+  m_Path: {fileID: 0}
   m_UpdateMethod: 0
   m_PositionUnits: 1
   m_Speed: 17
@@ -107114,63 +105710,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2091919228}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2098870391
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2098870393}
-  - component: {fileID: 2098870392}
-  m_Layer: 0
-  m_Name: NPCKotxeaPath (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2098870392
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2098870391}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d37e5385efd7064cb1d54c94960acae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Resolution: 20
-  m_Appearance:
-    pathColor: {r: 0, g: 1, b: 0, a: 1}
-    inactivePathColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-    width: 0.2
-  m_Looped: 0
-  m_Waypoints:
-  - position: {x: 0.09931027, y: 0, z: -7.9982314}
-    tangent: {x: 0.014506571, y: 0, z: 1.4933853}
-    roll: 0
-  - position: {x: 0.12586722, y: 0, z: 222.09875}
-    tangent: {x: -0.008847572, y: 0, z: 0.8998947}
-    roll: 0
---- !u!4 &2098870393
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2098870391}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.70710677}
-  m_LocalPosition: {x: -221.44482, y: -0.08139014, z: -19.5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 12719114}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1001 &2100515336
 PrefabInstance:
   m_ObjectHideFlags: 0
