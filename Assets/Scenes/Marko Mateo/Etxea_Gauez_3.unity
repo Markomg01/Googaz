@@ -7218,7 +7218,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: ec85333bc9848694bb1bb7d79f33e28d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.9999924
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ec85333bc9848694bb1bb7d79f33e28d,
         type: 3}
@@ -7228,7 +7228,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: ec85333bc9848694bb1bb7d79f33e28d,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -9.000003
+      value: -9.026
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ec85333bc9848694bb1bb7d79f33e28d,
         type: 3}
@@ -7285,6 +7285,26 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 4c45491455477dd4d95add360bd58326, type: 2}
+    - target: {fileID: 5512724556192156108, guid: ec85333bc9848694bb1bb7d79f33e28d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5512724556192156108, guid: ec85333bc9848694bb1bb7d79f33e28d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5512724556192156108, guid: ec85333bc9848694bb1bb7d79f33e28d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5512724556192156108, guid: ec85333bc9848694bb1bb7d79f33e28d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
     - target: {fileID: 5662654126497372025, guid: ec85333bc9848694bb1bb7d79f33e28d,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -7469,7 +7489,7 @@ MonoBehaviour:
   puertaKotxea: {fileID: 1125955990}
   escena: Bedroom_noche 3
   SonidoCambioescena: {fileID: 1125955988}
-  FadeOut: {fileID: 0}
+  FadeOut: {fileID: 710749874}
 --- !u!95 &1125955990
 Animator:
   serializedVersion: 5
@@ -7572,7 +7592,7 @@ MonoBehaviour:
   puertaKotxea: {fileID: 1125955990}
   escena: Bedroom_noche 3
   SonidoCambioescena: {fileID: 1125955988}
-  FadeOut: {fileID: 0}
+  FadeOut: {fileID: 710749874}
 --- !u!1001 &1151938596
 PrefabInstance:
   m_ObjectHideFlags: 0
