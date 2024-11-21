@@ -6,17 +6,28 @@ public class Coffee : MonoBehaviour
 {
     public bool isFilled = false;
     public bool socket = false;
+    public Collider finalSocket;
+    public GameObject coffeeInMachine;
+    public GameObject finalRef;
 
     public Vector3 ReferenceVector = Vector3.up;
 
 
     private void Update()
     {
+        if (isFilled)
+        {
+            coffeeInMachine.SetActive(false);
+            finalRef.SetActive(true);
+        }
         var output = Vector3.Dot(ReferenceVector, transform.TransformVector(ReferenceVector));
 
         if (output <= 0)
         {
             Debug.Log("lo has tirado");
+            coffeeInMachine.SetActive(true);
+            finalSocket.enabled = false;
+            finalRef.SetActive(false);
             isFilled = false;
             GetComponent<Animator>().SetBool("fill", false);
         }
