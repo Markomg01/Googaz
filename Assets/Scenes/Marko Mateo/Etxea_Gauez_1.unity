@@ -560,7 +560,7 @@ MonoBehaviour:
   tasksCompleted:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1710163399}
+      - m_Target: {fileID: 836092652}
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
@@ -2460,10 +2460,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1710163398}
-    - targetCorrespondingSourceObject: {fileID: -4462501776154760957, guid: ec85333bc9848694bb1bb7d79f33e28d,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1710163399}
     - targetCorrespondingSourceObject: {fileID: -4376165382222400258, guid: ec85333bc9848694bb1bb7d79f33e28d,
         type: 3}
       insertIndex: -1
@@ -2480,6 +2476,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 836092651}
+    - targetCorrespondingSourceObject: {fileID: -4376165382222400258, guid: ec85333bc9848694bb1bb7d79f33e28d,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 836092652}
   m_SourcePrefab: {fileID: 100100000, guid: ec85333bc9848694bb1bb7d79f33e28d, type: 3}
 --- !u!1 &471265229
 GameObject:
@@ -4381,6 +4381,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &836092652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 836092641}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 0.3140197, g: 0.8962264, b: 0.2240566, a: 1}
+  outlineWidth: 4
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1001 &919380758
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8394,24 +8412,6 @@ MonoBehaviour:
   escena: Bedroom_noche
   SonidoCambioescena: {fileID: 836092651}
   FadeOut: {fileID: 1063949849}
---- !u!114 &1710163399
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1710163393}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 0.3140197, g: 0.8962264, b: 0.2240566, a: 1}
-  outlineWidth: 2
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &1723141197
 GameObject:
   m_ObjectHideFlags: 0
@@ -10239,7 +10239,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1967949450}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 7.991}
+  m_LocalPosition: {x: 0, y: 0, z: 6.762}
   m_LocalScale: {x: 0.0070861476, y: 0.0070861476, z: 0.0070861476}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10248,7 +10248,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.969, y: 1.304}
+  m_AnchoredPosition: {x: -7.334, y: 1.668}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1972275752
