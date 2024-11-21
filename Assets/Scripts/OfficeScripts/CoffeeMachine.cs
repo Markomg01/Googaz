@@ -2,6 +2,7 @@ using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.XR.Interaction.Toolkit;
 
 public class CoffeeMachine : MonoBehaviour
@@ -9,18 +10,12 @@ public class CoffeeMachine : MonoBehaviour
     public GameObject coffeeVisual;
     public ParticleSystem particles;
     public GameObject coffee;
+    public Collider finalSocket;
+    public GameObject finalRef;
 
     private void Start()
     {
         particles.Stop();
-    }
-
-    private void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.T))
-        {
-            CoffeeFill();
-        }
     }
 
     public void CoffeeFill()
@@ -32,6 +27,9 @@ public class CoffeeMachine : MonoBehaviour
     {
         if (coffee.GetComponent<Coffee>().socket)
         {
+            finalSocket.enabled = true;
+            finalRef.SetActive(true);
+            coffee.GetComponent<Coffee>().isFilled = true;
             coffee.GetComponent<Collider>().enabled = false;
             coffee.GetComponent<Animator>().SetBool("fill", true);
         }
