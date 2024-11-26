@@ -16,6 +16,10 @@ public class DecalProjector : MonoBehaviour
     Ray currentRay;
     RaycastHit currentHit;
 
+    public GameObject pileArrow;
+    public GameObject stampArrow;
+    public bool paperSigned;
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Paper"))
@@ -27,6 +31,9 @@ public class DecalProjector : MonoBehaviour
             if (Physics.Raycast(ray, out hit, rayDistance))
             {
                 SpawnBulletHole(hit, ray);
+                pileArrow.SetActive(true);
+                paperSigned = true;
+                DeactivateArrow();
                 hit.transform.tag = "Signed";
             }
 
@@ -34,7 +41,6 @@ public class DecalProjector : MonoBehaviour
             currentHit = hit;
         }
     }
-
 
     void SpawnBulletHole(RaycastHit hit, Ray ray)
     {
@@ -51,5 +57,23 @@ public class DecalProjector : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawLine(origin.transform.position, origin.transform.position + origin.transform.forward * rayDistance);
+    }
+
+    public void ActivateArrow()
+    {
+        if(!paperSigned)
+        {
+            stampArrow.SetActive(true);
+        }
+    }
+
+    public void DeactivateArrow()
+    {
+        stampArrow.SetActive(false);
+    }
+
+    public void resetPaperSigned()
+    {
+        paperSigned = false;
     }
 }

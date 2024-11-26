@@ -12,11 +12,18 @@ public class Coffee : MonoBehaviour
 
     public Vector3 ReferenceVector = Vector3.up;
 
+    public GameObject coffeeArrow;
+    public GameObject socketArrow;
+    public GameObject buttonArrow;
+    public GameObject finalArrow;
 
     private void Update()
     {
         if (isFilled)
         {
+            socketArrow.SetActive(false);
+            buttonArrow.SetActive(false);
+            finalArrow.SetActive(true);
             coffeeInMachine.SetActive(false);
             finalRef.SetActive(true);
         }
@@ -25,6 +32,9 @@ public class Coffee : MonoBehaviour
         if (output <= 0)
         {
             Debug.Log("lo has tirado");
+            socketArrow.SetActive(true);
+            finalArrow.SetActive(false);
+            buttonArrow.SetActive(false);
             coffeeInMachine.SetActive(true);
             finalSocket.enabled = false;
             finalRef.SetActive(false);
@@ -49,5 +59,26 @@ public class Coffee : MonoBehaviour
     public void NotInSocket()
     {
         socket = false;
+    }
+
+    public void ActivateCoffeeArrow(bool a)
+    {
+        coffeeArrow.SetActive(a);
+    }
+
+    public void ActivateSocketArrow(bool a)
+    {
+        if(!socket)
+        {
+            socketArrow.SetActive(a);
+        }
+    }
+
+    public void ActivateButtonArrow(bool a)
+    {
+        if(!isFilled)
+        {
+            buttonArrow.SetActive(a);
+        }
     }
 }
