@@ -11,6 +11,8 @@ public class kaleaAI : MonoBehaviour
 
     private bool raycastGolpeo = false;
     public string escena;
+    public FadeInOut FadeOut;
+
 
     void Update()
     {
@@ -42,10 +44,17 @@ public class kaleaAI : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        Debug.Log(collision.gameObject);
         if (collision.gameObject.CompareTag("Player"))
         {
-            SceneManager.LoadScene(escena);
+            Invoke("CambiarEscena", 1.5f);
+            FadeOut.FadeOut();
         }
+    }
+
+    public void CambiarEscena()
+    {
+        SceneManager.LoadScene(escena);
     }
 
     /*private void OnTriggerEnter(Collider other)
