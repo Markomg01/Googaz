@@ -14,6 +14,10 @@ public class FaxMachine : MonoBehaviour
     public bool canSpawn;
     public Material faxLight;
 
+    public GameObject buttonArrow;
+    public GameObject stampArrow;
+    public bool stampIsBeingGrabbed;
+
     private void Start()
     {
         CanSpawn();
@@ -23,6 +27,11 @@ public class FaxMachine : MonoBehaviour
     {
         if (canSpawn)
         {
+            buttonArrow.SetActive(false);
+            if(!stampIsBeingGrabbed)
+            {
+                stampArrow.SetActive(true);
+            }
             Instantiate(paper, paperSpawner.transform.position, paperSpawner.transform.rotation);
             CantSpawn();
         }
@@ -30,6 +39,7 @@ public class FaxMachine : MonoBehaviour
 
     public void CanSpawn()
     {
+        buttonArrow.SetActive(true);
         faxLight.DOColor(Color.green, .01f);
         canSpawn = true;
     }
@@ -38,5 +48,15 @@ public class FaxMachine : MonoBehaviour
     {
         faxLight.DOColor(Color.red, .01f);
         canSpawn = false;
+    }
+
+    public void stampGrabbed()
+    {
+        stampIsBeingGrabbed = true;
+    }
+
+    public void stampNotGrabbed()
+    {
+        stampIsBeingGrabbed = false;
     }
 }
