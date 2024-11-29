@@ -47,7 +47,7 @@ public class kaleaAI : MonoBehaviour
         Debug.Log(collision.gameObject);
         if (collision.gameObject.CompareTag("Player"))
         {
-            Invoke("CambiarEscena", 1.5f);
+            Invoke("CambiarEscena", 1f);
             FadeOut.FadeOut();
         }
     }
