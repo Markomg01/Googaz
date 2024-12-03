@@ -16,7 +16,10 @@ public class FaxMachine : MonoBehaviour
 
     public GameObject buttonArrow;
     public GameObject stampArrow;
+    public GameObject pileArrow;
     public bool stampIsBeingGrabbed;
+
+    public bool taskEnded = false;
 
     private void Start()
     {
@@ -25,15 +28,18 @@ public class FaxMachine : MonoBehaviour
 
     public void SpawnPaper()
     {
-        if (canSpawn)
+        if (!taskEnded)
         {
-            buttonArrow.SetActive(false);
-            if(!stampIsBeingGrabbed)
+            if (canSpawn)
             {
-                stampArrow.SetActive(true);
+                buttonArrow.SetActive(false);
+                if (!stampIsBeingGrabbed)
+                {
+                    stampArrow.SetActive(true);
+                }
+                Instantiate(paper, paperSpawner.transform.position, paperSpawner.transform.rotation);
+                CantSpawn();
             }
-            Instantiate(paper, paperSpawner.transform.position, paperSpawner.transform.rotation);
-            CantSpawn();
         }
     }
 
