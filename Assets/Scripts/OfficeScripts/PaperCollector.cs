@@ -37,6 +37,7 @@ public class PaperCollector : MonoBehaviour
     {
         if (paperSigned >= paperToSign && !a)
         {
+            faxMachine.taskEnded = true;
             arrows.SetActive(false);
             faxMachine.CantSpawn();
             a = true;

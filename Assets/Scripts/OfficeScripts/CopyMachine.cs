@@ -27,6 +27,8 @@ public class CopyMachine : MonoBehaviour
     public GameObject socketHologram;
     public GameObject finalHologram;
 
+    public bool handleGrabbed;
+
     Vector3 ReferenceVector = -Vector3.up;
 
     private void Update()
@@ -87,7 +89,7 @@ public class CopyMachine : MonoBehaviour
 
     public void ActivatePrinterArrow(bool a)
     {
-        if(!paperInPrinter)
+        if(!paperInPrinter || !handleGrabbed)
         {
             printerArrow.SetActive(a);
         }
@@ -101,5 +103,10 @@ public class CopyMachine : MonoBehaviour
     public void ActivateFinalHologram(bool a)
     {
         finalHologram.SetActive(a);
+    }
+
+    public void HandleGrabbed(bool a)
+    {
+        handleGrabbed = a;
     }
 }
