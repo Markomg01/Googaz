@@ -9,10 +9,10 @@ public class StoreBokata : MonoBehaviour
     public Transform otraPosicion;  // Posición para devolver objetos incorrectos
     public ParticleSystem particulas;  // Sistema de partículas
     public AudioClip sonidoDeposito;  // Sonido al depositar correctamente
-    private AudioSource audioSource;  // Para reproducir el sonido
+    public AudioSource audioSource;  // Para reproducir el sonido
     public TMP_Text mensajeError;  // Mensaje de error
     public float duracionMensaje = 2f;  // Duración del mensaje
-    public float tiempoDesaparecer = 0.5f;  // Tiempo antes de eliminar el objeto correcto
+    public float tiempoDesaparecer = 0.2f;  // Tiempo antes de eliminar el objeto correcto
     public Outline outline;  // Componente Outline
     public Task task;
 
