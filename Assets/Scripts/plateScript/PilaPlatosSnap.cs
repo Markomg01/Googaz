@@ -6,16 +6,15 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class PilaPlatosSnap : MonoBehaviour
 {
-    private bool limpio;
     private Renderer ren;
     public GameObject[] SnapPlaterrak;
     private int iZeinSnapPlaterra = 0;
 
 
+    public Plato platoActivo;
+
     void Awake()
     {
-        limpio = false;
-
         for (int i = 0; i < SnapPlaterrak.Length; i++)
         {
             SnapPlaterrak[i].transform.gameObject.SetActive(false);
@@ -24,15 +23,19 @@ public class PilaPlatosSnap : MonoBehaviour
 
     void Update()
     {
-        if (limpio == true)
+        if (platoActivo.GetComponent<Plato>().limpio && SnapPlaterrak[iZeinSnapPlaterra] != null)
         {
-            SnapPlaterrak[iZeinSnapPlaterra].transform.gameObject.SetActive(true);
+            SnapPlaterrak[iZeinSnapPlaterra].transform.gameObject.SetActive(true); 
+
+            Debug.Log("true");
             
         }
 
-        if (limpio == false) 
+        if (!platoActivo.GetComponent<Plato>().limpio) 
         {
             SnapPlaterrak[iZeinSnapPlaterra].transform.gameObject.SetActive(false);
+
+            Debug.Log("false");
         }
 
     }
@@ -40,6 +43,8 @@ public class PilaPlatosSnap : MonoBehaviour
     public void ShowSnapPlate()
     {
         SnapPlaterrak[iZeinSnapPlaterra].transform.gameObject.SetActive(true);
+
+        Debug.Log("view");
     }
 
     public void HideSnapPlate()
@@ -50,13 +55,6 @@ public class PilaPlatosSnap : MonoBehaviour
     public void NextPlate()
     {
         iZeinSnapPlaterra++;
-        limpio = false;
     }
 
-    public void Limpiado()
-    {
-        limpio = true;
-
-
-    }
 }

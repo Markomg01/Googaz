@@ -71,7 +71,10 @@ public class Esponja : MonoBehaviour
                 Platerrak[iZeinPlaterra].transform.GetChild(2).gameObject.SetActive(false);
                 Platerrak[iZeinPlaterra].transform.GetChild(3).gameObject.SetActive(false);
                 iZeinPlaterra++;
-                Platerrak[iZeinPlaterra].transform.GetChild(0).gameObject.SetActive(true);
+                if (Platerrak[iZeinPlaterra] != null)
+                {
+                    Platerrak[iZeinPlaterra].transform.GetChild(0).gameObject.SetActive(true);
+                }
                
             }
         }       
