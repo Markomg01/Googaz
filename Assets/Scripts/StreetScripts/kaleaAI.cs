@@ -13,6 +13,8 @@ public class kaleaAI : MonoBehaviour
     public string escena;
     public FadeInOut FadeOut;
 
+    public Animator animator;
+
 
     void Update()
     {
@@ -32,11 +34,15 @@ public class kaleaAI : MonoBehaviour
         raycastGolpeo = detener;
 
         if (detener)
-        {
+        {            
+            animator.SetBool("IsMoving", false);
+            animator.SetBool("IsMovil", true);
             Debug.Log("IA Detenida");
         }
         else
         {
+            animator.SetBool("IsMovil", false);
+            animator.SetBool("IsMoving", true);
             MoverIA();
             Debug.Log("IA Reanudando movimiento");
         }
@@ -56,14 +62,4 @@ public class kaleaAI : MonoBehaviour
     {
         SceneManager.LoadScene(escena);
     }
-
-    /*private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            Debug.Log("Trigger activado por el jugador. Reiniciando escena...");
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        }
-    }*/
-
 }
