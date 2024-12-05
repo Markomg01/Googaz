@@ -24,6 +24,7 @@ public class DecalProjector : MonoBehaviour
     {
         if (other.CompareTag("Paper"))
         {
+            GetComponent<AudioSource>().Play();
             paperPile.GetComponent<Outline>().OutlineWidth = 3;
             Ray ray = new Ray(origin.transform.position, origin.transform.forward);
 

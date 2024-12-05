@@ -37,6 +37,7 @@ public class FaxMachine : MonoBehaviour
                 {
                     stampArrow.SetActive(true);
                 }
+                GetComponent<AudioSource>().Play();
                 Instantiate(paper, paperSpawner.transform.position, paperSpawner.transform.rotation);
                 CantSpawn();
             }
