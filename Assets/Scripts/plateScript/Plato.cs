@@ -7,40 +7,34 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class Plato : MonoBehaviour
 {
-    private bool limpio;
+    public bool limpio;
     private Renderer ren;
 
-    public Task task;
+    //public Task task;
 
-    [SerializeField] GameObject PilaPlatosSnap; 
+    [SerializeField] GameObject PilaPlatosSnap;
 
 
     void Awake()
     {
         limpio = false;
+        ren = GetComponent<Renderer>();
+        ren.material.color = Color.grey;
+        PilaPlatosSnap.GetComponent<PilaPlatosSnap>().HideSnapPlate();
     }
 
     void Update()
     {
-        if (limpio == true)
-        {
-            ren = GetComponent<Renderer>();
-            ren.material.color = Color.green;
-            PilaPlatosSnap.GetComponent<PilaPlatosSnap>().ShowSnapPlate();
-        }
-
-        if (limpio == false) 
-        {
-            ren = GetComponent<Renderer>();
-            ren.material.color = Color.grey;
-            PilaPlatosSnap.GetComponent<PilaPlatosSnap>().HideSnapPlate();
-        }
     }
 
     public void Limpios()
     {
         limpio = true;
-        PilaPlatosSnap.GetComponent<PilaPlatosSnap>().Limpiado();
+        ren = GetComponent<Renderer>();
+        ren.material.color = Color.green;
+        PilaPlatosSnap.GetComponent<PilaPlatosSnap>().ShowSnapPlate();
+
+        Debug.Log("limpiado");
 
     }
 
