@@ -16,6 +16,8 @@ public class PaperCollector : MonoBehaviour
     public GameObject pileArrow;
     public GameObject arrows;
 
+    public AudioSource endSound;
+
     [SerializeField]
     UnityEvent paperCollected;
 
@@ -23,6 +25,7 @@ public class PaperCollector : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Signed"))
         {
+            GetComponent<AudioSource>().Play();
             pileArrow.SetActive(false);
             paperCollected.Invoke();
             GetComponent<Outline>().OutlineWidth = 0;
