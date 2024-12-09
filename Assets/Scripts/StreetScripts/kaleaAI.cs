@@ -53,13 +53,22 @@ public class kaleaAI : MonoBehaviour
         Debug.Log(collision.gameObject);
         if (collision.gameObject.CompareTag("Player"))
         {
-            Invoke("CambiarEscena", 1f);
-            FadeOut.FadeOut();
+            DetenerIA(true);
+            //Invoke("CambiarEscena", 1f);
+            //FadeOut.FadeOut();
         }
     }
 
-    public void CambiarEscena()
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            MoverIA();
+        }
+    }
+
+    /*public void CambiarEscena()
     {
         SceneManager.LoadScene(escena);
-    }
+    }*/
 }
