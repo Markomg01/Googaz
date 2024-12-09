@@ -18,6 +18,7 @@ public class Ropa : MonoBehaviour
     public Task task;
     int zenbatArropaJasota = 0;
     public int MAXarropa = 3;
+    public Animator animator;
 
     private void Start()
     {
@@ -46,6 +47,7 @@ public class Ropa : MonoBehaviour
                     if (particulas2 != null)
                     {
                         particulas2.Play();  // Activar partículas
+                        animator.SetTrigger("Activar");
                     }
 
                     if (sonidoDeposito != null)
