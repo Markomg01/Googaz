@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 67c36b0ef08efc645a48a6ff591cfbb9
+guid: 74526fa44f117fc48bc911b57f2af400
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,7 +7,7 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: BossMat
+      name: defaultMat
     second: {fileID: 2100000, guid: 4c45491455477dd4d95add360bd58326, type: 2}
   materials:
     materialImportMode: 2
@@ -53,7 +53,7 @@ ModelImporter:
     nodeNameCollisionStrategy: 1
     fileIdsGeneration: 2
     swapUVChannels: 0
-    generateSecondaryUV: 1
+    generateSecondaryUV: 0
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1
