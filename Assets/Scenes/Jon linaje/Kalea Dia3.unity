@@ -20119,6 +20119,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1650007479}
+    - targetCorrespondingSourceObject: {fileID: 7696548424635294048, guid: 895f6f3c2d334633b5800312285058d2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1650007486}
     - targetCorrespondingSourceObject: {fileID: 9014170783728641055, guid: 895f6f3c2d334633b5800312285058d2,
         type: 3}
       insertIndex: -1
@@ -25068,6 +25072,111 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1265761976}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1270633207
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1270633211}
+  - component: {fileID: 1270633210}
+  - component: {fileID: 1270633209}
+  - component: {fileID: 1270633208}
+  m_Layer: 0
+  m_Name: collider para que no se vaya a los lados y solo recto (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &1270633208
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270633207}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 6.2720957, y: 1.6781044, z: 1.2175195}
+  m_Center: {x: 2.6360488, y: 0.33905357, z: -0.10875993}
+--- !u!23 &1270633209
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270633207}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1270633210
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270633207}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1270633211
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270633207}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.7070847, z: -0, w: 0.70712894}
+  m_LocalPosition: {x: 0.2, y: 3.64, z: 7}
+  m_LocalScale: {x: 0.12665689, y: 3.6093, z: 33.838764}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 89.996, z: 0}
 --- !u!1001 &1271062600
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29537,8 +29646,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 9.635675, y: 6.255088, z: 13.631534}
-  m_Center: {x: -3.4432602, y: 2.627544, z: 3.8486495}
+  m_Size: {x: 9.635675, y: 6.255088, z: 14.136876}
+  m_Center: {x: -3.4432602, y: 2.627544, z: 4.1013207}
 --- !u!114 &1608430784
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30029,6 +30138,27 @@ CapsuleCollider:
   m_Height: 1.4661651
   m_Direction: 1
   m_Center: {x: -0.02817005, y: 0.8663316, z: -0.038549468}
+--- !u!65 &1650007486
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650007472}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.5950975, y: 0.56627584, z: 1.5989816}
+  m_Center: {x: 0.20527768, y: 1.0033704, z: 1.0095706}
 --- !u!1001 &1653731798
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35671,6 +35801,7 @@ GameObject:
   - component: {fileID: 1968635544}
   - component: {fileID: 1968635546}
   - component: {fileID: 1968635549}
+  - component: {fileID: 1968635552}
   m_Layer: 8
   m_Name: El malo de atras
   m_TagString: Untagged
@@ -35714,7 +35845,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd072a3ec15306948b2f3003faa08d05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 1.25
+  velocidad: 1
   direccion: {x: 0, y: 0, z: 1}
   escena: Kalea Dia3
   FadeOut: {fileID: 278078040}
@@ -35980,6 +36111,27 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!65 &1968635552
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1968635537}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.9999994, y: 0.9999994, z: 2.618297}
+  m_Center: {x: 6.228219e-14, y: 0, z: 0.80914927}
 --- !u!1001 &1983021378
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38455,6 +38607,7 @@ SceneRoots:
   - {fileID: 1968635541}
   - {fileID: 1774730016}
   - {fileID: 1288202793}
+  - {fileID: 1270633211}
   - {fileID: 239097135}
   - {fileID: 1206051149}
   - {fileID: 280736680}
