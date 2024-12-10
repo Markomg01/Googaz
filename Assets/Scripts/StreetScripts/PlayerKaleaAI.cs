@@ -34,7 +34,7 @@ public class PlayerKaleaAI : MonoBehaviour
             }
         }
 
-        if( !kaleaAIrenderer.isVisible)
+        if (!kaleaAIrenderer.isVisible)
         {
             kaleaAI[] ias = FindObjectsOfType<kaleaAI>();
             foreach (kaleaAI ia in ias)
@@ -45,4 +45,5 @@ public class PlayerKaleaAI : MonoBehaviour
 
         Debug.DrawRay(transform.position, transform.forward * distanciaRaycast, Color.red);
     }
+    
 }
