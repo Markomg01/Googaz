@@ -9,7 +9,7 @@ public class Ropa : MonoBehaviour
     public Transform otraPosicion;  // Posición para devolver objetos incorrectos
     public ParticleSystem particulas2;  // Sistema de partículas (nuevo)
     public AudioClip sonidoDeposito;  // Sonido al depositar correctamente
-    private AudioSource audioSource;  // Para reproducir el sonido
+    public AudioSource audioSource;  // Para reproducir el sonido
     public TMP_Text mensajeError;  // Mensaje de error
     public float duracionMensaje = 2f;  // Duración del mensaje
     public float tiempoDesaparecer = 0.5f;  // Tiempo antes de eliminar el objeto correcto
@@ -19,6 +19,7 @@ public class Ropa : MonoBehaviour
     int zenbatArropaJasota = 0;
     public int MAXarropa = 3;
     public Animator animator;
+    public AudioSource audioStart;
 
     private void Start()
     {
@@ -29,6 +30,8 @@ public class Ropa : MonoBehaviour
         }
 
         audioSource = gameObject.AddComponent<AudioSource>();
+
+        audioSource.loop = true;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -52,7 +55,8 @@ public class Ropa : MonoBehaviour
 
                     if (sonidoDeposito != null)
                     {
-                        audioSource.PlayOneShot(sonidoDeposito);  // Reproducir sonido
+                        audioSource.clip = sonidoDeposito;  // Reproducir sonido
+                        audioSource.Play();
                     }
 
                     // Desactivar la interacción para que no pueda volver a agarrarse
@@ -75,7 +79,8 @@ public class Ropa : MonoBehaviour
                 {
                     if (sonidoDeposito != null)
                     {
-                        audioSource.PlayOneShot(sonidoDeposito);  // Reproducir sonido
+                        audioSource.clip = sonidoDeposito;  // Reproducir sonido
+                        audioSource.Play();
                     }
 
                     // Desactivar la interacción para que no pueda volver a agarrarse
@@ -154,6 +159,8 @@ public class Ropa : MonoBehaviour
             if (objetoDepositado != null)
             {
                 Destroy(objetoDepositado.gameObject);  // Eliminar el objeto de la escena
+                audioStart.Play();
+
             }
         }
     }
