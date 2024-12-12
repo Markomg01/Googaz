@@ -16,12 +16,14 @@ public class kaleaAI : MonoBehaviour
 
     public Animator animator;
 
+    public AudioSource pisadasMalo;
+
 
     void Update()
     {
         if (!raycastGolpeo && !enRetroceso)
         {
-            MoverIA();            
+            MoverIA();
         }
     }
 
@@ -48,6 +50,7 @@ public class kaleaAI : MonoBehaviour
             animator.SetBool("IsMoving", false);
             animator.SetBool("IsMovil", true);
             animator.SetBool("IsAtras", false);
+            pisadasMalo.Stop();
             Debug.Log("IA Detenida");
         }
         else
@@ -56,6 +59,7 @@ public class kaleaAI : MonoBehaviour
             animator.SetBool("IsAtras", false);
             animator.SetBool("IsMoving", true);
             MoverIA();
+            pisadasMalo.Play();
             Debug.Log("IA Reanudando movimiento");
         }
     }
@@ -89,6 +93,7 @@ public class kaleaAI : MonoBehaviour
             animator.SetBool("IsAtras", true);
             animator.SetBool("IsMovil", false);
             animator.SetBool("IsMoving", false);
+            pisadasMalo.Play();
         }
     }
 
@@ -99,7 +104,7 @@ public class kaleaAI : MonoBehaviour
             enRetroceso = true;
             Debug.Log("AtrasAtrasAtrasCoñoQue te vayas a tomar por culo");
             MoverHaciaAtras();
-            velocidad = 0.5f;
+            velocidad = 0.75f;
             animator.SetBool("IsAtras", true);
             animator.SetBool("IsMovil", false);
             animator.SetBool("IsMoving", false);
@@ -112,6 +117,7 @@ public class kaleaAI : MonoBehaviour
         {
             enRetroceso = false;
             MoverIA();
+            velocidad = 1.1f;
         }
     }
 
