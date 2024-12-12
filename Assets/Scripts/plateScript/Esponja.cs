@@ -8,6 +8,7 @@ public class Esponja : MonoBehaviour
     public GameObject[] Platerrak;
     private int count;
     private int iZeinPlaterra = 0;
+    public AudioSource Fregar;
 
 
     private void Awake()
@@ -35,6 +36,7 @@ public class Esponja : MonoBehaviour
                 Platerrak[iZeinPlaterra].transform.GetChild(0).gameObject.SetActive(false);
                 Platerrak[iZeinPlaterra].transform.GetChild(1).gameObject.SetActive(true);
                 count++;
+
             }
 
             if (collision.gameObject.CompareTag("cuboRgt"))
@@ -43,6 +45,10 @@ public class Esponja : MonoBehaviour
                 Platerrak[iZeinPlaterra].transform.GetChild(2).gameObject.SetActive(true);
 
                 count++;
+
+                Fregar.Play();
+
+
             }
 
             if (collision.gameObject.CompareTag("cuboBot"))
@@ -51,6 +57,7 @@ public class Esponja : MonoBehaviour
                 Platerrak[iZeinPlaterra].transform.GetChild(3).gameObject.SetActive(true);
 
                 count++;
+
             }
 
             if (collision.gameObject.CompareTag("cuboLft"))
@@ -59,6 +66,7 @@ public class Esponja : MonoBehaviour
                 Platerrak[iZeinPlaterra].transform.GetChild(0).gameObject.SetActive(true);
 
                 count++;
+
             }
 
             if (count == 20)
