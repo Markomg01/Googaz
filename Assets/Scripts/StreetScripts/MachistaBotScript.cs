@@ -6,10 +6,12 @@ using UnityEngine.UI;
 public class MachistaBotScript : MonoBehaviour
 {
     public float distanciaRaycastRobot = 100f;
-
-    public Canvas canvasRobot;
+    public Camera camera;
+    public Canvas canvasFaces;
+    public Canvas canvasScreen;
+    public Collider screenCollider;
     public LayerMask MachistaBot;
-    public Renderer RobotRenderer;
+    
 
     void Update()
     {       
@@ -18,24 +20,20 @@ public class MachistaBotScript : MonoBehaviour
 
     void LanzarRaycast()
     {
-        Ray ray = new Ray(transform.position, transform.forward);
+        Ray ray = new Ray(camera.transform.position, camera.transform.forward);
         RaycastHit hit;
 
         if (Physics.Raycast(ray, out hit, distanciaRaycastRobot, MachistaBot))
         {
             Debug.Log("Raycast impactó el objeto: " + hit.collider.name);
 
-            canvasRobot.gameObject.SetActive(true);
+            canvasScreen.gameObject.SetActive(true);
+            screenCollider.gameObject.SetActive(true);
         }
-
-        /*else
+        else
         {
-            canvasRobot.gameObject.SetActive(false);
-        }*/
-
-        if (!RobotRenderer.isVisible)
-        {
-            canvasRobot.gameObject.SetActive(false);
+            canvasScreen.gameObject.SetActive(false);
+            screenCollider.gameObject.SetActive(false);
         }
 
         Debug.DrawRay(transform.position, transform.forward * distanciaRaycastRobot, Color.green);
