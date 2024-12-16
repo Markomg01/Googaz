@@ -18,6 +18,7 @@ public class MachistaBotScript : MonoBehaviour
     public TaskManager taskManager;
     public GameObject taskTogglePrefab;
     public GameObject tasksParent;
+    public GameObject display;
     public GameObject finalText;
     public GameObject startText;
     public GameObject settingsButtons;
@@ -91,7 +92,7 @@ public class MachistaBotScript : MonoBehaviour
             settings = true;
             //sceneButtons.SetActive(true);
             settingsButtons.transform.DOScale(1,1);
-            tasksParent.transform.DOScale(0, 1);
+            display.transform.DOScale(0, 1);
             //tasksParent.SetActive(false);
         }
         else
@@ -99,7 +100,7 @@ public class MachistaBotScript : MonoBehaviour
             settings = false;
             //sceneButtons.SetActive(false);
             settingsButtons.transform.DOScale(0, 1);
-            tasksParent.transform.DOScale(1, 1);
+            display.transform.DOScale(1, 1);
             //tasksParent.SetActive(true);
         }
     }
