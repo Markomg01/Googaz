@@ -45,7 +45,7 @@ public class Esponja : MonoBehaviour
                 Platerrak[iZeinPlaterra].transform.GetChild(1).gameObject.SetActive(true);
                 count++;
 
-                brillo1.Play(); Debug.Log ("particle");
+                //brillo1.Play();
 
 
             }
@@ -59,7 +59,7 @@ public class Esponja : MonoBehaviour
 
                 Fregar.Play();
 
-                brillo2.Play(); Debug.Log("particle");
+                //brillo2.Play();
 
 
 
@@ -72,7 +72,7 @@ public class Esponja : MonoBehaviour
 
                 count++;
 
-                brillo3.Play(); Debug.Log("particle");
+                //brillo3.Play();
 
 
             }
@@ -84,7 +84,7 @@ public class Esponja : MonoBehaviour
 
                 count++;
 
-                brillo4.Play(); Debug.Log("particle");
+                //brillo4.Play();
 
 
             }
