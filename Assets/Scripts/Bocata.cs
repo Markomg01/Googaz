@@ -16,6 +16,7 @@ public class Bocata : MonoBehaviour
     public AudioSource po;
     public GameObject end;
     public Task task;
+    public AudioSource confetiSound;
 
     private void Awake()
     {
@@ -30,22 +31,26 @@ public class Bocata : MonoBehaviour
     public void Letuce()
     {
         letuce.GetComponent<MeshRenderer>().enabled = false; tomato.SetActive(true);
-        letuce.GetComponent<XRSocketInteractor>().GetOldestInteractableSelected().transform.gameObject.GetComponent<Collider>().enabled = false; po.Play();
+        letuce.GetComponent<XRSocketInteractor>().GetOldestInteractableSelected().transform.gameObject.GetComponent<Collider>().enabled = false; 
+        po.Play();
     }
     public void Tomato()
     {
         tomato.GetComponent<MeshRenderer>().enabled = false; cheese.SetActive(true);
-        tomato.GetComponent<XRSocketInteractor>().GetOldestInteractableSelected().transform.gameObject.GetComponent<Collider>().enabled = false; po.Play();
+        tomato.GetComponent<XRSocketInteractor>().GetOldestInteractableSelected().transform.gameObject.GetComponent<Collider>().enabled = false; 
+        po.Play();
     }
     public void Cheese()
     {
         cheese.GetComponent<MeshRenderer>().enabled = false; breadtop.SetActive(true);
-        cheese.GetComponent<XRSocketInteractor>().GetOldestInteractableSelected().transform.gameObject.GetComponent<Collider>().enabled = false; po.Play();
+        cheese.GetComponent<XRSocketInteractor>().GetOldestInteractableSelected().transform.gameObject.GetComponent<Collider>().enabled = false; 
+        po.Play();
     }
     public void BreadTop()
     {
         breadtop.GetComponent<MeshRenderer>().enabled = false;
-        breadtop.GetComponent<XRSocketInteractor>().GetOldestInteractableSelected().transform.gameObject.GetComponent<Collider>().enabled = true; po.Play();
+        breadtop.GetComponent<XRSocketInteractor>().GetOldestInteractableSelected().transform.gameObject.GetComponent<Collider>().enabled = true;
+        confetiSound.Play();
         Instantiate(bocatafinal, gameObject.transform.position, bocatafinal.transform.rotation);
         GameObject g = GameObject.Instantiate(end);
         Destroy(gameObject, 0.08f);
