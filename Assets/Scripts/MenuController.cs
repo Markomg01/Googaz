@@ -7,7 +7,7 @@ public class MenuController : MonoBehaviour
 {
     public string eszena;
 
-    public GameObject sceneButtons;
+    public GameObject settingsButtons;
     public bool settings =  false;
 
     public void LoadScene(string eszena)
@@ -20,12 +20,12 @@ public class MenuController : MonoBehaviour
         if(!settings)
         {
             settings = true;
-            sceneButtons.SetActive(true);
+            settingsButtons.SetActive(true);
         }
         else
         {
             settings = false;
-            sceneButtons.SetActive(false);
+            settingsButtons.SetActive(false);
         }
     }
 

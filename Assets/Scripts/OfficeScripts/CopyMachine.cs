@@ -27,7 +27,11 @@ public class CopyMachine : MonoBehaviour
     public GameObject socketHologram;
     public GameObject finalHologram;
 
+    public AudioSource copySound;
+
     public bool handleGrabbed;
+
+    bool copied = false;
 
     Vector3 ReferenceVector = -Vector3.up;
 
@@ -58,8 +62,9 @@ public class CopyMachine : MonoBehaviour
 
     public void PrintPaper()
     {
-        if (paperInPrinter && topClosed)
+        if (paperInPrinter && topClosed && !copied)
         {
+            copySound.Play();
             copyMachine.Play("CopyMachine");
         }
     }
@@ -76,6 +81,7 @@ public class CopyMachine : MonoBehaviour
 
     public void PrintingEnd()
     {
+        copied = true;
         copiesInPrinterArrow.SetActive(true);
         copies.SetActive(true);
         finalHologram.SetActive(true);

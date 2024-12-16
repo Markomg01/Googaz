@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,6 +11,11 @@ public class TaskManager : MonoBehaviour
 
     public FadeInOut fade;
 
+    public MachistaBotScript machistaBot;
+
+    public AudioSource taskCompleteAudio;
+    public AudioSource allTaskCompleteAudio;
+
     [SerializeField]
     UnityEvent tasksCompleted;
 
@@ -21,12 +27,18 @@ public class TaskManager : MonoBehaviour
             if (tasksInScene[i].IsFinished())
             {
                 howManyFinished++;
+                machistaBot.CheckTask(tasksInScene[i].taskName);
+                taskCompleteAudio.Play();
             }
         }
 
         if (howManyFinished == tasksInScene.Count)
         {
             Debug.Log("All Tasks Completed");
+            allTaskCompleteAudio.Play();
+            machistaBot.tasksParent.transform.DOScale(0, 1);
+            machistaBot.settingsButtons.transform.DOScale(0, 1);
+            machistaBot.finalText.gameObject.transform.DOScale(1, 1);
             tasksCompleted.Invoke();
         }
     }
