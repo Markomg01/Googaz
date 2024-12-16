@@ -10396,7 +10396,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 667476306}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5c98ab6571b51424988e3eae750a5081, type: 3}
   m_Name: 
@@ -10432,6 +10432,31 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+--- !u!114 &667476313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667476306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae59bbf44da9e1242a5cf60a89da4aed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ropaTag: Ropa
+  otraPosicion: {fileID: 332539840}
+  particulas2: {fileID: 665652530}
+  sonidoDeposito: {fileID: 8300000, guid: 16fba6d30ed741d4a9fdd6e79ee2f3ac, type: 3}
+  audioSource: {fileID: 836092651}
+  mensajeError: {fileID: 0}
+  duracionMensaje: 2
+  tiempoDesaparecer: 0.5
+  outline: {fileID: 667476312}
+  task: {fileID: 551626668}
+  MAXarropa: 3
+  animator: {fileID: 1362339857}
+  audioStart: {fileID: 836092651}
 --- !u!1001 &688754898
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15265,6 +15290,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 667476310}
+    - targetCorrespondingSourceObject: {fileID: 8164078558771037576, guid: 91addf2b2ea181848b9dcf1942dde5ba,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 667476313}
   m_SourcePrefab: {fileID: 100100000, guid: 91addf2b2ea181848b9dcf1942dde5ba, type: 3}
 --- !u!4 &1412380519 stripped
 Transform:
