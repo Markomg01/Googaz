@@ -14025,7 +14025,7 @@ PrefabInstance:
     - target: {fileID: 4134505312059479865, guid: 895f6f3c2d334633b5800312285058d2,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.4
+      value: -0.85
       objectReference: {fileID: 0}
     - target: {fileID: 4134505312059479865, guid: 895f6f3c2d334633b5800312285058d2,
         type: 3}
@@ -48171,6 +48171,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 4c45491455477dd4d95add360bd58326, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 5fc732cea2a848a449e481e8e2ea301d,
+        type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: b5b75f1626bafff47bc5dbf07f6e01a9, type: 2}
     - target: {fileID: 919132149155446097, guid: 5fc732cea2a848a449e481e8e2ea301d,
         type: 3}
       propertyPath: m_Name
@@ -56310,6 +56315,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: FaxMachine
       objectReference: {fileID: 0}
+    - target: {fileID: 3188975605905909900, guid: e095f339548d3d140b49ddd127165519,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3243043421060052269, guid: e095f339548d3d140b49ddd127165519,
         type: 3}
       propertyPath: m_Layer
@@ -57295,6 +57305,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CoffeeMachine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3958236489761364657, guid: 6bee6e2abe7305b4fbc074d45ede9a6c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4301952007892523484, guid: 6bee6e2abe7305b4fbc074d45ede9a6c,
         type: 3}
@@ -58790,6 +58805,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CopyMachine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7671902606223626686, guid: 6a486342831b59d48b6361b2f2fe6830,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7798715304322298434, guid: 6a486342831b59d48b6361b2f2fe6830,
         type: 3}
