@@ -2216,8 +2216,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.002897908, y: 0.002286299, z: 0.00065126346}
-  m_Center: {x: 0.0014489538, y: 0.0008199326, z: 0.0000024142205}
+  m_Size: {x: 0.0032230637, y: 0.0022862987, z: 0.0015453276}
+  m_Center: {x: 0.0012863771, y: 0.0008199326, z: 0.00044944632}
 --- !u!114 &653087167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4632,6 +4632,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eszena: 
+  settingsButtons: {fileID: 0}
+  settings: 0
 --- !u!4 &1215803354
 Transform:
   m_ObjectHideFlags: 0
@@ -6209,14 +6211,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1772731733}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.52, y: 1.226, z: -0.928}
+  m_LocalRotation: {x: -0.18366273, y: 0.06231607, z: -0.060352527, w: 0.97915393}
+  m_LocalPosition: {x: 2.515, y: 1.243, z: -0.963}
   m_LocalScale: {x: 0.13379, y: 0.13379, z: 0.13379}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1962648039}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -20.619, y: 8.863, z: -8.669}
 --- !u!1001 &1828919690
 PrefabInstance:
   m_ObjectHideFlags: 0
