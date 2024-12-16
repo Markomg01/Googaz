@@ -825,9 +825,9 @@ MonoBehaviour:
   tasksInScene:
   - {fileID: 551626668}
   fade: {fileID: 1063949849}
-  machistaBot: {fileID: 0}
-  taskCompleteAudio: {fileID: 0}
-  allTaskCompleteAudio: {fileID: 0}
+  machistaBot: {fileID: 604371142}
+  taskCompleteAudio: {fileID: 836092651}
+  allTaskCompleteAudio: {fileID: 836092651}
   tasksCompleted:
     m_PersistentCalls:
       m_Calls:
@@ -9532,7 +9532,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca16b41bff9ce8a43b30d1c966fad4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  taskName: Colada
+  taskName: Arropa jaso
   finished: 0
   toggle: {fileID: 1720597657}
 --- !u!1 &563770252
@@ -9998,6 +9998,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 604371139}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &604371142 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6337341539643825615, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
+    type: 3}
+  m_PrefabInstance: {fileID: 604371139}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6c6e7cc2a57d0a42aedb43be3282e08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &636431272
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10393,7 +10405,7 @@ MonoBehaviour:
   otraPosicion: {fileID: 332539840}
   particulas2: {fileID: 665652530}
   sonidoDeposito: {fileID: 8300000, guid: 16fba6d30ed741d4a9fdd6e79ee2f3ac, type: 3}
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 836092651}
   mensajeError: {fileID: 0}
   duracionMensaje: 3
   tiempoDesaparecer: 0.1
@@ -10401,7 +10413,7 @@ MonoBehaviour:
   task: {fileID: 551626668}
   MAXarropa: 3
   animator: {fileID: 1362339857}
-  audioStart: {fileID: 0}
+  audioStart: {fileID: 836092651}
 --- !u!114 &667476312
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10828,11 +10840,47 @@ PrefabInstance:
       propertyPath: m_Name
       value: FridgeStickyNote (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 4ce2e6bf583ced642944168189fe076b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8164078558771037576, guid: 4ce2e6bf583ced642944168189fe076b,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 728423355}
   m_SourcePrefab: {fileID: 100100000, guid: 4ce2e6bf583ced642944168189fe076b, type: 3}
+--- !u!1 &728423354 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8164078558771037576, guid: 4ce2e6bf583ced642944168189fe076b,
+    type: 3}
+  m_PrefabInstance: {fileID: 728423353}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &728423355
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 728423354}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.246214, y: 0.411876, z: 0.017413}
+  m_Center: {x: 0.0002229996, y: 0, z: 0.0049805}
 --- !u!4 &729014612 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c541c73a234497f419c68ba5ada0dd41,
@@ -21051,7 +21099,6 @@ SceneRoots:
   - {fileID: 813552208}
   - {fileID: 502365647}
   - {fileID: 1643819783}
-  - {fileID: 123639255}
   - {fileID: 918329860}
   - {fileID: 498742661}
   - {fileID: 1186309469}
@@ -21072,3 +21119,4 @@ SceneRoots:
   - {fileID: 886422473}
   - {fileID: 1062116968}
   - {fileID: 1763781826}
+  - {fileID: 123639255}

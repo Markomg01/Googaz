@@ -4418,7 +4418,7 @@ PrefabInstance:
     - target: {fileID: 4134505312059479865, guid: 895f6f3c2d334633b5800312285058d2,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.12
+      value: -6.863
       objectReference: {fileID: 0}
     - target: {fileID: 4134505312059479865, guid: 895f6f3c2d334633b5800312285058d2,
         type: 3}
@@ -4428,7 +4428,7 @@ PrefabInstance:
     - target: {fileID: 4134505312059479865, guid: 895f6f3c2d334633b5800312285058d2,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.14
+      value: 6.924
       objectReference: {fileID: 0}
     - target: {fileID: 4134505312059479865, guid: 895f6f3c2d334633b5800312285058d2,
         type: 3}
@@ -8649,11 +8649,47 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: -0.01
       objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 4ce2e6bf583ced642944168189fe076b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8164078558771037576, guid: 4ce2e6bf583ced642944168189fe076b,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 791067593}
   m_SourcePrefab: {fileID: 100100000, guid: 4ce2e6bf583ced642944168189fe076b, type: 3}
+--- !u!1 &791067592 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8164078558771037576, guid: 4ce2e6bf583ced642944168189fe076b,
+    type: 3}
+  m_PrefabInstance: {fileID: 791067591}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &791067593
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 791067592}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.246214, y: 0.411876, z: 0.017413}
+  m_Center: {x: 0.0002229996, y: 0, z: 0.0049805}
 --- !u!1 &797198097 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4938095755617958529, guid: 2e79f16be10fbd14f8d5ef191f8db4aa,
@@ -13039,7 +13075,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1335259698
 Transform:
   m_ObjectHideFlags: 0
@@ -13079,7 +13115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca16b41bff9ce8a43b30d1c966fad4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  taskName: CleanPlates
+  taskName: Platerrak garbitu
   finished: 0
   toggle: {fileID: 1388486577}
 --- !u!1 &1344144149
