@@ -4,8 +4,7 @@ using UnityEngine.UI;
 public class Task : MonoBehaviour
 {
     public string taskName;
-    [SerializeField]
-    bool finished;
+    public bool finished;
 
     public Toggle toggle;
 
