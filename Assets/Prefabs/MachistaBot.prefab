@@ -243,7 +243,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Zoaz zure ordenagailura eta begiratu zer egin behar duzun
+  m_text: Start Text
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -378,9 +378,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Zure eginbeharrak amaitu dituzu
-
-    Etxera bueltatu'
+  m_text: Final Text
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -857,7 +855,9 @@ MonoBehaviour:
     type: 3}
   tasksParent: {fileID: 3721887123484820447}
   display: {fileID: 8111769460203517672}
+  finalTextString: Zure eginbeharrak amaitu dituzu Etxera bueltatu
   finalText: {fileID: 1457978837036566442}
+  startTextString: Zoaz zure ordenagailura eta begiratu zer egin behar duzun
   startText: {fileID: 841813755220989437}
   settingsButtons: {fileID: 3799373079240698232}
   settings: 0

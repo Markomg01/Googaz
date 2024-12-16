@@ -1,4 +1,5 @@
 using DG.Tweening;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -19,13 +20,17 @@ public class MachistaBotScript : MonoBehaviour
     public GameObject taskTogglePrefab;
     public GameObject tasksParent;
     public GameObject display;
+    public string finalTextString;
     public GameObject finalText;
+    public string startTextString;
     public GameObject startText;
     public GameObject settingsButtons;
     public bool settings = false;
 
     private void Awake()
     {
+        finalText.GetComponent<TextMeshProUGUI>().text = finalTextString;
+        startText.GetComponent<TextMeshProUGUI>().text=startTextString;
         FillTaskList();
         tasksParent.transform.DOScale(0, 0);
     }
