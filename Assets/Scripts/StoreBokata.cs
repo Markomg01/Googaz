@@ -15,6 +15,7 @@ public class StoreBokata : MonoBehaviour
     public float tiempoDesaparecer = 0.2f;  // Tiempo antes de eliminar el objeto correcto
     public Outline outline;  // Componente Outline
     public Task task;
+    public GameObject ArrowBokataFinal;
 
     private void Start()
     {
@@ -119,6 +120,7 @@ public class StoreBokata : MonoBehaviour
             if (objetoDepositado != null)
             {
                 Destroy(objetoDepositado.gameObject);  // Eliminar el objeto de la escena
+                Destroy(ArrowBokataFinal);
             }
         }
     }
