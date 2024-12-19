@@ -9,6 +9,14 @@ public class Esponja : MonoBehaviour
     private int count;
     private int iZeinPlaterra = 0;
     public AudioSource Fregar;
+    
+    public ParticleSystem brillo1;
+    public ParticleSystem brillo2;
+    public ParticleSystem brillo3;
+    public ParticleSystem brillo4;
+
+
+
 
 
     private void Awake()
@@ -37,6 +45,9 @@ public class Esponja : MonoBehaviour
                 Platerrak[iZeinPlaterra].transform.GetChild(1).gameObject.SetActive(true);
                 count++;
 
+                //brillo1.Play();
+
+
             }
 
             if (collision.gameObject.CompareTag("cuboRgt"))
@@ -48,6 +59,9 @@ public class Esponja : MonoBehaviour
 
                 Fregar.Play();
 
+                //brillo2.Play();
+
+
 
             }
 
@@ -58,6 +72,9 @@ public class Esponja : MonoBehaviour
 
                 count++;
 
+                //brillo3.Play();
+
+
             }
 
             if (collision.gameObject.CompareTag("cuboLft"))
@@ -66,6 +83,9 @@ public class Esponja : MonoBehaviour
                 Platerrak[iZeinPlaterra].transform.GetChild(0).gameObject.SetActive(true);
 
                 count++;
+
+                //brillo4.Play();
+
 
             }
 

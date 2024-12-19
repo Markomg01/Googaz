@@ -59,6 +59,8 @@ public class MachistaBotScript : MonoBehaviour
         Ray ray = new Ray(camera.transform.position, camera.transform.forward);
         RaycastHit hit;
 
+        Debug.DrawRay(camera.transform.position, camera.transform.forward * distanciaRaycastRobot, Color.green, .1f);
+
         if (Physics.Raycast(ray, out hit, distanciaRaycastRobot, machistaBotLayer))
         {
             canvasScreen.gameObject.SetActive(true);
@@ -74,8 +76,6 @@ public class MachistaBotScript : MonoBehaviour
             canvasScreen.gameObject.SetActive(false);
             screenCollider.gameObject.SetActive(false);
         }
-
-        Debug.DrawRay(transform.position, transform.forward * distanciaRaycastRobot, Color.green);
     }
 
 
