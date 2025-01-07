@@ -18,7 +18,6 @@ public class kaleaAI : MonoBehaviour
 
     public AudioSource pisadasMalo;
 
-
     void Update()
     {
         if (!raycastGolpeo && !enRetroceso)
