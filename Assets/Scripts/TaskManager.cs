@@ -34,9 +34,8 @@ public class TaskManager : MonoBehaviour
 
         if (howManyFinished == tasksInScene.Count)
         {
-            Debug.Log("All Tasks Completed");
             allTaskCompleteAudio.Play();
-            machistaBot.tasksParent.transform.DOScale(0, 1);
+            machistaBot.display.transform.DOScale(0, 1);
             machistaBot.settingsButtons.transform.DOScale(0, 1);
             machistaBot.finalText.gameObject.transform.DOScale(1, 1);
             tasksCompleted.Invoke();
@@ -48,7 +47,6 @@ public class TaskManager : MonoBehaviour
     public void ChangeScene()
     {
         fade.FadeOut();
-        Debug.Log(nextSceneName + " sceneLoaded");
     SceneManager.LoadScene(nextSceneName);
     }
 }

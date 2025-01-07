@@ -13,7 +13,6 @@ public class ChangeScene : MonoBehaviour
     public AudioSource SonidoCambioescena;
     public FadeInOut FadeOut;
 
-
     private void Start()
     {
         SonidoCambioescena = GetComponent<AudioSource>();
@@ -45,4 +44,5 @@ public class ChangeScene : MonoBehaviour
     {
         SceneManager.LoadScene(escena);
     }    
+    
 }
