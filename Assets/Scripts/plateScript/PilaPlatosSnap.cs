@@ -10,6 +10,8 @@ public class PilaPlatosSnap : MonoBehaviour
     public GameObject[] SnapPlaterrak;
     private int iZeinSnapPlaterra = 0;
 
+    //private Task task;
+
 
     public Plato platoActivo;
 
@@ -55,6 +57,8 @@ public class PilaPlatosSnap : MonoBehaviour
     public void NextPlate()
     {
         iZeinSnapPlaterra++;
+
+        //task.TaskComplete(task);
     }
 
 }

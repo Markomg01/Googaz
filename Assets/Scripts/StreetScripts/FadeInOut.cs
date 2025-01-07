@@ -5,7 +5,7 @@ using UnityEngine;
 public class FadeInOut : MonoBehaviour
 {
     public bool fadeOnStart = true;
-    public float fadeDuration = 2f;
+    public float fadeDuration = 1.5f;
     public Color fadecolor;
     private Renderer rend;
 
@@ -23,6 +23,7 @@ public class FadeInOut : MonoBehaviour
     public void FadeOut()
     {
         Fade(0, 1);
+        gameObject.SetActive(true);
     }
 
     public void Fade(float alphaIn, float alphaOut)
@@ -48,5 +49,10 @@ public class FadeInOut : MonoBehaviour
         newcolor2.a = alphaOut;
 
         rend.material.SetColor("_Color", newcolor2);
+
+        if (alphaOut == 0)
+        {
+            gameObject.SetActive(false);
+        }
     }
 }
