@@ -88,7 +88,7 @@ public class kaleaAI : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             enRetroceso = true;
-            Debug.Log("AtrasAtrasAtras");
+            //Debug.Log("AtrasAtrasAtras");
             MoverHaciaAtras();
             animator.SetBool("IsAtras", true);
             animator.SetBool("IsMovil", false);
