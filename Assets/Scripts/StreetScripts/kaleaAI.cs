@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -17,14 +18,35 @@ public class kaleaAI : MonoBehaviour
     public Animator animator;
 
     public AudioSource pisadasMalo;
+    public GameObject prota;
 
 
     void Update()
     {
-        if (!raycastGolpeo && !enRetroceso)
+        float distance = Vector3.Distance(transform.position, prota.transform.position);
+        Debug.Log(distance);
+
+        if(distance <= 1.75f)
         {
-            MoverIA();
+            if(raycastGolpeo == true)
+            {
+                MoverHaciaAtras();
+            }
+
+            else
+            {
+                DetenerIA(true);
+            }
         }
+
+        else 
+        {
+            if (!raycastGolpeo && !enRetroceso)
+            {
+                MoverIA();
+            }
+        }
+
     }
 
     void MoverIA()

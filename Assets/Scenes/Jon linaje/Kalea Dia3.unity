@@ -24723,6 +24723,12 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &1138517051 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7313654230448209575, guid: 895f6f3c2d334633b5800312285058d2,
+    type: 3}
+  m_PrefabInstance: {fileID: 912955678}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1148078198
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37536,6 +37542,7 @@ GameObject:
   - component: {fileID: 1968635552}
   - component: {fileID: 1968635554}
   - component: {fileID: 1968635555}
+  - component: {fileID: 1968635556}
   m_Layer: 8
   m_Name: El malo de atras
   m_TagString: Untagged
@@ -37585,6 +37592,7 @@ MonoBehaviour:
   FadeOut: {fileID: 278078040}
   animator: {fileID: 498141343}
   pisadasMalo: {fileID: 1968635553}
+  prota: {fileID: 1138517051}
 --- !u!114 &1968635544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37840,7 +37848,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 1.1123271, y: 0.9999994, z: 2.4687326}
   m_Center: {x: -0.056164376, y: 0, z: 0.8839287}
@@ -37957,7 +37965,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 6.307605, y: 3.8517804, z: 3.5006611}
   m_Center: {x: 0.052523367, y: 1.1800708, z: 1.2503327}
@@ -37978,10 +37986,31 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 6.2357225, y: 0.44391453, z: 5.094903}
   m_Center: {x: 0.043078925, y: 3.4122293, z: 3.86954}
+--- !u!65 &1968635556
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1968635537}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Size: {x: 7.1200075, y: 0.6875492, z: 10.2428}
+  m_Center: {x: 0.039371848, y: 5.05029, z: 4.621397}
 --- !u!1001 &1983021378
 PrefabInstance:
   m_ObjectHideFlags: 0
