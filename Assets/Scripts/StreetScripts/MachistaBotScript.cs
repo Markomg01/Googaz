@@ -13,7 +13,7 @@ public class MachistaBotScript : MonoBehaviour
     public float distanciaRaycastRobot = 100f;
     public Camera camera;
     public Canvas canvasFaces;
-    public Canvas canvasScreen;
+    public GameObject canvasScreenParent;
     public Collider screenCollider;
     public LayerMask machistaBotLayer;
     public LayerMask computerScreenLayer;
@@ -56,22 +56,7 @@ public class MachistaBotScript : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Q))
-        {
-            if(a)
-            {
-                canvasScreen.gameObject.transform.DOScaleY(1, 1);
-                a = false;
-                Debug.Log("a");
-            }
-            else if(!a)
-            {
-                Debug.Log("b");
-                canvasScreen.gameObject.transform.DOScaleY(0, 1);
-                a = true;
-            }
-        }
-        //LanzarRaycast();
+        LanzarRaycast();
         Timer();
     }
 
@@ -114,9 +99,9 @@ public class MachistaBotScript : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit, distanciaRaycastRobot, machistaBotLayer))
         {
-            canvasScreen.gameObject.SetActive(true);
+            canvasScreenParent.gameObject.transform.DOScaleY(1, .5f);
             screenCollider.gameObject.transform.DOScaleY(1, 1);
-            //screenCollider.gameObject.SetActive(true);
+            screenCollider.gameObject.SetActive(true);
         }
         else if (Physics.Raycast(ray, out hit, distanciaRaycastRobot, computerScreenLayer))
         {
@@ -125,9 +110,9 @@ public class MachistaBotScript : MonoBehaviour
         }
         else
         {
-            canvasScreen.gameObject.SetActive(false);
+            canvasScreenParent.gameObject.transform.DOScaleY(0, .1f);
             screenCollider.gameObject.transform.DOScaleY(0, 1);
-            //screenCollider.gameObject.SetActive(false);
+            screenCollider.gameObject.SetActive(false);
         }
     }
 

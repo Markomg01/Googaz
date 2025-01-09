@@ -32662,11 +32662,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: MachistaBot
       objectReference: {fileID: 0}
-    - target: {fileID: 6223569171624254206, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
-        type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6337341539643825615, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
         type: 3}
       propertyPath: camera
@@ -32677,6 +32672,11 @@ PrefabInstance:
       propertyPath: taskManager
       value: 
       objectReference: {fileID: 1685407772}
+    - target: {fileID: 6337341539643825615, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
+        type: 3}
+      propertyPath: canvasScreenParent
+      value: 
+      objectReference: {fileID: 1433312698}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -32694,6 +32694,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6c6e7cc2a57d0a42aedb43be3282e08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1433312698 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7971570254661911602, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1433312696}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1436968394
 PrefabInstance:
   m_ObjectHideFlags: 0
