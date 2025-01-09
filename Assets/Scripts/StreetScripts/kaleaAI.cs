@@ -20,37 +20,138 @@ public class kaleaAI : MonoBehaviour
     public AudioSource pisadasMalo;
     public GameObject prota;
 
+    public void setRaycastGolpeo (bool bvalor)
+    {
+        /*if (bvalor == false)
+        {
+            enRetroceso = false;
+        }*/
+        raycastGolpeo = bvalor;
+    }
     void Update()
     {
         float distance = Vector3.Distance(transform.position, prota.transform.position);
-        Debug.Log(distance);
+        //Debug.Log(raycastGolpeo+" "+ distance);
 
-        if(distance <= 1.75f)
+
+        if (enRetroceso)
+        {
+            Debug.Log("en Retroceso chaval");
+            enRetroceso = true;
+            MoverHaciaAtras();
+            animator.SetBool("IsAtras", true);
+            animator.SetBool("IsMovil", false);
+            animator.SetBool("IsMoving", false);
+            pisadasMalo.Play();
+        }
+        else
+        {
+            if (distance < 2f) //En Rango
+            {
+                if (raycastGolpeo == true)
+                {
+                    Debug.Log("en rango y mirando");
+                    enRetroceso = true;
+                    MoverHaciaAtras();
+                    animator.SetBool("IsAtras", true);
+                    animator.SetBool("IsMovil", false);
+                    animator.SetBool("IsMoving", false);
+                    pisadasMalo.Play();
+                }
+                else
+                {
+                    Debug.Log("en rango y no mirando");
+                    DetenerIA(true);
+                    enRetroceso = false;
+                }
+            }
+            else  //Fuera de Rango
+            {
+                if (raycastGolpeo)
+                {
+                    Debug.Log("fuera de range y mirando");
+                    DetenerIA(true);
+                    enRetroceso = false;
+
+                }
+                else
+                {
+                    Debug.Log("fuera de rango y no mirando");
+                    enRetroceso = false;
+                    MoverIA();
+                    velocidad = 1.1f;
+                }
+            }
+        }
+
+        /*if(distance <= 2.5f)
         {
             if(raycastGolpeo == true)
             {
+                Debug.Log("en rango y mirando");
+                enRetroceso = true;
+                //Debug.Log("AtrasAtrasAtras");
                 MoverHaciaAtras();
+                animator.SetBool("IsAtras", true);
+                animator.SetBool("IsMovil", false);
+                animator.SetBool("IsMoving", false);
+                pisadasMalo.Play();
             }
-
             else
             {
+                Debug.Log("en rango y no mirando");
                 DetenerIA(true);
+                enRetroceso = false;
             }
         }
-
         else 
         {
-            if (!raycastGolpeo && !enRetroceso)
+            if (!enRetroceso)
             {
-                MoverIA();
+                if (!raycastGolpeo)// !enRetroceso)
+                {
+
+                    Debug.Log("fuera de rango y no mirando");
+                    enRetroceso = false;
+                    MoverIA();
+                    velocidad = 1.1f;
+                }
+                else
+                {
+                    Debug.Log("fuera de range y mirando");
+                    DetenerIA(true);
+                    enRetroceso = false;
+                }
             }
-        }
+            else
+            {
+                if(raycastGolpeo == true)
+                {
+                    Debug.Log("fuera de rango y mirando222");
+                    enRetroceso = true;
+                    //Debug.Log("AtrasAtrasAtras");
+                    MoverHaciaAtras();
+                    animator.SetBool("IsAtras", true);
+                    animator.SetBool("IsMovil", false);
+                    animator.SetBool("IsMoving", false);
+                    pisadasMalo.Play();
+                }
+                else
+                {
+                    Debug.Log("fuera de rango y no mirando2222");
+                    enRetroceso = false;
+                    MoverIA();
+                    velocidad = 1.1f;
+                }
+            }
+        }*/
 
     }
 
     void MoverIA()
     {
         transform.Translate(direccion.normalized * velocidad * Time.deltaTime);
+        enRetroceso = false;
     }
 
     void MoverHaciaAtras()
@@ -64,28 +165,30 @@ public class kaleaAI : MonoBehaviour
     {
         if (enRetroceso) return;
 
-        raycastGolpeo = detener;
+        //raycastGolpeo = detener;
 
         if (detener)
-        {            
+        {
+            enRetroceso = false;
             animator.SetBool("IsMoving", false);
             animator.SetBool("IsMovil", true);
             animator.SetBool("IsAtras", false);
             pisadasMalo.Stop();
-            Debug.Log("IA Detenida");
+            //Debug.Log("IA Detenida");
         }
         else
         {
+            enRetroceso = false;
             animator.SetBool("IsMovil", false);
             animator.SetBool("IsAtras", false);
             animator.SetBool("IsMoving", true);
             MoverIA();
             pisadasMalo.Play();
-            Debug.Log("IA Reanudando movimiento");
+            //Debug.Log("IA Reanudando movimiento");
         }
     }
 
-    private void OnCollisionEnter(Collision collision)
+    /*private void OnCollisionEnter(Collision collision)
     {
         Debug.Log(collision.gameObject);
         if (collision.gameObject.CompareTag("Player"))
@@ -102,7 +205,7 @@ public class kaleaAI : MonoBehaviour
         {
             MoverIA();
         }
-    }
+    }*/
 
     private void OnTriggerEnter(Collider other)
     {
