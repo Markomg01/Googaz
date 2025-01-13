@@ -35,8 +35,9 @@ public class ChangeScene : MonoBehaviour
 
     public void InvocarEscena()
     {
-        Invoke("CambiarEscena", 1.5f);
         SonidoCambioescena.Play();
+        Debug.Log("sonido0");
+        Invoke("CambiarEscena", 1f);
         FadeOut.FadeOut();
     }
 

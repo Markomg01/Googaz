@@ -384,7 +384,6 @@ GameObject:
   m_Component:
   - component: {fileID: 134103076}
   - component: {fileID: 134103075}
-  - component: {fileID: 134103077}
   m_Layer: 0
   m_Name: task manager
   m_TagString: Untagged
@@ -428,102 +427,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &134103077
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 134103074}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 68cec9923d8c495448905421768976d3, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1 &137325314
 GameObject:
   m_ObjectHideFlags: 0
@@ -616,7 +519,7 @@ PrefabInstance:
     - target: {fileID: 3190975238547441657, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.000000014901161
+      value: -0.046
       objectReference: {fileID: 0}
     - target: {fileID: 3190975238547441657, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
         type: 3}
@@ -626,7 +529,7 @@ PrefabInstance:
     - target: {fileID: 3190975238547441657, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.00000010430813
+      value: -0.12
       objectReference: {fileID: 0}
     - target: {fileID: 3190975238547441657, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
         type: 3}
@@ -667,6 +570,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MachistaBot
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337341539643825615, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
+        type: 3}
+      propertyPath: max
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337341539643825615, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
+        type: 3}
+      propertyPath: time
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 6337341539643825615, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
         type: 3}
@@ -1156,7 +1069,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: f48c29d02b47ba74a921645466fe061c, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 68cec9923d8c495448905421768976d3, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -1334,7 +1247,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 333578580}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 37649dc8867f8214c8f173c2862d851c, type: 3}
   m_Name: 
@@ -1342,7 +1255,7 @@ MonoBehaviour:
   puertaKotxea: {fileID: 333578583}
   escena: Etxea_Egunez 1 Eguna
   SonidoCambioescena: {fileID: 333578581}
-  FadeOut: {fileID: 0}
+  FadeOut: {fileID: 624193507}
 --- !u!1001 &354101637
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2986,6 +2899,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 639105560}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1b1ff3a1717eee94a9f47eead7363e6c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 639105562}
   m_SourcePrefab: {fileID: 100100000, guid: 1b1ff3a1717eee94a9f47eead7363e6c, type: 3}
 --- !u!1 &639105553 stripped
 GameObject:
@@ -3290,6 +3207,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resetLocationTransform: {fileID: 1212289693}
+--- !u!114 &639105562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 639105553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 0.5662663, b: 0.27058828, a: 1}
+  outlineWidth: 8
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &650685879
 GameObject:
   m_ObjectHideFlags: 0
@@ -3694,7 +3629,7 @@ MonoBehaviour:
   distanciaRaycastRobot: 33
   camera: {fileID: 0}
   canvasFaces: {fileID: 0}
-  canvasScreen: {fileID: 0}
+  canvasScreenParent: {fileID: 0}
   screenCollider: {fileID: 0}
   machistaBotLayer:
     serializedVersion: 2
@@ -7259,8 +7194,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 8.826214, y: 0.9514534, z: 8.15923}
-  m_Center: {x: -3.085351, y: -0.44367877, z: -3.1099486}
+  m_Size: {x: 8.826214, y: 1.0104145, z: 8.15923}
+  m_Center: {x: -3.085351, y: -0.41419822, z: -3.1099486}
 --- !u!1001 &1351072684
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9537,8 +9472,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 7.4567547, y: 0.56056637, z: 7.0175166}
-  m_Center: {x: -1.2591877, y: -0.21971682, z: -3.0087583}
+  m_Size: {x: 7.4567547, y: 0.45936376, z: 7.0175166}
+  m_Center: {x: -1.2591877, y: -0.27031812, z: -3.0087583}
 --- !u!4 &2142449763 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8cfeafde0761d6e47b0b8b5e2f1b4e8a,
