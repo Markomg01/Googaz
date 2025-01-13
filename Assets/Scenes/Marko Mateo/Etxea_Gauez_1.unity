@@ -6795,12 +6795,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!4 &226486030 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1151388028547126963, guid: 9ad4e3174285bd64287a00da2b738400,
-    type: 3}
-  m_PrefabInstance: {fileID: 226486026}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &226486031
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6813,7 +6807,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df56f486d0a3e1449af0a49b8cee9caf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToFollow: {fileID: 226486030}
+  objectToFollow: {fileID: 1924343785}
 --- !u!1 &241711155
 GameObject:
   m_ObjectHideFlags: 0
@@ -18276,8 +18270,8 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.28322172
-  m_Center: {x: -0.02899599, y: -0.09321803, z: 0}
+  m_Radius: 0.26724145
+  m_Center: {x: -0.028995985, y: -0.004163954, z: 0}
 --- !u!114 &1783920322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20484,7 +20478,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df56f486d0a3e1449af0a49b8cee9caf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToFollow: {fileID: 804430879}
+  objectToFollow: {fileID: 1924343785}
 --- !u!1001 &2127662200
 PrefabInstance:
   m_ObjectHideFlags: 0
