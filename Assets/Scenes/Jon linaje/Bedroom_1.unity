@@ -681,7 +681,7 @@ PrefabInstance:
     - target: {fileID: 6337341539643825615, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
         type: 3}
       propertyPath: startTextString
-      value: 'hartu iratzargailua gauzak nola hartzen diren jakiteko. Ondoren, joan
+      value: 'Hartu iratzargailua gauzak nola hartzen diren jakiteko. Ondoren, joan
         atea eta ireki jokoa hasteko '
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -3275,8 +3275,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.078036845, y: 0.13430685, z: 0.073708534}
-  m_Center: {x: 0.000000029802322, y: 0.0021642148, z: 0}
+  m_Size: {x: 0.11639863, y: 0.13430685, z: 0.3018961}
+  m_Center: {x: 0.0015119612, y: 0.0021642148, z: 0.0002465248}
 --- !u!114 &639105560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3712,6 +3712,11 @@ MonoBehaviour:
   startText: {fileID: 0}
   settingsButtons: {fileID: 0}
   settings: 0
+  time: 0
+  fill: {fileID: 0}
+  max: 0
+  cuarto: 1
+  redFilterAnimator: {fileID: 0}
 --- !u!135 &688655266
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4788,7 +4793,7 @@ GameObject:
   - component: {fileID: 879290527}
   - component: {fileID: 879290526}
   m_Layer: 5
-  m_Name: Ogitartekoa egin
+  m_Name: eskua
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6262,7 +6267,7 @@ GameObject:
   - component: {fileID: 1117302949}
   - component: {fileID: 1117302950}
   m_Layer: 5
-  m_Name: ToggleBokataEgin
+  m_Name: ToggleTutorial
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6790,7 +6795,7 @@ Transform:
   m_GameObject: {fileID: 1212289692}
   serializedVersion: 2
   m_LocalRotation: {x: -0.5, y: 0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: 2.296, y: 0.768, z: -5.734}
+  m_LocalPosition: {x: 2.296, y: 0.864, z: -5.734}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7250,12 +7255,12 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 7.312857, y: 0.021506011, z: 6.6164565}
-  m_Center: {x: -3.1564286, y: -0.00020036101, z: -2.8082283}
+  m_Size: {x: 8.826214, y: 0.9514534, z: 8.15923}
+  m_Center: {x: -3.085351, y: -0.44367877, z: -3.1099486}
 --- !u!1001 &1351072684
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9122,6 +9127,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1857305220}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1858310809 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: be1ab7125565e174dadda63a2070f6ad,
+    type: 3}
+  m_PrefabInstance: {fileID: 2129472558}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1921973392
 GameObject:
   m_ObjectHideFlags: 0
@@ -9495,7 +9506,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: be1ab7125565e174dadda63a2070f6ad,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2129472560}
   m_SourcePrefab: {fileID: 100100000, guid: be1ab7125565e174dadda63a2070f6ad, type: 3}
 --- !u!4 &2129472559 stripped
 Transform:
@@ -9503,6 +9518,27 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2129472558}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &2129472560
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1858310809}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 7.4567547, y: 0.56056637, z: 7.0175166}
+  m_Center: {x: -1.2591877, y: -0.21971682, z: -3.0087583}
 --- !u!4 &2142449763 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8cfeafde0761d6e47b0b8b5e2f1b4e8a,

@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using TMPro;
 using Unity.XR.CoreUtils;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MachistaBotScript : MonoBehaviour
@@ -12,7 +13,7 @@ public class MachistaBotScript : MonoBehaviour
     public float distanciaRaycastRobot = 100f;
     public Camera camera;
     public Canvas canvasFaces;
-    public Canvas canvasScreen;
+    public GameObject canvasScreenParent;
     public Collider screenCollider;
     public LayerMask machistaBotLayer;
     public LayerMask computerScreenLayer;
@@ -26,6 +27,12 @@ public class MachistaBotScript : MonoBehaviour
     public GameObject startText;
     public GameObject settingsButtons;
     public bool settings = false;
+
+    public float time;
+    public Image fill;
+    public float max;
+    public int cuarto = 1;
+    public Animator redFilterAnimator;
 
     private void Awake()
     {
@@ -45,12 +52,41 @@ public class MachistaBotScript : MonoBehaviour
         }
     }
 
+    bool a = true;
+
     void Update()
     {
         LanzarRaycast();
-        if (Input.GetKeyDown(KeyCode.J))
+        Timer();
+    }
+
+    void Timer()
+    {
+        time -= Time.deltaTime;
+        fill.fillAmount = time / max;
+
+        if((time <= (max/4)*3) && (cuarto == 1))
         {
-            FillTaskList();
+            redFilterAnimator.SetTrigger("playRed");
+            cuarto += 1;
+        }
+
+        if (time <= max / 2 && cuarto == 2)
+        {
+            redFilterAnimator.SetTrigger("playRed");
+            cuarto += 1;
+        }
+
+        if (time <= (max / 4) && cuarto == 3)
+        {
+            redFilterAnimator.SetTrigger("playRed");
+            cuarto += 1;
+        }
+
+        if (time < 0)
+        {
+            time = 0;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 
@@ -63,7 +99,8 @@ public class MachistaBotScript : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit, distanciaRaycastRobot, machistaBotLayer))
         {
-            canvasScreen.gameObject.SetActive(true);
+            canvasScreenParent.gameObject.transform.DOScaleY(1, .5f);
+            screenCollider.gameObject.transform.DOScaleY(1, 1);
             screenCollider.gameObject.SetActive(true);
         }
         else if (Physics.Raycast(ray, out hit, distanciaRaycastRobot, computerScreenLayer))
@@ -73,7 +110,8 @@ public class MachistaBotScript : MonoBehaviour
         }
         else
         {
-            canvasScreen.gameObject.SetActive(false);
+            canvasScreenParent.gameObject.transform.DOScaleY(0, .1f);
+            screenCollider.gameObject.transform.DOScaleY(0, 1);
             screenCollider.gameObject.SetActive(false);
         }
     }
