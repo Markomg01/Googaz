@@ -36,6 +36,7 @@ public class MachistaBotScript : MonoBehaviour
 
     private void Awake()
     {
+        max = time;
         finalText.GetComponent<TextMeshProUGUI>().text = finalTextString;
         startText.GetComponent<TextMeshProUGUI>().text=startTextString;
         FillTaskList();
