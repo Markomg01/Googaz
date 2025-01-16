@@ -35,9 +35,9 @@ public class TaskManager : MonoBehaviour
         if (howManyFinished == tasksInScene.Count)
         {
             allTaskCompleteAudio.Play();
-            machistaBot.display.transform.DOScale(0, 1);
+            //machistaBot.display.transform.DOScale(0, 1);
             machistaBot.settingsButtons.transform.DOScale(0, 1);
-            machistaBot.finalText.gameObject.transform.DOScale(1, 1);
+            machistaBot.finalText.transform.DOScale(1, 1);
             tasksCompleted.Invoke();
         }
     }
