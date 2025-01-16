@@ -2,6 +2,7 @@ using DG.Tweening;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Xml.Linq;
 using TMPro;
 using Unity.XR.CoreUtils;
 using UnityEngine;
@@ -34,11 +35,17 @@ public class MachistaBotScript : MonoBehaviour
     public int cuarto = 1;
     public Animator redFilterAnimator;
 
+    public AudioSource watchNoti;
+    public AudioSource watchAlarm;
+    public List<GameObject> textLines = new List<GameObject>();
+    public GameObject textBox;
+
+
     private void Awake()
     {
         max = time;
         finalText.GetComponent<TextMeshProUGUI>().text = finalTextString;
-        startText.GetComponent<TextMeshProUGUI>().text=startTextString;
+        startText.GetComponent<TextMeshProUGUI>().text = startTextString;
         FillTaskList();
         tasksParent.transform.DOScale(0, 0);
     }
@@ -48,6 +55,7 @@ public class MachistaBotScript : MonoBehaviour
         foreach (Task task in taskManager.tasksInScene)
         {
             taskTogglePrefab.GetComponent<Toggle>().isOn = task.GetComponent<Task>().finished;
+            taskTogglePrefab.GetComponentInChildren<TextMeshProUGUI>().text = task.GetComponent<Task>().taskName;
             taskTogglePrefab.GetComponentInChildren<TextMeshProUGUI>().text = task.GetComponent<Task>().taskName;
             Instantiate(taskTogglePrefab, tasksParent.transform);
         }
@@ -66,28 +74,39 @@ public class MachistaBotScript : MonoBehaviour
         time -= Time.deltaTime;
         fill.fillAmount = time / max;
 
-        if((time <= (max/4)*3) && (cuarto == 1))
+        if ((time <= (max / 4) * 3) && (cuarto == 1))
         {
-            redFilterAnimator.SetTrigger("playRed");
-            cuarto += 1;
+            AvisarTiempo();
         }
 
         if (time <= max / 2 && cuarto == 2)
         {
-            redFilterAnimator.SetTrigger("playRed");
-            cuarto += 1;
+            AvisarTiempo();
         }
 
         if (time <= (max / 4) && cuarto == 3)
         {
-            redFilterAnimator.SetTrigger("playRed");
-            cuarto += 1;
+            AvisarTiempo();
         }
 
         if (time < 0)
         {
             time = 0;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+    }
+
+    void AvisarTiempo()
+    {
+        textBox.transform.DOScale(1, .5f);
+        watchAlarm.Play();
+        redFilterAnimator.SetTrigger("playRed");
+        cuarto += 1;
+        for (int i = 0; i < textLines.Count; i++)
+        {
+            textLines[i].SetActive(i == cuarto - 2);
+            textLines[i].transform.localScale = Vector3.zero;
+            textLines[i].transform.DOScale(1, .5f);
         }
     }
 
@@ -135,7 +154,7 @@ public class MachistaBotScript : MonoBehaviour
         {
             settings = true;
             //sceneButtons.SetActive(true);
-            settingsButtons.transform.DOScale(1,1);
+            settingsButtons.transform.DOScale(1, 1);
             display.transform.DOScale(0, 1);
             //tasksParent.SetActive(false);
         }
