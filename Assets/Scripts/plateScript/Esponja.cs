@@ -9,13 +9,19 @@ public class Esponja : MonoBehaviour
     private int count;
     private int iZeinPlaterra = 0;
     public AudioSource Fregar;
-    
-    public ParticleSystem brillo1;
-    public ParticleSystem brillo2;
-    public ParticleSystem brillo3;
-    public ParticleSystem brillo4;
 
+    //public ParticleSystem brillo1;
+    //public ParticleSystem brillo2;
+    //public ParticleSystem brillo3;
+    //public ParticleSystem brillo4;
 
+    public Material sucio5;
+    public Material sucio4;
+    public Material sucio3;
+    public Material sucio2;
+    public Material limpio1;
+
+    Color PlaterrenHasieraKolorea;
 
 
 
@@ -29,11 +35,25 @@ public class Esponja : MonoBehaviour
             Platerrak[i].transform.GetChild(3).gameObject.SetActive(false);
         }
 
+        PlaterrenHasieraKolorea = Platerrak[0].GetComponent<Renderer>().material.color;
+        Debug.Log("CFGHCXFHCHCH " + PlaterrenHasieraKolorea.r);
 
         Platerrak[0].transform.GetChild(0).gameObject.SetActive(true);
         count = 0;
 
     }
+
+    void KoloreaJeitzi()
+    {
+        Color kolorin = Platerrak[iZeinPlaterra].GetComponent<Renderer>().material.color;
+        kolorin.r = kolorin.r + ((1-PlaterrenHasieraKolorea.r) / 20);
+        kolorin.g = kolorin.g + ((1 - PlaterrenHasieraKolorea.g) / 20);
+        kolorin.b = kolorin.b + ((1 - PlaterrenHasieraKolorea.b) / 20);
+        Platerrak[iZeinPlaterra].GetComponent<Renderer>().material.color=kolorin;
+    }
+
+
+
     private void OnTriggerEnter(Collider collision)
     {
 
@@ -47,7 +67,7 @@ public class Esponja : MonoBehaviour
 
                 //brillo1.Play();
 
-
+                KoloreaJeitzi();
             }
 
             if (collision.gameObject.CompareTag("cuboRgt"))
@@ -61,7 +81,7 @@ public class Esponja : MonoBehaviour
 
                 //brillo2.Play();
 
-
+                KoloreaJeitzi();
 
             }
 
@@ -73,7 +93,7 @@ public class Esponja : MonoBehaviour
                 count++;
 
                 //brillo3.Play();
-
+                KoloreaJeitzi();
 
             }
 
@@ -85,8 +105,7 @@ public class Esponja : MonoBehaviour
                 count++;
 
                 //brillo4.Play();
-
-
+                KoloreaJeitzi();
             }
 
             if (count == 20)
@@ -99,11 +118,13 @@ public class Esponja : MonoBehaviour
                 Platerrak[iZeinPlaterra].transform.GetChild(2).gameObject.SetActive(false);
                 Platerrak[iZeinPlaterra].transform.GetChild(3).gameObject.SetActive(false);
                 iZeinPlaterra++;
-                if (Platerrak[iZeinPlaterra] != null)
+                if (iZeinPlaterra < Platerrak.Length)
                 {
-                    Platerrak[iZeinPlaterra].transform.GetChild(0).gameObject.SetActive(true);
+                    if (Platerrak[iZeinPlaterra] != null)
+                    {
+                        Platerrak[iZeinPlaterra].transform.GetChild(0).gameObject.SetActive(true);
+                    }
                 }
-               
             }
         }       
     }
