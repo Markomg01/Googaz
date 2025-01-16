@@ -19,19 +19,20 @@ public class Plato : MonoBehaviour
     {
         limpio = false;
         ren = GetComponent<Renderer>();
-        ren.material.color = Color.grey;
+       // ren.material.color = Color.grey;
         PilaPlatosSnap.GetComponent<PilaPlatosSnap>().HideSnapPlate();
     }
 
     void Update()
     {
+         
     }
 
     public void Limpios()
     {
         limpio = true;
         ren = GetComponent<Renderer>();
-        ren.material.color = Color.green;
+       // ren.material.color = Color.green;
         PilaPlatosSnap.GetComponent<PilaPlatosSnap>().ShowSnapPlate();
 
         Debug.Log("limpiado");

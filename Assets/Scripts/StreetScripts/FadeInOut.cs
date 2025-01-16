@@ -20,6 +20,7 @@ public class FadeInOut : MonoBehaviour
     {
         Fade(1, 0);
     }
+
     public void FadeOut()
     {
         Fade(0, 1);

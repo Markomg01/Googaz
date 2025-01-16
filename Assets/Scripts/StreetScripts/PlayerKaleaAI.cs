@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,7 +13,7 @@ public class PlayerKaleaAI : MonoBehaviour
 
     void Update()
     {
-        Debug.Log("Visible " + kaleaAIrenderer.isVisible);
+        //Debug.Log("Visible " + kaleaAIrenderer.isVisible);
         LanzarRaycast();
     }
 
@@ -23,9 +24,11 @@ public class PlayerKaleaAI : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit, distanciaRaycast, kaleaAI))
         {
-            Debug.Log("GGGGGGG");
+            
+            //Debug.Log("GGGGGGG");
             kaleaAI ia = hit.collider.GetComponent<kaleaAI>();
-
+            iaUltimaGolpeada = ia;
+            iaUltimaGolpeada.setRaycastGolpeo(true);
             if (ia != null)
             {
                 ia.DetenerIA(true);
@@ -33,6 +36,14 @@ public class PlayerKaleaAI : MonoBehaviour
                 Debug.Log("Raycast impactó a la IA: " + hit.collider.name);
             }
         }
+        else
+        {
+            if (iaUltimaGolpeada != null)
+            {
+                iaUltimaGolpeada.setRaycastGolpeo(false);
+            }
+        }
+
 
         if (!kaleaAIrenderer.isVisible)
         {

@@ -2,9 +2,11 @@ using DG.Tweening;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Xml.Linq;
 using TMPro;
 using Unity.XR.CoreUtils;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MachistaBotScript : MonoBehaviour
@@ -12,7 +14,7 @@ public class MachistaBotScript : MonoBehaviour
     public float distanciaRaycastRobot = 100f;
     public Camera camera;
     public Canvas canvasFaces;
-    public Canvas canvasScreen;
+    public GameObject canvasScreenParent;
     public Collider screenCollider;
     public LayerMask machistaBotLayer;
     public LayerMask computerScreenLayer;
@@ -27,10 +29,23 @@ public class MachistaBotScript : MonoBehaviour
     public GameObject settingsButtons;
     public bool settings = false;
 
+    public float time;
+    public Image fill;
+    public float max;
+    public int cuarto = 1;
+    public Animator redFilterAnimator;
+
+    public AudioSource watchNoti;
+    public AudioSource watchAlarm;
+    public List<GameObject> textLines = new List<GameObject>();
+    public GameObject textBox;
+
+
     private void Awake()
     {
+        max = time;
         finalText.GetComponent<TextMeshProUGUI>().text = finalTextString;
-        startText.GetComponent<TextMeshProUGUI>().text=startTextString;
+        startText.GetComponent<TextMeshProUGUI>().text = startTextString;
         FillTaskList();
         tasksParent.transform.DOScale(0, 0);
     }
@@ -41,16 +56,57 @@ public class MachistaBotScript : MonoBehaviour
         {
             taskTogglePrefab.GetComponent<Toggle>().isOn = task.GetComponent<Task>().finished;
             taskTogglePrefab.GetComponentInChildren<TextMeshProUGUI>().text = task.GetComponent<Task>().taskName;
+            taskTogglePrefab.GetComponentInChildren<TextMeshProUGUI>().text = task.GetComponent<Task>().taskName;
             Instantiate(taskTogglePrefab, tasksParent.transform);
         }
     }
 
+    bool a = true;
+
     void Update()
     {
         LanzarRaycast();
-        if (Input.GetKeyDown(KeyCode.J))
+        Timer();
+    }
+
+    void Timer()
+    {
+        time -= Time.deltaTime;
+        fill.fillAmount = time / max;
+
+        if ((time <= (max / 4) * 3) && (cuarto == 1))
         {
-            FillTaskList();
+            AvisarTiempo();
+        }
+
+        if (time <= max / 2 && cuarto == 2)
+        {
+            AvisarTiempo();
+        }
+
+        if (time <= (max / 4) && cuarto == 3)
+        {
+            AvisarTiempo();
+        }
+
+        if (time < 0)
+        {
+            time = 0;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+    }
+
+    void AvisarTiempo()
+    {
+        textBox.transform.DOScale(1, .5f);
+        watchAlarm.Play();
+        redFilterAnimator.SetTrigger("playRed");
+        cuarto += 1;
+        for (int i = 0; i < textLines.Count; i++)
+        {
+            textLines[i].SetActive(i == cuarto - 2);
+            textLines[i].transform.localScale = Vector3.zero;
+            textLines[i].transform.DOScale(1, .5f);
         }
     }
 
@@ -63,7 +119,8 @@ public class MachistaBotScript : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit, distanciaRaycastRobot, machistaBotLayer))
         {
-            canvasScreen.gameObject.SetActive(true);
+            canvasScreenParent.gameObject.transform.DOScaleY(1, .5f);
+            screenCollider.gameObject.transform.DOScaleY(1, 1);
             screenCollider.gameObject.SetActive(true);
         }
         else if (Physics.Raycast(ray, out hit, distanciaRaycastRobot, computerScreenLayer))
@@ -73,7 +130,8 @@ public class MachistaBotScript : MonoBehaviour
         }
         else
         {
-            canvasScreen.gameObject.SetActive(false);
+            canvasScreenParent.gameObject.transform.DOScaleY(0, .1f);
+            screenCollider.gameObject.transform.DOScaleY(0, 1);
             screenCollider.gameObject.SetActive(false);
         }
     }
@@ -96,7 +154,7 @@ public class MachistaBotScript : MonoBehaviour
         {
             settings = true;
             //sceneButtons.SetActive(true);
-            settingsButtons.transform.DOScale(1,1);
+            settingsButtons.transform.DOScale(1, 1);
             display.transform.DOScale(0, 1);
             //tasksParent.SetActive(false);
         }

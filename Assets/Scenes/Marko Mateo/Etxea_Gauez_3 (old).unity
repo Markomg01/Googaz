@@ -2350,6 +2350,9 @@ MonoBehaviour:
   tasksInScene:
   - {fileID: 1016946771}
   fade: {fileID: 710749874}
+  machistaBot: {fileID: 0}
+  taskCompleteAudio: {fileID: 0}
+  allTaskCompleteAudio: {fileID: 0}
   tasksCompleted:
     m_PersistentCalls:
       m_Calls:
@@ -11073,6 +11076,7 @@ MonoBehaviour:
   otraPosicion: {fileID: 1521884544}
   particulas2: {fileID: 1713786022}
   sonidoDeposito: {fileID: 0}
+  audioSource: {fileID: 0}
   mensajeError: {fileID: 0}
   duracionMensaje: 4
   tiempoDesaparecer: 0.5
@@ -11080,6 +11084,7 @@ MonoBehaviour:
   task: {fileID: 1016946771}
   MAXarropa: 2
   animator: {fileID: 0}
+  audioStart: {fileID: 0}
 --- !u!114 &1650505201
 MonoBehaviour:
   m_ObjectHideFlags: 0
