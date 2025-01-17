@@ -42,7 +42,7 @@ public class TirarBasura : MonoBehaviour
         {
             if (other.CompareTag(ropaTag))
             {
-                zenbatArropaJasota++;
+                zenbatArropaJasota++ ; Debug.Log("cantidad");
 
                 if ( zenbatArropaJasota == MAXarropa)
                 {
