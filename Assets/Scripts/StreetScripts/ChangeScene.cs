@@ -44,6 +44,7 @@ public class ChangeScene : MonoBehaviour
     public void CambiarEscena()
     {
         SceneManager.LoadScene(escena);
+        Debug.Log("PuertaNoAbierta");
     }    
     
 }

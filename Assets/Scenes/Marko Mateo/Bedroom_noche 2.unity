@@ -1223,6 +1223,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8164078558771037576, guid: b74d32c108350b4469f82c4d0576fbd7,
         type: 3}
       insertIndex: -1
+      addedObject: {fileID: 484964432}
+    - targetCorrespondingSourceObject: {fileID: 8164078558771037576, guid: b74d32c108350b4469f82c4d0576fbd7,
+        type: 3}
+      insertIndex: -1
       addedObject: {fileID: 484964421}
     - targetCorrespondingSourceObject: {fileID: 8164078558771037576, guid: b74d32c108350b4469f82c4d0576fbd7,
         type: 3}
@@ -1446,6 +1450,27 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!65 &484964432
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 484964420}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.546065, y: 0.835105, z: 2.055208}
+  m_Center: {x: -0.21790951, y: 0.11056849, z: -0.13781604}
 --- !u!1001 &548212621
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6792,10 +6817,15 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 857712074}
     m_Modifications:
+    - target: {fileID: 153851677691104926, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3190975238547441657, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.046
       objectReference: {fileID: 0}
     - target: {fileID: 3190975238547441657, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
         type: 3}
@@ -6805,7 +6835,7 @@ PrefabInstance:
     - target: {fileID: 3190975238547441657, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.12
       objectReference: {fileID: 0}
     - target: {fileID: 3190975238547441657, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
         type: 3}
@@ -6866,6 +6896,11 @@ PrefabInstance:
         type: 3}
       propertyPath: startTextString
       value: Zoaz hozkailua begiratzera
+      objectReference: {fileID: 0}
+    - target: {fileID: 8509070233309402978, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
