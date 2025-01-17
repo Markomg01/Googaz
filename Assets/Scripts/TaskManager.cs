@@ -36,6 +36,8 @@ public class TaskManager : MonoBehaviour
         {
             allTaskCompleteAudio.Play();
             //machistaBot.display.transform.DOScale(0, 1);
+            machistaBot.startText.transform.DOScale(0, 1);
+            machistaBot.tasksParent.transform.DOScale(0, 1);
             machistaBot.settingsButtons.transform.DOScale(0, 1);
             machistaBot.finalText.transform.DOScale(1, 1);
             tasksCompleted.Invoke();
