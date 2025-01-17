@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 177714622346228630}
   - component: {fileID: 2446864273481006414}
   - component: {fileID: 204421016569751131}
-  - component: {fileID: 3631666550325861397}
   - component: {fileID: 6467587992654592257}
   - component: {fileID: 3967626331322057248}
   m_Layer: 0
@@ -92,18 +91,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &3631666550325861397
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2169307912869445791}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a2932ebe20dd8c4f9d0abc29ba5b210, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &6467587992654592257
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -121,6 +108,7 @@ MonoBehaviour:
     type: 3}
   particulas: {fileID: 6799603980637755019}
   sonidoDeposito: {fileID: 8300000, guid: 781c6c66c05488646b9227ef03be2bd2, type: 3}
+  audioSource: {fileID: 0}
   mensajeError: {fileID: 0}
   duracionMensaje: 2
   tiempoDesaparecer: 0.1

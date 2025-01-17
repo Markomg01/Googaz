@@ -20,6 +20,7 @@ public class Ropa : MonoBehaviour
     public int MAXarropa = 3;
     public Animator animator;
     public AudioSource audioStart;
+    public GameObject flechaRopa;
 
     private void Start()
     {
@@ -51,6 +52,7 @@ public class Ropa : MonoBehaviour
                     {
                         particulas2.Play();  // Activar partículas
                         animator.SetTrigger("Activar");
+                        Destroy(flechaRopa);
                     }
 
                     if (sonidoDeposito != null)
