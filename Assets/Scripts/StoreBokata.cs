@@ -17,6 +17,9 @@ public class StoreBokata : MonoBehaviour
     public Task task;
     public GameObject ArrowBokataFinal;
     public GameObject ArrowStoreBokata;
+    public GameObject Preparar_MesaProps;
+    public GameObject PlatoSocket;
+    public GameObject ArrowSetTable1;
 
     private void Start()
     {
@@ -123,6 +126,9 @@ public class StoreBokata : MonoBehaviour
                 Destroy(objetoDepositado.gameObject);  // Eliminar el objeto de la escena
                 Destroy(ArrowBokataFinal);
                 Destroy(ArrowStoreBokata);
+                Preparar_MesaProps.SetActive(true);
+                PlatoSocket.SetActive(true);
+                ArrowSetTable1.SetActive(true);
             }
         }
     }

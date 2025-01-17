@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class kaleaAI : MonoBehaviour
 {
-    public float velocidad = 1f;
+    private float velocidad = 1f;
 
     public Vector3 direccion = Vector3.forward;
 
@@ -63,7 +63,7 @@ public class kaleaAI : MonoBehaviour
                 Debug.Log("moviendo");
                 enRetroceso = false;
                 MoverIA();
-                velocidad = 1.1f;
+                velocidad = 1f;
                 animator.SetBool("IsAtras", false);
                 animator.SetBool("IsMovil", false);
                 animator.SetBool("IsMoving", true);
@@ -192,12 +192,14 @@ public class kaleaAI : MonoBehaviour
 
     void MoverIA()
     {
+        velocidad = 1f;
         enRetroceso = false;
         transform.Translate(direccion.normalized * velocidad * Time.deltaTime);
     }
 
     void MoverHaciaAtras()
     {
+        velocidad = 2f;
         enRetroceso = true;
         transform.Translate(-direccion.normalized * velocidad * Time.deltaTime);
         animator.SetBool("IsMoving", true);
