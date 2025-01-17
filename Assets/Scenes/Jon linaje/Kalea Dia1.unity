@@ -43822,10 +43822,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1733047866}
-    - targetCorrespondingSourceObject: {fileID: 9014170783809206332, guid: 895f6f3c2d334633b5800312285058d2,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1733047867}
     - targetCorrespondingSourceObject: {fileID: 8063056433196656523, guid: 895f6f3c2d334633b5800312285058d2,
         type: 3}
       insertIndex: -1
@@ -61638,44 +61634,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   kaleaAIrenderer: {fileID: 0}
---- !u!114 &1733047867
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1733047856}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6c6e7cc2a57d0a42aedb43be3282e08, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  distanciaRaycastRobot: 33
-  camera: {fileID: 0}
-  canvasFaces: {fileID: 0}
-  canvasScreenParent: {fileID: 0}
-  screenCollider: {fileID: 0}
-  machistaBotLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  computerScreenLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  taskManager: {fileID: 0}
-  taskTogglePrefab: {fileID: 0}
-  tasksParent: {fileID: 0}
-  display: {fileID: 0}
-  finalTextString: 
-  finalText: {fileID: 0}
-  startTextString: 
-  startText: {fileID: 0}
-  settingsButtons: {fileID: 0}
-  settings: 0
-  time: 0
-  fill: {fileID: 0}
-  max: 0
-  cuarto: 1
-  redFilterAnimator: {fileID: 0}
 --- !u!1001 &1735661259
 PrefabInstance:
   m_ObjectHideFlags: 0
