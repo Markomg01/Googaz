@@ -14000,6 +14000,7 @@ GameObject:
   - component: {fileID: 200894237}
   - component: {fileID: 200894238}
   - component: {fileID: 200894239}
+  - component: {fileID: 200894240}
   m_Layer: 0
   m_Name: parentkotxea
   m_TagString: Untagged
@@ -14065,8 +14066,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puertaKotxea: {fileID: 200894238}
   escena: Etxea_Gauez_1
-  SonidoCambioescena: {fileID: 0}
+  SonidoCambioescena: {fileID: 826958232}
   FadeOut: {fileID: 278078040}
+--- !u!54 &200894240
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 200894236}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1001 &206667988
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14649,29 +14677,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.9741626, y: 0.20482063, z: 1.9666541}
   m_Center: {x: -0.99981666, y: 0.10049939, z: -0.9869505}
---- !u!1 &237843470 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9014170783728641055, guid: 895f6f3c2d334633b5800312285058d2,
-    type: 3}
-  m_PrefabInstance: {fileID: 912955678}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &237843472
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 237843470}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ab037760d995684ea0ba1b17065599c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  distanciaRaycast: 500
-  kaleaAI:
-    serializedVersion: 2
-    m_Bits: 0
-  kaleaAIrenderer: {fileID: 0}
 --- !u!1 &239097131
 GameObject:
   m_ObjectHideFlags: 0
@@ -43802,18 +43807,10 @@ PrefabInstance:
       insertIndex: 0
       addedObject: {fileID: 381027508}
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 9014170783728641055, guid: 895f6f3c2d334633b5800312285058d2,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 237843472}
     - targetCorrespondingSourceObject: {fileID: 9014170783809206332, guid: 895f6f3c2d334633b5800312285058d2,
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1733047861}
-    - targetCorrespondingSourceObject: {fileID: 9014170783809206332, guid: 895f6f3c2d334633b5800312285058d2,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1733047866}
     - targetCorrespondingSourceObject: {fileID: 8063056433196656523, guid: 895f6f3c2d334633b5800312285058d2,
         type: 3}
       insertIndex: -1
@@ -52701,12 +52698,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 2093322861}
   m_SourcePrefab: {fileID: 100100000, guid: 6237114bfa84783499175801a09829da, type: 3}
---- !u!137 &1166181799 stripped
-SkinnedMeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 1766366140485441829, guid: 6237114bfa84783499175801a09829da,
-    type: 3}
-  m_PrefabInstance: {fileID: 1166181798}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1167413204
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -59252,6 +59243,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1031804962}
     m_Modifications:
+    - target: {fileID: 153851677691104926, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3190975238547441657, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -59346,6 +59342,11 @@ PrefabInstance:
         type: 3}
       propertyPath: startTextString
       value: Joan zure kotxera
+      objectReference: {fileID: 0}
+    - target: {fileID: 8509070233309402978, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -61704,23 +61705,6 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
---- !u!114 &1733047866
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1733047856}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ab037760d995684ea0ba1b17065599c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  distanciaRaycast: 500
-  kaleaAI:
-    serializedVersion: 2
-    m_Bits: 256
-  kaleaAIrenderer: {fileID: 1166181799}
 --- !u!1001 &1735661259
 PrefabInstance:
   m_ObjectHideFlags: 0
