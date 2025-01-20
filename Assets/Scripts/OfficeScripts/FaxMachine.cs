@@ -48,12 +48,14 @@ public class FaxMachine : MonoBehaviour
     {
         buttonArrow.SetActive(true);
         faxLight.DOColor(Color.green, .01f);
+        faxLight.DOColor(Color.green, "_EmissionColor", .1f);
         canSpawn = true;
     }
 
     public void CantSpawn()
     {
         faxLight.DOColor(Color.red, .01f);
+        faxLight.DOColor(Color.red, "_EmissionColor", .1f);
         canSpawn = false;
     }
 
