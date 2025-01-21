@@ -12,7 +12,7 @@ public class TirarBasura : MonoBehaviour
     public AudioSource audioSource;  // Para reproducir el sonido
     public TMP_Text mensajeError;  // Mensaje de error
     public float duracionMensaje = 2f;  // Duración del mensaje
-    public float tiempoDesaparecer = 0.5f;  // Tiempo antes de eliminar el objeto correcto
+    public float tiempoDesaparecer = 0f;  // Tiempo antes de eliminar el objeto correcto
     public Outline outline;  // Componente Outline
     //public Toggle UIToggle ;  // Referencia al Canvas que quieres desactivar
     public Task task;
@@ -67,7 +67,7 @@ public class TirarBasura : MonoBehaviour
 
                     // Desactivar las partículas y eliminar el objeto más rápido
                     Invoke("DetenerParticulas", tiempoDesaparecer);
-                    Invoke("EliminarObjetoCorrecto", tiempoDesaparecer);
+                   // Invoke("EliminarObjetoCorrecto", tiempoDesaparecer);
 
 
 
@@ -91,10 +91,10 @@ public class TirarBasura : MonoBehaviour
 
                     // Desactivar las partículas y eliminar el objeto más rápido
                     Invoke("DetenerParticulas", tiempoDesaparecer);
-                    Invoke("EliminarObjetoCorrecto", tiempoDesaparecer);
+                  //  Invoke("EliminarObjetoCorrecto", tiempoDesaparecer);
                 }
+                Destroy(other.gameObject);
 
-                
             }
             else
             {
@@ -117,6 +117,7 @@ public class TirarBasura : MonoBehaviour
                 }
 
             }
+
         }
     }
 
