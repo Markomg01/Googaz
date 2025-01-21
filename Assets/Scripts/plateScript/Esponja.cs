@@ -15,13 +15,18 @@ public class Esponja : MonoBehaviour
     //public ParticleSystem brillo3;
     //public ParticleSystem brillo4;
 
-    public Material sucio5;
-    public Material sucio4;
-    public Material sucio3;
-    public Material sucio2;
-    public Material limpio1;
+    //public Material sucio5;
+    //public Material sucio4;
+    //public Material sucio3;
+    //public Material sucio2;
+    //public Material limpio1;
 
     Color PlaterrenHasieraKolorea;
+
+    public Material suciedad;
+
+    //public float mierdaInicial = 0f;
+
 
 
 
@@ -35,8 +40,8 @@ public class Esponja : MonoBehaviour
             Platerrak[i].transform.GetChild(3).gameObject.SetActive(false);
         }
 
-        PlaterrenHasieraKolorea = Platerrak[0].GetComponent<Renderer>().material.color;
-        Debug.Log("CFGHCXFHCHCH " + PlaterrenHasieraKolorea.r);
+       // mierdaInicial = Platerrak[0].GetComponent<Renderer>().material.GetFloat("_Activate");
+       // Debug.Log("CFGHCXFHCHCH " + mierdaInicial);
 
         Platerrak[0].transform.GetChild(0).gameObject.SetActive(true);
         count = 0;
@@ -45,11 +50,17 @@ public class Esponja : MonoBehaviour
 
     void KoloreaJeitzi()
     {
-        Color kolorin = Platerrak[iZeinPlaterra].GetComponent<Renderer>().material.color;
+        float mierda = Platerrak[iZeinPlaterra].GetComponent<Renderer>().material.GetFloat("_Activate");
+        mierda = mierda  - 0.1f;
+        Platerrak[iZeinPlaterra].GetComponent<Renderer>().material.SetFloat("_Activate", mierda);
+
+
+      /*  float kolorin = Platerrak[0].GetComponent<Renderer>().material.GetFloat("_Activate");
         kolorin.r = kolorin.r + ((1-PlaterrenHasieraKolorea.r) / 20);
         kolorin.g = kolorin.g + ((1 - PlaterrenHasieraKolorea.g) / 20);
         kolorin.b = kolorin.b + ((1 - PlaterrenHasieraKolorea.b) / 20);
-        Platerrak[iZeinPlaterra].GetComponent<Renderer>().material.color=kolorin;
+        Platerrak[iZeinPlaterra].GetComponent<Renderer>().material.color=kolorin;*/
+        
     }
 
 
