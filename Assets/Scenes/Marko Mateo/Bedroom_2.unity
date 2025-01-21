@@ -2139,6 +2139,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 653087164}
+    - targetCorrespondingSourceObject: {fileID: -4462501776154760957, guid: ec85333bc9848694bb1bb7d79f33e28d,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 653087168}
+    - targetCorrespondingSourceObject: {fileID: -4462501776154760957, guid: ec85333bc9848694bb1bb7d79f33e28d,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 653087167}
     - targetCorrespondingSourceObject: {fileID: 7396283782910707871, guid: ec85333bc9848694bb1bb7d79f33e28d,
         type: 3}
       insertIndex: -1
@@ -2353,6 +2361,49 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.0032230637, y: 0.0022862987, z: 0.0015453276}
   m_Center: {x: 0.0012863771, y: 0.0008199326, z: 0.00044944632}
+--- !u!54 &653087167
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 653087161}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!114 &653087168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 653087161}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37649dc8867f8214c8f173c2862d851c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puertaKotxea: {fileID: 653087164}
+  escena: Etxea_Egunez 2 Eguna
+  SonidoCambioescena: {fileID: 653087162}
+  FadeOut: {fileID: 1000488011}
 --- !u!1 &699223261
 GameObject:
   m_ObjectHideFlags: 0
