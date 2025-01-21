@@ -3580,6 +3580,59 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.900846, y: 0.708421, z: 0.427034}
   m_Center: {x: 0, y: 0.3515255, z: -0.013420999}
+--- !u!1 &958902785
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 958902787}
+  - component: {fileID: 958902786}
+  m_Layer: 0
+  m_Name: taskManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &958902786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 958902785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 619612e7ef28ab34cb1968cda3aca1b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tasksInScene: []
+  fade: {fileID: 0}
+  machistaBot: {fileID: 0}
+  taskCompleteAudio: {fileID: 0}
+  allTaskCompleteAudio: {fileID: 0}
+  tasksCompleted:
+    m_PersistentCalls:
+      m_Calls: []
+  nextSceneName: 
+--- !u!4 &958902787
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 958902785}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.3751666, y: 1.4841584, z: -3.8232496}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &997485076
 GameObject:
   m_ObjectHideFlags: 0
@@ -6886,7 +6939,7 @@ PrefabInstance:
         type: 3}
       propertyPath: taskManager
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 958902786}
     - target: {fileID: 6337341539643825615, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
         type: 3}
       propertyPath: finalTextString
@@ -6895,7 +6948,7 @@ PrefabInstance:
     - target: {fileID: 6337341539643825615, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
         type: 3}
       propertyPath: startTextString
-      value: Zoaz hozkailua begiratzera
+      value: Zoaz lo egitera
       objectReference: {fileID: 0}
     - target: {fileID: 8509070233309402978, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
         type: 3}
@@ -7446,3 +7499,4 @@ SceneRoots:
   - {fileID: 952199306}
   - {fileID: 1880450149}
   - {fileID: 1337260956}
+  - {fileID: 958902787}
