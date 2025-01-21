@@ -217,7 +217,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: cd9b4ba9e0e3ade40a55f43c8999dd8d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 4.9
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cd9b4ba9e0e3ade40a55f43c8999dd8d,
         type: 3}
@@ -269,6 +269,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GreenArrow
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: cd9b4ba9e0e3ade40a55f43c8999dd8d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7879,6 +7884,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2181e49c2c8c94e4e824cd57acb6cfa0,
     type: 3}
   m_PrefabInstance: {fileID: 706804997}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &712523490 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1151388028547126963, guid: 777fef60ee102244fa87aeadd3f610c8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1761685225}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &729014612 stripped
 Transform:
@@ -25063,7 +25074,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1736853250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25076,7 +25087,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df56f486d0a3e1449af0a49b8cee9caf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToFollow: {fileID: 1761685235}
+  objectToFollow: {fileID: 712523490}
 --- !u!4 &1736853252
 Transform:
   m_ObjectHideFlags: 0
@@ -25086,7 +25097,7 @@ Transform:
   m_GameObject: {fileID: 1736853249}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.07058983, y: 0.9487236, z: -0.6225999}
+  m_LocalPosition: {x: -0.07058983, y: 0.9487236, z: 0.035}
   m_LocalScale: {x: 0.1639372, y: 0.1639372, z: 0.1639372}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -25794,6 +25805,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1736853249}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
@@ -25808,6 +25831,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1736853249}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
   m_FirstFocusEntered:
     m_PersistentCalls:
