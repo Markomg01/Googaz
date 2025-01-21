@@ -1821,115 +1821,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 488700917}
   m_CullTransparentMesh: 1
---- !u!1001 &509250321
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 857712074}
-    m_Modifications:
-    - target: {fileID: 153851677691104926, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3190975238547441657, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.046
-      objectReference: {fileID: 0}
-    - target: {fileID: 3190975238547441657, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3190975238547441657, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.12
-      objectReference: {fileID: 0}
-    - target: {fileID: 3190975238547441657, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 3190975238547441657, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3190975238547441657, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3190975238547441657, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 3190975238547441657, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3190975238547441657, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3190975238547441657, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 5923695361626920634, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
-        type: 3}
-      propertyPath: m_Name
-      value: MachistaBot
-      objectReference: {fileID: 0}
-    - target: {fileID: 6337341539643825615, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
-        type: 3}
-      propertyPath: time
-      value: 300
-      objectReference: {fileID: 0}
-    - target: {fileID: 6337341539643825615, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
-        type: 3}
-      propertyPath: camera
-      value: 
-      objectReference: {fileID: 857712075}
-    - target: {fileID: 6337341539643825615, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
-        type: 3}
-      propertyPath: taskManager
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6337341539643825615, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
-        type: 3}
-      propertyPath: finalTextString
-      value: Joan lo egitera
-      objectReference: {fileID: 0}
-    - target: {fileID: 6337341539643825615, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
-        type: 3}
-      propertyPath: startTextString
-      value: Zoaz hozkailua begiratzera
-      objectReference: {fileID: 0}
-    - target: {fileID: 8509070233309402978, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: d8e8bd9e8e7ad934dad0dc795837c4b5, type: 3}
---- !u!4 &509250322 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3190975238547441657, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
-    type: 3}
-  m_PrefabInstance: {fileID: 509250321}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &525451890
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3286,7 +3177,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 9014170785475729501, guid: 895f6f3c2d334633b5800312285058d2,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 509250322}
+      addedObject: {fileID: 1199816328}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 9014170783809206332, guid: 895f6f3c2d334633b5800312285058d2,
         type: 3}
@@ -4496,6 +4387,59 @@ Transform:
   - {fileID: 1099104201}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1126755474
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1126755476}
+  - component: {fileID: 1126755475}
+  m_Layer: 0
+  m_Name: taskManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1126755475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126755474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 619612e7ef28ab34cb1968cda3aca1b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tasksInScene: []
+  fade: {fileID: 0}
+  machistaBot: {fileID: 0}
+  taskCompleteAudio: {fileID: 0}
+  allTaskCompleteAudio: {fileID: 0}
+  tasksCompleted:
+    m_PersistentCalls:
+      m_Calls: []
+  nextSceneName: 
+--- !u!4 &1126755476
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126755474}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.3751666, y: 1.4841584, z: -3.8232496}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1137814005
 GameObject:
   m_ObjectHideFlags: 0
@@ -4727,6 +4671,120 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: be1ab7125565e174dadda63a2070f6ad,
     type: 3}
   m_PrefabInstance: {fileID: 1157731530}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1199816327
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 857712074}
+    m_Modifications:
+    - target: {fileID: 153851677691104926, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3190975238547441657, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3190975238547441657, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3190975238547441657, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3190975238547441657, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3190975238547441657, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3190975238547441657, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3190975238547441657, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3190975238547441657, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3190975238547441657, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3190975238547441657, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5923695361626920634, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
+        type: 3}
+      propertyPath: m_Name
+      value: MachistaBot
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337341539643825615, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
+        type: 3}
+      propertyPath: max
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337341539643825615, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
+        type: 3}
+      propertyPath: time
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337341539643825615, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 857712075}
+    - target: {fileID: 6337341539643825615, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
+        type: 3}
+      propertyPath: taskManager
+      value: 
+      objectReference: {fileID: 1126755475}
+    - target: {fileID: 6337341539643825615, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
+        type: 3}
+      propertyPath: finalTextString
+      value: Joan lo egitera
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337341539643825615, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
+        type: 3}
+      propertyPath: startTextString
+      value: Zoaz lo egitera
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337341539643825615, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
+        type: 3}
+      propertyPath: distanciaRaycastRobot
+      value: 100
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d8e8bd9e8e7ad934dad0dc795837c4b5, type: 3}
+--- !u!4 &1199816328 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3190975238547441657, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1199816327}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1211010765
 PrefabInstance:
@@ -7483,3 +7541,4 @@ SceneRoots:
   - {fileID: 2042131031}
   - {fileID: 606558923}
   - {fileID: 1977373167}
+  - {fileID: 1126755476}
