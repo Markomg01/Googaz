@@ -554,6 +554,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 153851677691104926, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: b49eab9882859704e91a0722abc6f3d0, type: 3}
     - target: {fileID: 3190975238547441657, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -637,13 +642,19 @@ PrefabInstance:
     - target: {fileID: 6337341539643825615, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
         type: 3}
       propertyPath: startTextString
-      value: Hartu iratzargailua eta utzi holograma esaten duen lekuan
+      value: Hemen zure eginkizunak ikusiko dituzu, hasteko hartu iratzargailua eta
+        utzi holograma esaten duen lekuan
       objectReference: {fileID: 0}
     - target: {fileID: 8509070233309402978, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
         type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8509070233309402978, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: b49eab9882859704e91a0722abc6f3d0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1560,7 +1571,7 @@ Transform:
   m_GameObject: {fileID: 455142847}
   serializedVersion: 2
   m_LocalRotation: {x: 0.42147642, y: -0, z: -0, w: 0.9068394}
-  m_LocalPosition: {x: 3.88, y: 2.089926, z: -3.3419397}
+  m_LocalPosition: {x: 3.88, y: 1.949, z: -3.228}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2252,7 +2263,7 @@ Transform:
   m_GameObject: {fileID: 621107646}
   serializedVersion: 2
   m_LocalRotation: {x: -0.407368, y: -0, z: -0, w: 0.9132641}
-  m_LocalPosition: {x: 3.901, y: 2.084, z: -4.153}
+  m_LocalPosition: {x: 3.901, y: 1.94, z: -4.319}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6448,7 +6459,7 @@ Transform:
   m_GameObject: {fileID: 1212289692}
   serializedVersion: 2
   m_LocalRotation: {x: -0.5, y: 0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: 2.296, y: 0.864, z: -5.734}
+  m_LocalPosition: {x: 2.587, y: 0.864, z: -5.734}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6470,32 +6481,32 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 1b1ff3a1717eee94a9f47eead7363e6c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.19847035
+      value: -0.19592136
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1b1ff3a1717eee94a9f47eead7363e6c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.48636055
+      value: -0.48451614
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1b1ff3a1717eee94a9f47eead7363e6c,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: 0.49072224
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1b1ff3a1717eee94a9f47eead7363e6c,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.000000022351747
+      value: -0.5091088
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1b1ff3a1717eee94a9f47eead7363e6c,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.7071068
+      value: 0.49072224
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1b1ff3a1717eee94a9f47eead7363e6c,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.000000022351747
+      value: -0.50910866
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1b1ff3a1717eee94a9f47eead7363e6c,
         type: 3}
@@ -6510,7 +6521,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 1b1ff3a1717eee94a9f47eead7363e6c,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: -92.107
       objectReference: {fileID: 0}
     - target: {fileID: -7635826562936255635, guid: 1b1ff3a1717eee94a9f47eead7363e6c,
         type: 3}
