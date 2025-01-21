@@ -390,7 +390,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &134103075
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -559,6 +559,16 @@ PrefabInstance:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: b49eab9882859704e91a0722abc6f3d0, type: 3}
+    - target: {fileID: 1173198681846119252, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
+        type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1173198681846119252, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: b49eab9882859704e91a0722abc6f3d0, type: 3}
     - target: {fileID: 3190975238547441657, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -609,6 +619,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 4465985368806894700, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0.29
+      objectReference: {fileID: 0}
     - target: {fileID: 5923695361626920634, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
         type: 3}
       propertyPath: m_Name
@@ -633,7 +648,7 @@ PrefabInstance:
         type: 3}
       propertyPath: taskManager
       value: 
-      objectReference: {fileID: 134103075}
+      objectReference: {fileID: 0}
     - target: {fileID: 6337341539643825615, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
         type: 3}
       propertyPath: finalTextString
@@ -643,7 +658,24 @@ PrefabInstance:
         type: 3}
       propertyPath: startTextString
       value: Hemen zure eginkizunak ikusiko dituzu, hasteko hartu iratzargailua eta
-        utzi holograma esaten duen lekuan
+        utzi holograma esaten duen lekuan. Soinu hau entzuten duzunean niri adi egon
+      objectReference: {fileID: 0}
+    - target: {fileID: 8100441361610767917, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
+        type: 3}
+      propertyPath: m_text
+      value: "Hemen zure eginkizunak ikusiko dituzu, hasteko hartu iratzargailua
+        eta utzi holograma esaten duen lekuan \nSoinu hau entzuten duzunean niri
+        adi egon\nAmaitzen duzunean zoaz atera eta hasi jokua"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8100441361610767917, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 0.024
+      objectReference: {fileID: 0}
+    - target: {fileID: 8100441361610767917, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 0.024
       objectReference: {fileID: 0}
     - target: {fileID: 8509070233309402978, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
         type: 3}
@@ -3307,7 +3339,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 688655259}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4ab037760d995684ea0ba1b17065599c, type: 3}
   m_Name: 
