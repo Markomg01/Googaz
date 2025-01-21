@@ -37,6 +37,8 @@ public class MachistaBotScript : MonoBehaviour
 
     public AudioSource watchNoti;
     public AudioSource watchAlarm;
+    public AudioSource watchOpen;
+    public AudioSource watchClose;
     public List<GameObject> textLines = new List<GameObject>();
     public GameObject textBox;
 
@@ -119,6 +121,7 @@ public class MachistaBotScript : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit, distanciaRaycastRobot, machistaBotLayer))
         {
+            watchOpen.Play();
             canvasScreenParent.gameObject.transform.DOScaleY(1, .5f);
             screenCollider.gameObject.transform.DOScaleY(1, 1);
             screenCollider.gameObject.SetActive(true);
@@ -130,6 +133,7 @@ public class MachistaBotScript : MonoBehaviour
         }
         else
         {
+            watchClose.Play();
             canvasScreenParent.gameObject.transform.DOScaleY(0, .1f);
             screenCollider.gameObject.transform.DOScaleY(0, 1);
             screenCollider.gameObject.SetActive(false);

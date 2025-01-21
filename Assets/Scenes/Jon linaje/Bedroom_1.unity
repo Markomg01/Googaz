@@ -554,6 +554,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 153851677691104926, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: b49eab9882859704e91a0722abc6f3d0, type: 3}
     - target: {fileID: 3190975238547441657, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -637,13 +642,19 @@ PrefabInstance:
     - target: {fileID: 6337341539643825615, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
         type: 3}
       propertyPath: startTextString
-      value: Hartu iratzargailua eta utzi holograma esaten duen lekuan
+      value: Hemen zure eginkizunak ikusiko dituzu, hasteko hartu iratzargailua eta
+        utzi holograma esaten duen lekuan
       objectReference: {fileID: 0}
     - target: {fileID: 8509070233309402978, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
         type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8509070233309402978, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: b49eab9882859704e91a0722abc6f3d0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
