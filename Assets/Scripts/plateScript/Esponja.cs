@@ -10,10 +10,30 @@ public class Esponja : MonoBehaviour
     private int iZeinPlaterra = 0;
     public AudioSource Fregar;
 
-    //public ParticleSystem brillo1;
-    //public ParticleSystem brillo2;
-    //public ParticleSystem brillo3;
-    //public ParticleSystem brillo4;
+    public ParticleSystem brillo1;
+    public ParticleSystem brillo2;
+    public ParticleSystem brillo3;
+    public ParticleSystem brillo4;
+
+    public ParticleSystem brillo5;
+    public ParticleSystem brillo6;
+    public ParticleSystem brillo7;
+    public ParticleSystem brillo8;
+
+    public ParticleSystem brillo9;
+    public ParticleSystem brillo10;
+    public ParticleSystem brillo11;
+    public ParticleSystem brillo12;
+
+    public ParticleSystem brillo13;
+    public ParticleSystem brillo14;
+    public ParticleSystem brillo15;
+    public ParticleSystem brillo16;
+
+    public ParticleSystem brillo17;
+    public ParticleSystem brillo18;
+    public ParticleSystem brillo19;
+    public ParticleSystem brillo20;
 
     //public Material sucio5;
     //public Material sucio4;
@@ -76,7 +96,13 @@ public class Esponja : MonoBehaviour
                 Platerrak[iZeinPlaterra].transform.GetChild(1).gameObject.SetActive(true);
                 count++;
 
-                //brillo1.Play();
+                brillo1.Play();
+                
+                brillo5.Play();
+                brillo9.Play();
+                brillo13.Play();
+                brillo17.Play();
+
 
                 KoloreaJeitzi();
             }
@@ -90,7 +116,13 @@ public class Esponja : MonoBehaviour
 
                 Fregar.Play();
 
-                //brillo2.Play();
+                brillo2.Play();
+                
+                brillo6.Play();
+                brillo10.Play();
+                brillo14.Play();
+                brillo18.Play();
+
 
                 KoloreaJeitzi();
 
@@ -103,7 +135,13 @@ public class Esponja : MonoBehaviour
 
                 count++;
 
-                //brillo3.Play();
+                brillo3.Play();
+                
+                brillo7.Play();
+                brillo11.Play();
+                brillo15.Play();
+                brillo19.Play();
+
                 KoloreaJeitzi();
 
             }
@@ -115,7 +153,13 @@ public class Esponja : MonoBehaviour
 
                 count++;
 
-                //brillo4.Play();
+                brillo4.Play();
+                
+                brillo8.Play();
+                brillo12.Play();
+                brillo16.Play();
+                brillo20.Play();
+
                 KoloreaJeitzi();
             }
 
