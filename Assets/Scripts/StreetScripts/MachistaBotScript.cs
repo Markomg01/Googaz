@@ -47,19 +47,25 @@ public class MachistaBotScript : MonoBehaviour
     {
         max = time;
         finalText.GetComponent<TextMeshProUGUI>().text = finalTextString;
-        startText.GetComponent<TextMeshProUGUI>().text = startTextString;
+        if(startText != null)
+        {
+            startText.GetComponent<TextMeshProUGUI>().text = startTextString;
+        }
         FillTaskList();
         tasksParent.transform.DOScale(0, 0);
     }
 
     private void FillTaskList()
     {
-        foreach (Task task in taskManager.tasksInScene)
+        if(taskManager != null)
         {
-            taskTogglePrefab.GetComponent<Toggle>().isOn = task.GetComponent<Task>().finished;
-            taskTogglePrefab.GetComponentInChildren<TextMeshProUGUI>().text = task.GetComponent<Task>().taskName;
-            taskTogglePrefab.GetComponentInChildren<TextMeshProUGUI>().text = task.GetComponent<Task>().taskName;
-            Instantiate(taskTogglePrefab, tasksParent.transform);
+            foreach (Task task in taskManager.tasksInScene)
+            {
+                taskTogglePrefab.GetComponent<Toggle>().isOn = task.GetComponent<Task>().finished;
+                taskTogglePrefab.GetComponentInChildren<TextMeshProUGUI>().text = task.GetComponent<Task>().taskName;
+                taskTogglePrefab.GetComponentInChildren<TextMeshProUGUI>().text = task.GetComponent<Task>().taskName;
+                Instantiate(taskTogglePrefab, tasksParent.transform);
+            }
         }
     }
 
