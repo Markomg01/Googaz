@@ -15,7 +15,7 @@ public class Bocata : MonoBehaviour
     public GameObject bocatafinal;
     public AudioSource po;
     public GameObject end;
-    public Task task;
+    //public Task task;
     public AudioSource confetiSound;
 
     private void Awake()
@@ -54,7 +54,7 @@ public class Bocata : MonoBehaviour
         Instantiate(bocatafinal, gameObject.transform.position, bocatafinal.transform.rotation);
         GameObject g = GameObject.Instantiate(end);
         Destroy(gameObject, 0.08f);
-        task.TaskComplete(end);
+        //task.TaskComplete(end);
     }
 
 }
