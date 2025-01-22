@@ -8,8 +8,9 @@ OcclusionCullingSettings:
     smallestOccluder: 5
     smallestHole: 0.25
     backfaceThreshold: 100
-  m_SceneGUID: 00000000000000000000000000000000
-  m_OcclusionCullingData: {fileID: 0}
+  m_SceneGUID: 5e1d3d6030d633e4f9ea8520f8b9fab6
+  m_OcclusionCullingData: {fileID: 36300000, guid: 53c11e10dfa1fdc419e185cdb37ea981,
+    type: 2}
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
@@ -33519,6 +33520,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MachistaBot
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337341539643825615, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
+        type: 3}
+      propertyPath: time
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 6337341539643825615, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
         type: 3}

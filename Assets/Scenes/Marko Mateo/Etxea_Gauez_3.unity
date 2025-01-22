@@ -6102,10 +6102,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sounds:
   - {fileID: 8300000, guid: 21518869b2cc2a74db5e86263eec7ae1, type: 3}
+  - {fileID: 8300000, guid: 21518869b2cc2a74db5e86263eec7ae1, type: 3}
   volumeChangeMultiplier: 0.2
   pitchChangeMultiplier: 0.2
   timeRemaining: 10
-  secondTimeRemaining: 0.5
+  secondTimeRemaining: 2000
 --- !u!95 &155323207
 Animator:
   serializedVersion: 5
@@ -7503,6 +7504,11 @@ PrefabInstance:
       propertyPath: texts.Array.size
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4185917144809332650, guid: cc6d50bf109fd5a418ea5566fbc637e5,
+        type: 3}
+      propertyPath: texts.Array.data[2]
+      value: 
+      objectReference: {fileID: 292449802}
     - target: {fileID: 4289858868777890714, guid: cc6d50bf109fd5a418ea5566fbc637e5,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -7613,6 +7619,12 @@ PrefabInstance:
 --- !u!4 &292449801 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7261563039781323898, guid: cc6d50bf109fd5a418ea5566fbc637e5,
+    type: 3}
+  m_PrefabInstance: {fileID: 292449800}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &292449802 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9088012516387878132, guid: cc6d50bf109fd5a418ea5566fbc637e5,
     type: 3}
   m_PrefabInstance: {fileID: 292449800}
   m_PrefabAsset: {fileID: 0}
@@ -20673,12 +20685,12 @@ PrefabInstance:
     - target: {fileID: 6337341539643825615, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
         type: 3}
       propertyPath: finalTextString
-      value: Joan lo egitera
+      value: Joan zure logelara
       objectReference: {fileID: 0}
     - target: {fileID: 6337341539643825615, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
         type: 3}
       propertyPath: startTextString
-      value: Zoaz hozkailua begiratzera
+      value: Joan hozkailura zure zereginak ikustera
       objectReference: {fileID: 0}
     - target: {fileID: 6337341539643825615, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
         type: 3}
