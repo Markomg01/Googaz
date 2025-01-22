@@ -100,7 +100,6 @@ public class MachistaBotScript : MonoBehaviour
         if (time < 0)
         {
             time = 0;
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 
