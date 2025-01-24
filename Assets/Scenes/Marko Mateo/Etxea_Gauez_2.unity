@@ -1000,11 +1000,7 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1344144150}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8164078558771037576, guid: 8b1840b7270eefd478220661c4a8e074,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 89285075}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b1840b7270eefd478220661c4a8e074, type: 3}
 --- !u!4 &89285073 stripped
 Transform:
@@ -1012,30 +1008,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 89285072}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &89285074 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8164078558771037576, guid: 8b1840b7270eefd478220661c4a8e074,
-    type: 3}
-  m_PrefabInstance: {fileID: 89285072}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &89285075
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 89285074}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 0.2784474, g: 1, b: 0, a: 1}
-  outlineWidth: 2
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1001 &99863835
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1456,7 +1428,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 89285075}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
@@ -7243,18 +7215,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 836092652}
-        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
       - m_Target: {fileID: 1880817668}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -10140,7 +10100,7 @@ PrefabInstance:
     - target: {fileID: -4376165382222400258, guid: ec85333bc9848694bb1bb7d79f33e28d,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 2147483647
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -1494359460490068117, guid: ec85333bc9848694bb1bb7d79f33e28d,
         type: 3}
@@ -10227,10 +10187,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 836092651}
-    - targetCorrespondingSourceObject: {fileID: -4376165382222400258, guid: ec85333bc9848694bb1bb7d79f33e28d,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 836092652}
   m_SourcePrefab: {fileID: 100100000, guid: ec85333bc9848694bb1bb7d79f33e28d, type: 3}
 --- !u!1001 &458061113
 PrefabInstance:
@@ -16801,24 +16757,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &836092652
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 836092641}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 0.27332437, g: 1, b: 0, a: 1}
-  outlineWidth: 4
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1001 &855827337
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22547,7 +22485,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 89285075}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
@@ -34979,10 +34917,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 777fef60ee102244fa87aeadd3f610c8,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1761685231}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 777fef60ee102244fa87aeadd3f610c8,
-        type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1761685233}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 777fef60ee102244fa87aeadd3f610c8,
         type: 3}
@@ -35034,7 +34968,7 @@ MonoBehaviour:
   m_HoverEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 89285075}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
@@ -35046,7 +34980,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1761685231}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
@@ -35061,7 +34995,7 @@ MonoBehaviour:
   m_HoverExited:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1761685231}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
@@ -35270,24 +35204,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &1761685231
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1761685226}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 0.2569139, g: 1, b: 0, a: 1}
-  outlineWidth: 2
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!135 &1761685233
 SphereCollider:
   m_ObjectHideFlags: 0
