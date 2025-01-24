@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 2446864273481006414}
   - component: {fileID: 204421016569751131}
   - component: {fileID: 6467587992654592257}
-  - component: {fileID: 3967626331322057248}
   m_Layer: 0
   m_Name: ColliderParaStoreBokata
   m_TagString: Untagged
@@ -112,26 +111,12 @@ MonoBehaviour:
   mensajeError: {fileID: 0}
   duracionMensaje: 2
   tiempoDesaparecer: 0.1
-  outline: {fileID: 3967626331322057248}
   task: {fileID: 0}
---- !u!114 &3967626331322057248
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2169307912869445791}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 0.7735849, g: 0.30683863, b: 0, a: 1}
-  outlineWidth: 5
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
+  ArrowBokataFinal: {fileID: 0}
+  ArrowStoreBokata: {fileID: 0}
+  Preparar_MesaProps: {fileID: 0}
+  PlatoSocket: {fileID: 0}
+  ArrowSetTable1: {fileID: 0}
 --- !u!1 &3281789012194852665
 GameObject:
   m_ObjectHideFlags: 0
