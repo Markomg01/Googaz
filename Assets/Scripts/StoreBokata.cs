@@ -13,7 +13,7 @@ public class StoreBokata : MonoBehaviour
     public TMP_Text mensajeError;  // Mensaje de error
     public float duracionMensaje = 2f;  // Duración del mensaje
     public float tiempoDesaparecer = 0.2f;  // Tiempo antes de eliminar el objeto correcto
-    public Outline outline;  // Componente Outline
+    //public Outline outline;  // Componente Outline
     public Task task;
     public GameObject ArrowBokataFinal;
     public GameObject ArrowStoreBokata;
@@ -23,13 +23,13 @@ public class StoreBokata : MonoBehaviour
 
     private void Start()
     {
-        // Asegurarse de que el outline esté desactivado al principio
+        /* Asegurarse de que el outline esté desactivado al principio
         if (outline != null)
         {
             outline.enabled = false;
         }
 
-        audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource = gameObject.AddComponent<AudioSource>();*/
     }
 
     private void OnTriggerEnter(Collider other)
