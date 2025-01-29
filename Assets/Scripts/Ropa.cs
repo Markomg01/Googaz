@@ -13,7 +13,7 @@ public class Ropa : MonoBehaviour
     public TMP_Text mensajeError;  // Mensaje de error
     public float duracionMensaje = 2f;  // Duración del mensaje
     public float tiempoDesaparecer = 0.5f;  // Tiempo antes de eliminar el objeto correcto
-    public Outline outline;  // Componente Outline
+    //public Outline outline;  // Componente Outline
     //public Toggle UIToggle ;  // Referencia al Canvas que quieres desactivar
     public Task task;
     int zenbatArropaJasota = 0;
@@ -24,7 +24,7 @@ public class Ropa : MonoBehaviour
 
     private void Start()
     {
-        // Asegurarse de que el outline esté desactivado al principio
+        /* Asegurarse de que el outline esté desactivado al principio
         if (outline != null)
         {
             outline.enabled = false;
@@ -32,7 +32,7 @@ public class Ropa : MonoBehaviour
 
         audioSource = gameObject.AddComponent<AudioSource>();
 
-        audioSource.loop = true;
+        audioSource.loop = true;*/
     }
 
     private void OnTriggerEnter(Collider other)
@@ -75,7 +75,7 @@ public class Ropa : MonoBehaviour
 
                     //UIToggle.isOn = true;
 
-                    task.TaskComplete(outline);
+                    task.TaskComplete(task);
                 }
                 else
                 {

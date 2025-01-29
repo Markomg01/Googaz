@@ -489,6 +489,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8164078558771037576, guid: 59580e2f406141247bce5cf5b2fda809,
         type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 59580e2f406141247bce5cf5b2fda809,
+        type: 3}
       propertyPath: m_TagString
       value: Ropa
       objectReference: {fileID: 0}
@@ -628,18 +633,6 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 667476311}
-        m_TargetAssemblyTypeName: Ropa, Assembly-CSharp
-        m_MethodName: ActivarOutline
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 667476312}
-          m_ObjectArgumentAssemblyTypeName: Outline, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 426764498}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -667,18 +660,6 @@ MonoBehaviour:
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 667476311}
-        m_TargetAssemblyTypeName: Ropa, Assembly-CSharp
-        m_MethodName: DesactivarOutline
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 667476312}
-          m_ObjectArgumentAssemblyTypeName: Outline, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1643819782}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -6653,42 +6634,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 836092655}
-        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
   nextSceneName: Bedroom_noche
 --- !u!4 &123639255
 Transform:
@@ -6857,6 +6802,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BackGroundColor.r
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9032954039820430273, guid: 895f6f3c2d334633b5800312285058d2,
+        type: 3}
+      propertyPath: m_MaxRaycastDistance
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 9146015503685400394, guid: 895f6f3c2d334633b5800312285058d2,
+        type: 3}
+      propertyPath: m_MaxRaycastDistance
+      value: 0.05
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -9414,7 +9369,7 @@ PrefabInstance:
     - target: {fileID: -4376165382222400258, guid: ec85333bc9848694bb1bb7d79f33e28d,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 2147483647
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -1494359460490068117, guid: ec85333bc9848694bb1bb7d79f33e28d,
         type: 3}
@@ -9501,10 +9456,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 836092651}
-    - targetCorrespondingSourceObject: {fileID: -4376165382222400258, guid: ec85333bc9848694bb1bb7d79f33e28d,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 836092655}
   m_SourcePrefab: {fileID: 100100000, guid: ec85333bc9848694bb1bb7d79f33e28d, type: 3}
 --- !u!1001 &457637165
 PrefabInstance:
@@ -11221,9 +11172,9 @@ CapsuleCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.3192079
-  m_Height: 0.84131384
+  m_Height: 0.928529
   m_Direction: 1
-  m_Center: {x: 0.0017592907, y: -0.07934308, z: 0}
+  m_Center: {x: 0.0017592907, y: -0.039732456, z: 0}
 --- !u!114 &667476311
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11244,30 +11195,11 @@ MonoBehaviour:
   mensajeError: {fileID: 0}
   duracionMensaje: 3
   tiempoDesaparecer: 0.1
-  outline: {fileID: 667476312}
   task: {fileID: 551626668}
   MAXarropa: 3
   animator: {fileID: 1362339857}
   audioStart: {fileID: 836092651}
   flechaRopa: {fileID: 0}
---- !u!114 &667476312
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 667476306}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 1, g: 0, b: 0, a: 1}
-  outlineWidth: 2
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!114 &667476313
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11288,7 +11220,6 @@ MonoBehaviour:
   mensajeError: {fileID: 0}
   duracionMensaje: 1
   tiempoDesaparecer: 0.5
-  outline: {fileID: 667476312}
   task: {fileID: 551626668}
   MAXarropa: 2
   animator: {fileID: 1362339857}
@@ -13010,24 +12941,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &836092655
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 836092641}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 0.0845902, g: 1, b: 0, a: 1}
-  outlineWidth: 4
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &853126733
 GameObject:
   m_ObjectHideFlags: 0
@@ -22505,15 +22418,11 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 91addf2b2ea181848b9dcf1942dde5ba,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1412380520}
+      addedObject: {fileID: 1412380521}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 91addf2b2ea181848b9dcf1942dde5ba,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1412380521}
-    - targetCorrespondingSourceObject: {fileID: 8164078558771037576, guid: 91addf2b2ea181848b9dcf1942dde5ba,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 667476312}
+      addedObject: {fileID: 1412380522}
     - targetCorrespondingSourceObject: {fileID: 8164078558771037576, guid: 91addf2b2ea181848b9dcf1942dde5ba,
         type: 3}
       insertIndex: -1
@@ -22533,27 +22442,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1412380514}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &1412380520
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 897712561}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.6718626, y: 0.20145643, z: 0.70620203}
-  m_Center: {x: 0.003815651, y: 0.9789358, z: 0.005723238}
 --- !u!114 &1412380521
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22574,11 +22462,31 @@ MonoBehaviour:
   mensajeError: {fileID: 0}
   duracionMensaje: 1
   tiempoDesaparecer: 0.5
-  outline: {fileID: 667476312}
   task: {fileID: 551626668}
   MAXarropa: 2
   animator: {fileID: 1362339857}
   audioStart: {fileID: 836092651}
+--- !u!65 &1412380522
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 897712561}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 16384
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.652545, y: 0.112709284, z: 0.6490793}
+  m_Center: {x: 0.004474163, y: 0.8249954, z: 0.0017533302}
 --- !u!1001 &1415797796
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23287,8 +23195,7 @@ Transform:
   m_LocalPosition: {x: -0.80138487, y: -0.34625542, z: -1.100916}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1928896226}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1532995524
@@ -25931,6 +25838,7 @@ Transform:
   - {fileID: 1942987474}
   - {fileID: 1224392707}
   - {fileID: 1942317060}
+  - {fileID: 1928896226}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1763781825
@@ -26231,7 +26139,7 @@ MonoBehaviour:
         m_MethodName: ActivarOutline
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 667476312}
+          m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: Outline, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -26270,7 +26178,7 @@ MonoBehaviour:
         m_MethodName: DesactivarOutline
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 667476312}
+          m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: Outline, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -26589,10 +26497,18 @@ PrefabInstance:
     - target: {fileID: 2524277947475339735, guid: cc6d50bf109fd5a418ea5566fbc637e5,
         type: 3}
       propertyPath: m_text
-      value: "Ah! Eta bihar, beranduago jaikitzen naiz, gaur oso kantsatuta nago
-        eta lo egin behar dut ondo, bihar lanean egun gogorra dut, buruzagia dena
-        bidaltzen dit niri eta ez dut ia denbora niretzako\u2026 , orduan bihar bokata
-        egin ahal nazakezu berriz\u2026 konpentsatuko dizut\u2026"
+      value: "Ah! Eta bihar, beranduago jaikitzen naiz, egun gogorra dut, orduan
+        bihar bokata egin ahal nazakezu berriz\u2026 "
+      objectReference: {fileID: 0}
+    - target: {fileID: 2524277947475339735, guid: cc6d50bf109fd5a418ea5566fbc637e5,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 0.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 2524277947475339735, guid: cc6d50bf109fd5a418ea5566fbc637e5,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 0.13
       objectReference: {fileID: 0}
     - target: {fileID: 2939131080329383153, guid: cc6d50bf109fd5a418ea5566fbc637e5,
         type: 3}
@@ -26662,8 +26578,13 @@ PrefabInstance:
     - target: {fileID: 4185917144809332650, guid: cc6d50bf109fd5a418ea5566fbc637e5,
         type: 3}
       propertyPath: texts.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 4185917144809332650, guid: cc6d50bf109fd5a418ea5566fbc637e5,
+        type: 3}
+      propertyPath: texts.Array.data[2]
+      value: 
+      objectReference: {fileID: 1851990197}
     - target: {fileID: 4289858868777890714, guid: cc6d50bf109fd5a418ea5566fbc637e5,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -26708,6 +26629,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ChatBox
+      objectReference: {fileID: 0}
+    - target: {fileID: 6501634347435211644, guid: cc6d50bf109fd5a418ea5566fbc637e5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6501634347435211644, guid: cc6d50bf109fd5a418ea5566fbc637e5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.005
+      objectReference: {fileID: 0}
+    - target: {fileID: 6501634347435211644, guid: cc6d50bf109fd5a418ea5566fbc637e5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.022
       objectReference: {fileID: 0}
     - target: {fileID: 7261563039781323898, guid: cc6d50bf109fd5a418ea5566fbc637e5,
         type: 3}
@@ -26759,12 +26695,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9088012516387878132, guid: cc6d50bf109fd5a418ea5566fbc637e5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9119143700955717509, guid: cc6d50bf109fd5a418ea5566fbc637e5,
         type: 3}
       propertyPath: m_text
-      value: "Mari, kontuz nire arroparekin, azken aldian kamiseta zuria, morea bihurtu
-        zenidan eta nire gym-eko lagunak barrezka hasi ziren, zelako lotsa pasatu
-        nuen\u2026"
+      value: Mari, kontuz nire arroparekin, azken aldian kamiseta zuria morea bihurtu
+        zenidan.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -26774,6 +26714,12 @@ PrefabInstance:
 --- !u!4 &1851990196 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7261563039781323898, guid: cc6d50bf109fd5a418ea5566fbc637e5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1851990195}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1851990197 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9088012516387878132, guid: cc6d50bf109fd5a418ea5566fbc637e5,
     type: 3}
   m_PrefabInstance: {fileID: 1851990195}
   m_PrefabAsset: {fileID: 0}
@@ -27127,6 +27073,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Arrow
       objectReference: {fileID: 0}
+    - target: {fileID: 1534023406229861425, guid: f10d8c572075ed3459d97a51a84753ab,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4660160340481328902, guid: f10d8c572075ed3459d97a51a84753ab,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -27190,6 +27141,11 @@ PrefabInstance:
     - target: {fileID: 4660160340481328902, guid: f10d8c572075ed3459d97a51a84753ab,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6166818498441962883, guid: f10d8c572075ed3459d97a51a84753ab,
+        type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -27402,18 +27358,6 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 667476311}
-        m_TargetAssemblyTypeName: Ropa, Assembly-CSharp
-        m_MethodName: ActivarOutline
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 667476312}
-          m_ObjectArgumentAssemblyTypeName: Outline, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1803148599}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -27441,18 +27385,6 @@ MonoBehaviour:
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 667476311}
-        m_TargetAssemblyTypeName: Ropa, Assembly-CSharp
-        m_MethodName: DesactivarOutline
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 667476312}
-          m_ObjectArgumentAssemblyTypeName: Outline, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1643819782}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -27691,11 +27623,11 @@ Transform:
   m_GameObject: {fileID: 1928896225}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.3103309, y: 1.1348782, z: 1.9831506}
+  m_LocalPosition: {x: -1.3334284, y: -1.3113772, z: -6.9677653}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1509611858}
+  m_Father: {fileID: 1760817988}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1928896227
 BoxCollider:
