@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -18,6 +19,8 @@ public class PaperCollector : MonoBehaviour
 
     public AudioSource endSound;
 
+    public TextMeshProUGUI paperNumber;
+
     [SerializeField]
     UnityEvent paperCollected;
 
@@ -31,6 +34,7 @@ public class PaperCollector : MonoBehaviour
             GetComponent<Outline>().OutlineWidth = 0;
             faxMachine.CanSpawn();
             paperSigned++;
+            paperNumber.text = (paperSigned + "/" + paperToSign);
             spark.Play();
             Destroy(collision.gameObject);
         }
