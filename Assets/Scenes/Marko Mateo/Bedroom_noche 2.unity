@@ -1779,6 +1779,24 @@ MonoBehaviour:
   escena: Etxea_Egunez 1 Eguna
   SonidoCambioescena: {fileID: 0}
   FadeOut: {fileID: 0}
+--- !u!1 &588723792 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7696548424635294048, guid: 895f6f3c2d334633b5800312285058d2,
+    type: 3}
+  m_PrefabInstance: {fileID: 857712070}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &588723793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 588723792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad4046a6e16c3d4459dd859baa892083, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &699223261
 GameObject:
   m_ObjectHideFlags: 0
@@ -2367,6 +2385,10 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1938008651}
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7696548424635294048, guid: 895f6f3c2d334633b5800312285058d2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 588723793}
     - targetCorrespondingSourceObject: {fileID: 9014170783809206332, guid: 895f6f3c2d334633b5800312285058d2,
         type: 3}
       insertIndex: -1
