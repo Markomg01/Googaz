@@ -4836,9 +4836,7 @@ PrefabInstance:
     - target: {fileID: 1112789062576480264, guid: cc6d50bf109fd5a418ea5566fbc637e5,
         type: 3}
       propertyPath: m_text
-      value: 'Ez al zara nekatzen hain gutxi egiteaz? Nik ezingo nuke
-
-'
+      value: "Ez al zara nekatzen hain gutxi egiteaz? \n"
       objectReference: {fileID: 0}
     - target: {fileID: 1112789062576480264, guid: cc6d50bf109fd5a418ea5566fbc637e5,
         type: 3}
@@ -4858,7 +4856,7 @@ PrefabInstance:
     - target: {fileID: 2524277947475339735, guid: cc6d50bf109fd5a418ea5566fbc637e5,
         type: 3}
       propertyPath: m_text
-      value: 'Ea pilak ipintzen ditugun e maribel
+      value: 'Ea pilak ipintzen ditugun eh, Maribel.
 
 '
       objectReference: {fileID: 0}
@@ -4985,7 +4983,7 @@ PrefabInstance:
     - target: {fileID: 9119143700955717509, guid: cc6d50bf109fd5a418ea5566fbc637e5,
         type: 3}
       propertyPath: m_text
-      value: 'Niri ere ekarri zeniezadake kafe bat noizean behin
+      value: 'Niri ere ekarri zeniezadake kafe bat noizean behin.
 
 '
       objectReference: {fileID: 0}
@@ -26650,7 +26648,7 @@ PrefabInstance:
     - target: {fileID: 1112789062576480264, guid: cc6d50bf109fd5a418ea5566fbc637e5,
         type: 3}
       propertyPath: m_text
-      value: 'Horrela, gustura etortzen naiz lanera
+      value: 'Horrela, gustura etortzen naiz lanera.
 
         Ederra!
 
@@ -26674,7 +26672,7 @@ PrefabInstance:
     - target: {fileID: 2524277947475339735, guid: cc6d50bf109fd5a418ea5566fbc637e5,
         type: 3}
       propertyPath: m_text
-      value: Zein ederra zatozen gaur laztana
+      value: Zein ederra zatozen gaur laztana.
       objectReference: {fileID: 0}
     - target: {fileID: 2524277947475339735, guid: cc6d50bf109fd5a418ea5566fbc637e5,
         type: 3}
@@ -31603,9 +31601,7 @@ PrefabInstance:
     - target: {fileID: 1112789062576480264, guid: cc6d50bf109fd5a418ea5566fbc637e5,
         type: 3}
       propertyPath: m_text
-      value: 'Ez al zara nekatzen hain gutxi egiteaz? Nik ezingo nuke
-
-'
+      value: 'Ez al zara nekatzen hain gutxi egiteaz? '
       objectReference: {fileID: 0}
     - target: {fileID: 1112789062576480264, guid: cc6d50bf109fd5a418ea5566fbc637e5,
         type: 3}
@@ -31625,7 +31621,7 @@ PrefabInstance:
     - target: {fileID: 2524277947475339735, guid: cc6d50bf109fd5a418ea5566fbc637e5,
         type: 3}
       propertyPath: m_text
-      value: 'Ea pilak ipintzen ditugun e maribel
+      value: 'Ea pilak ipintzen ditugun eh, Maribel.
 
 '
       objectReference: {fileID: 0}
@@ -40283,6 +40279,13 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2524277947475339735, guid: cc6d50bf109fd5a418ea5566fbc637e5,
+        type: 3}
+      propertyPath: m_text
+      value: 'Hemen ez dago ezer ikustekorik, zoaz zerbait baliagarria egitera.
+
+'
+      objectReference: {fileID: 0}
     - target: {fileID: 3694379858098151100, guid: cc6d50bf109fd5a418ea5566fbc637e5,
         type: 3}
       propertyPath: objectToFollow
@@ -40342,6 +40345,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9119143700955717509, guid: cc6d50bf109fd5a418ea5566fbc637e5,
+        type: 3}
+      propertyPath: m_text
+      value: Egun osoan nabil lanean.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
