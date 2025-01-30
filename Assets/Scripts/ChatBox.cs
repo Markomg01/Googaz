@@ -8,24 +8,34 @@ public class ChatBox : MonoBehaviour
     public List<GameObject> texts = new List<GameObject>();
 
     public GameObject box;
-    int a;
+    int currentText;
+    bool canEnter = true;
+    bool canExit = true;
 
     private void OnTriggerEnter(Collider other)
     {
-        a = Random.Range(0, texts.Count);
-        if(other.CompareTag("Player"))
+        currentText = Random.Range(0, texts.Count);
+
+        if (other.CompareTag("Player") && canEnter)
         {
+            canExit = true;
+            canEnter = false;
             box.transform.DOScale(1, .5f);
-            texts[a].SetActive(true);
+            texts[currentText].SetActive(true);
         }
     }
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && canExit)
         {
+            canEnter = true;
+            canExit = false;
+            Debug.Log("textos");
             box.transform.DOScale(0, .5f);
-            texts[a].SetActive(false);
-
+            foreach (GameObject go in texts)
+            {
+                go.SetActive(false);
+            }          
         }
     }
 }
