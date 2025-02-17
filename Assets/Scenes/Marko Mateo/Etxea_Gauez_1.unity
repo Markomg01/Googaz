@@ -10738,12 +10738,12 @@ PrefabInstance:
     - target: {fileID: 6337341539643825615, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
         type: 3}
       propertyPath: max
-      value: 60
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 6337341539643825615, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
         type: 3}
       propertyPath: time
-      value: 60
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 6337341539643825615, guid: d8e8bd9e8e7ad934dad0dc795837c4b5,
         type: 3}
@@ -11233,6 +11233,9 @@ MonoBehaviour:
   MAXarropa: 2
   animator: {fileID: 1362339857}
   audioStart: {fileID: 836092651}
+  corazon: {fileID: 0}
+  aumentarVolumen: 0.1
+  maxVolume: 2
 --- !u!1001 &688754898
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22493,6 +22496,9 @@ MonoBehaviour:
   MAXarropa: 2
   animator: {fileID: 1362339857}
   audioStart: {fileID: 836092651}
+  corazon: {fileID: 0}
+  aumentarVolumen: 0.1
+  maxVolume: 2
 --- !u!65 &1412380522
 BoxCollider:
   m_ObjectHideFlags: 0
