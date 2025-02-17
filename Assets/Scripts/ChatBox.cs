@@ -30,8 +30,7 @@ public class ChatBox : MonoBehaviour
         {
             canEnter = true;
             canExit = false;
-            Debug.Log("textos");
-            box.transform.DOScale(0, .5f);
+                        box.transform.DOScale(0, .5f);
             foreach (GameObject go in texts)
             {
                 go.SetActive(false);

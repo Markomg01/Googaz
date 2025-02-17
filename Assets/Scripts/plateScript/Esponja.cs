@@ -61,8 +61,7 @@ public class Esponja : MonoBehaviour
         }
 
        // mierdaInicial = Platerrak[0].GetComponent<Renderer>().material.GetFloat("_Activate");
-       // Debug.Log("CFGHCXFHCHCH " + mierdaInicial);
-
+       // 
         Platerrak[0].transform.GetChild(0).gameObject.SetActive(true);
         count = 0;
 

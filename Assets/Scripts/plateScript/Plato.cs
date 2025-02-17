@@ -35,8 +35,7 @@ public class Plato : MonoBehaviour
        // ren.material.color = Color.green;
         PilaPlatosSnap.GetComponent<PilaPlatosSnap>().ShowSnapPlate();
 
-        Debug.Log("limpiado");
-
+        
     }
 
 }

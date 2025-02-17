@@ -25,8 +25,7 @@ public class Task : MonoBehaviour
 
     public void TaskComplete(bool completed)
     {
-        Debug.Log("finished "+ taskName);
-        finished = completed;
+                finished = completed;
         toggle.isOn = completed;
         manager.CheckTasksCompleted();
     }

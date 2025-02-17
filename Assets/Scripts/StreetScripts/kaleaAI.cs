@@ -31,15 +31,13 @@ public class kaleaAI : MonoBehaviour
     {
         float distance = Vector3.Distance(transform.position, prota.transform.position);
 
-        Debug.Log("Raycastgolpeo = " + raycastGolpeo);
-        //Lo estoy mirando
+                //Lo estoy mirando
         if (raycastGolpeo)
         {
             if (distance <= 6f)
             {
                 //MoverseAtras
-                Debug.Log("irse hacia taras");
-                enRetroceso = true;
+                                enRetroceso = true;
                 MoverHaciaAtras();
                 animator.SetBool("IsAtras", true);
                 animator.SetBool("IsMovil", false);
@@ -50,8 +48,7 @@ public class kaleaAI : MonoBehaviour
             if (distance > 6f)
             {
                 enRetroceso = false;
-                Debug.Log("quedarse quieto");
-                DetenerIA(true);
+                                DetenerIA(true);
             }
         }
         else
@@ -59,8 +56,7 @@ public class kaleaAI : MonoBehaviour
             if(distance > 2.5f)
             {
                 //MoverseHaciaMi
-                Debug.Log("moviendo");
-                enRetroceso = false;
+                                enRetroceso = false;
                 MoverIA();
                 velocidad = 1f;
                 animator.SetBool("IsAtras", false);
@@ -69,18 +65,15 @@ public class kaleaAI : MonoBehaviour
             }
             if(distance <= 2.5f)
             {
-                Debug.Log("quito desde cerca");          
-                DetenerIA(true);
+                                DetenerIA(true);
                 enRetroceso = false;
             }
         }
 
         /*if (enRetroceso)
         {            
-            Debug.Log("en Retroceso hahahahaha");
-            enRetroceso = true;
-            //Debug.Log("AtrasAtrasAtras");
-            MoverHaciaAtras();
+                        enRetroceso = true;
+                      MoverHaciaAtras();
             animator.SetBool("IsAtras", true);
             animator.SetBool("IsMovil", false);
             animator.SetBool("IsMoving", false);
@@ -92,8 +85,7 @@ public class kaleaAI : MonoBehaviour
             {
                 if (raycastGolpeo == true)
                 {
-                    Debug.Log("en rango y mirando");
-                    enRetroceso = true;
+                                        enRetroceso = true;
                     MoverHaciaAtras();
                     animator.SetBool("IsAtras", true);
                     animator.SetBool("IsMovil", false);
@@ -102,8 +94,7 @@ public class kaleaAI : MonoBehaviour
                 }
                 else
                 {
-                    Debug.Log("en rango y no mirando");
-                    DetenerIA(true);
+                                        DetenerIA(true);
                     enRetroceso = false;
                 }
             }
@@ -112,13 +103,11 @@ public class kaleaAI : MonoBehaviour
                 if (raycastGolpeo)
                 {
                     enRetroceso = false;
-                    Debug.Log("fuera de range y mirando");
-                    DetenerIA(true);
+                                        DetenerIA(true);
                 }
                 else
                 {
-                    Debug.Log("fuera de rango y no mirando");
-                    enRetroceso = false;
+                                        enRetroceso = false;
                     MoverIA();
                     velocidad = 1.1f;
                 }
@@ -129,10 +118,8 @@ public class kaleaAI : MonoBehaviour
         {
             if (raycastGolpeo == true)
             {
-                Debug.Log("en rango y mirando");
-                enRetroceso = true;
-                //Debug.Log("AtrasAtrasAtras");
-                MoverHaciaAtras();
+                                enRetroceso = true;
+                              MoverHaciaAtras();
                 animator.SetBool("IsAtras", true);
                 animator.SetBool("IsMovil", false);
                 animator.SetBool("IsMoving", false);
@@ -140,8 +127,7 @@ public class kaleaAI : MonoBehaviour
             }
             else
             {
-                Debug.Log("en rango y no mirando");
-                DetenerIA(true);
+                                DetenerIA(true);
                 enRetroceso = false;
             }
         }
@@ -152,15 +138,13 @@ public class kaleaAI : MonoBehaviour
                 if (!raycastGolpeo)// !enRetroceso)
                 {
 
-                    Debug.Log("fuera de rango y no mirando");
-                    enRetroceso = false;
+                                        enRetroceso = false;
                     MoverIA();
                     velocidad = 1.1f;
                 }
                 else
                 {
-                    Debug.Log("fuera de range y mirando");
-                    DetenerIA(true);
+                                        DetenerIA(true);
                     enRetroceso = false;
                 }
             }
@@ -168,10 +152,8 @@ public class kaleaAI : MonoBehaviour
             {
                 if (raycastGolpeo == true)
                 {
-                    Debug.Log("fuera de rango y mirando222");
-                    enRetroceso = true;
-                    //Debug.Log("AtrasAtrasAtras");
-                    MoverHaciaAtras();
+                                        enRetroceso = true;
+                                      MoverHaciaAtras();
                     animator.SetBool("IsAtras", true);
                     animator.SetBool("IsMovil", false);
                     animator.SetBool("IsMoving", false);
@@ -179,8 +161,7 @@ public class kaleaAI : MonoBehaviour
                 }
                 else
                 {
-                    Debug.Log("fuera de rango y no mirando2222");
-                    enRetroceso = false;
+                                        enRetroceso = false;
                     MoverIA();
                     velocidad = 1.1f;
                 }
@@ -228,8 +209,7 @@ public class kaleaAI : MonoBehaviour
 
     /*private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log(collision.gameObject);
-        if (collision.gameObject.CompareTag("Player"))
+                if (collision.gameObject.CompareTag("Player"))
         {
             DetenerIA(true);
             //Invoke("CambiarEscena", 1f);
@@ -250,8 +230,7 @@ public class kaleaAI : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             enRetroceso = true;
-            //Debug.Log("AtrasAtrasAtras");
-            MoverHaciaAtras();
+                      MoverHaciaAtras();
             animator.SetBool("IsAtras", true);
             animator.SetBool("IsMovil", false);
             animator.SetBool("IsMoving", false);
@@ -264,8 +243,7 @@ public class kaleaAI : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             enRetroceso = true;
-            Debug.Log("AtrasAtrasAtrasCoñoQue te vayas a tomar por culo");
-            MoverHaciaAtras();
+                        MoverHaciaAtras();
             velocidad = 0.75f;
             animator.SetBool("IsAtras", true);
             animator.SetBool("IsMovil", false);

@@ -42,8 +42,7 @@ public class TirarBasura : MonoBehaviour
         {
             if (other.CompareTag(ropaTag))
             {
-                zenbatArropaJasota++ ; Debug.Log("cantidad");
-
+                zenbatArropaJasota++ ; 
                 if ( zenbatArropaJasota == MAXarropa)
                 {
                     // Si es un objeto correcto
@@ -91,7 +90,7 @@ public class TirarBasura : MonoBehaviour
 
                     // Desactivar las partículas y eliminar el objeto más rápido
                     Invoke("DetenerParticulas", tiempoDesaparecer);
-                  //  Invoke("EliminarObjetoCorrecto", tiempoDesaparecer);
+                  Invoke("EliminarObjetoCorrecto", tiempoDesaparecer);
                 }
                 Destroy(other.gameObject);
 

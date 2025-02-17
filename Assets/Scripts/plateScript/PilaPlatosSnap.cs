@@ -29,16 +29,14 @@ public class PilaPlatosSnap : MonoBehaviour
         {
             SnapPlaterrak[iZeinSnapPlaterra].transform.gameObject.SetActive(true); 
 
-            Debug.Log("true");
-            
+                        
         }
 
         if (!platoActivo.GetComponent<Plato>().limpio) 
         {
             SnapPlaterrak[iZeinSnapPlaterra].transform.gameObject.SetActive(false);
 
-            Debug.Log("false");
-        }
+                    }
 
     }
 
@@ -46,8 +44,7 @@ public class PilaPlatosSnap : MonoBehaviour
     {
         SnapPlaterrak[iZeinSnapPlaterra].transform.gameObject.SetActive(true);
 
-        Debug.Log("view");
-    }
+            }
 
     public void HideSnapPlate()
     {

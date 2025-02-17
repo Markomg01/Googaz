@@ -51,8 +51,7 @@ public class GameController : MonoBehaviour
         {
             /*if (!song)
             {
-                Debug.Log("song");
-                faputa.Play();
+                                faputa.Play();
                 song = true;
             }
             */

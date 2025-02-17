@@ -31,8 +31,7 @@ public class Coffee : MonoBehaviour
 
         if (output <= 0)
         {
-            Debug.Log("lo has tirado");
-            socketArrow.SetActive(true);
+                        socketArrow.SetActive(true);
             finalArrow.SetActive(false);
             buttonArrow.SetActive(false);
             coffeeInMachine.SetActive(true);
