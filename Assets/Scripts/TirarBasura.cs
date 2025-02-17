@@ -21,6 +21,12 @@ public class TirarBasura : MonoBehaviour
     public Animator animator;
     public AudioSource audioStart;
 
+
+
+    public AudioSource corazon;
+    public float aumentarVolumen = 0.1f;
+    public float maxVolume = 2.0f;
+
     private void Start()
     {
         /* Asegurarse de que el outline esté desactivado al principio
@@ -37,6 +43,8 @@ public class TirarBasura : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         XRGrabInteractable interactable = other.GetComponent<XRGrabInteractable>();
+
+        corazon.volume = Mathf.Clamp(corazon.volume + aumentarVolumen, 0f, maxVolume);
 
         if (interactable != null)
         {
