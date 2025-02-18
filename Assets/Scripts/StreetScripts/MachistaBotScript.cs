@@ -42,6 +42,7 @@ public class MachistaBotScript : MonoBehaviour
     public List<GameObject> textLines = new List<GameObject>();
     public GameObject textBox;
 
+    public bool timeRunning = false;
 
     private void Awake()
     {
@@ -74,7 +75,10 @@ public class MachistaBotScript : MonoBehaviour
     void Update()
     {
         LanzarRaycast();
-        Timer();
+        if(timeRunning)
+        {
+            Timer();
+        }
     }
 
     void Timer()
@@ -155,6 +159,16 @@ public class MachistaBotScript : MonoBehaviour
                 tasksParent.transform.GetChild(i).GetComponent<Toggle>().isOn = true;
             }
         }
+    }
+
+    public void StartTime()
+    {
+        timeRunning = true;
+    }
+
+    public void StopTime()
+    {
+        timeRunning = false;
     }
 
     public void SettingsButtons()
