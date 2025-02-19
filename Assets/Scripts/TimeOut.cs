@@ -19,8 +19,9 @@ public class TimeOut : MonoBehaviour
     IEnumerator RestartScene()
     {
         gameObject.transform.DOScale(1, .5f);
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(4f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         yield return null;
+
     }
 }
